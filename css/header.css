@@ -1,0 +1,33 @@
+.header {
+  height: 980px;
+  padding-top: 146px;
+  margin-bottom: 50px;
+}
+
+.header__title {
+  position: relative;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 100%;
+  letter-spacing: -0.1em;
+}
+
+.header__title:after {
+  position: absolute;
+  content:"";
+  right: 0;
+  top: 70px;
+  display: inline-block;
+  width: 675px;
+  height: 762px;
+  background-image: url(../images/banner.png);
+}
+
+.header__subtitle {
+  margin-left: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+}

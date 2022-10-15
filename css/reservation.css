@@ -1,0 +1,13 @@
+.reservation__title {
+  margin-bottom: 50px;
+}
+
+.reservation__form  {
+  width: 1135px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.reservation__input {
+  width: 143px;
+}
