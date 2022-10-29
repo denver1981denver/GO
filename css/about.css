@@ -1,24 +1,20 @@
-.about__title {
-  margin-bottom: 50px;
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about__image-container {
-  display: inline-block;
   width: 600px;
   height: 596px;
-  margin-right: 80px;
   background-image: url(../images/about-image.jpg);
 }
 
 .about__content {
-  display: inline-block;
-  width: 495px;
+  width: 500px;
 }
 
-.about__wrapper {
+.about__block-description {
   margin-bottom: 48px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
@@ -27,56 +23,46 @@
   margin-bottom: 30px;
 }
 
-.blockquote__wrapper {
+.about__blockquote {
   position: relative;
   margin-bottom: 40px;
-}
-
-.blockquote__wrapper:before {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../images/“.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.blockquote__wrapper:after {
-  position: absolute;
-  content: "";
-  bottom: 25px;
-  right: 107px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../images/“.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: rotate(180deg);
-}
-
-.blockquote__quote {
-  display: inline-block;
-  margin-left: 30px;
-  font-style: normal;
-  font-weight: 400;
+  padding-left: 33px;
+  width: 455px;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
 }
 
-.blockquote__author {
-  width: 389px;
-  margin-left: auto;
+.about__blockquote:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/quotes.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.blockquote__cite {
-  display: inline-block;
-  margin-left: 20px;
-  font-style: normal;
-  font-weight: 400;
+.about__blockquote:after {
+  position: absolute;
+  content: "";
+  right: 63px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/quotes.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.author {
+  display: flex;
+  padding-left: 111px;
+  gap: 30px;
+}
+
+.author__caption {
   font-size: 20px;
   line-height: 28px;
 }

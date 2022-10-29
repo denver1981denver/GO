@@ -1,13 +1,158 @@
-.reservation__title {
-  margin-bottom: 50px;
+.reservation {
+  padding: 80px 0;
+  background-color: #440f51;
 }
 
-.reservation__form  {
-  width: 1135px;
-  margin: 0 auto;
-  font-weight: 500;
+.form__legend {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
 }
 
-.reservation__input {
-  width: 143px;
+.form__legend--title {
+  margin-bottom: 40px;
+}
+
+.form__hall {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.form__radio-button-cinema {
+  width: 250px;
+  height: 55px;
+  padding: 7px 15px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #000;
+  cursor: pointer;
+}
+
+.form__box {
+  padding: 0 100px;
+}
+
+.form__entertainment-set {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 60px;
+}
+
+.form__input-wrapper-games {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__legend--subtitle {
+  margin-bottom: 24px;
+}
+
+.form__legend--text-aligne--left {
+  text-align: left;
+}
+
+.form__label {
+  display: flex;
+  padding-top: 2px;
+  padding-left: 37px;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.form__label--ellipse {
+  padding-left: 39px;
+}
+
+.form__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__input:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.form__input--radio-button:after {
+  background-image: url(../images/rectangle.svg);
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+}
+
+.form__input--checkbox:after {
+  background-image: url(../images/rectangle.svg);
+}
+
+.form__client-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  row-gap: 14px;
+  margin-bottom: 40px;
+}
+
+.form__date-time {
+  display: flex;
+  width: 300px;
+  gap: 32px;
+}
+
+.form__input-date {
+  width: 134px;
+  height: 52px;
+  padding: 18px 20px;
+}
+
+.form__description-client-data {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+.form__input-value {
+  display: block;
+  width: 300px;
+  height: 52px;
+}
+
+.form__input-name {
+  display: block;
+  width: 280px;
+  height: 52px;
+}
+
+.form__input-value,
+.form__input-name,
+.form__input-daten {
+  padding: 12px 27px 12px 20px;
+}
+
+.form__btn {
+  display: block;
+  margin-left: auto;
+  padding: 16px 50px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6c0287;
+  background: #ffffff;
+  border-radius: 10px;
 }

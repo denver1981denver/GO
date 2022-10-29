@@ -1,18 +1,12 @@
-.reviews__title {
-  margin-bottom: 40px;
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .reviews__item {
-  display: flow-root;
-}
-
-.reviews__item:not(:last-child) {
-  margin-bottom: 50px;
-}
-
-.reviews__box {
-  float: left;
-  margin-right: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .reviews__img {
@@ -20,7 +14,6 @@
 }
 
 .reviews__name {
-  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -28,8 +21,7 @@
 
 .reviews__description {
   padding-top: 52px;
-  width: 970px;
-  font-weight: 400;
+  width: 680px;
   font-size: 20px;
   line-height: 28px;
 }

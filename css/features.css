@@ -1,0 +1,24 @@
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.features__item {
+  position: relative;
+}
+
+.features__description {
+  position: absolute;
+  left: 40px;
+  top: 166px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.features__description--audio {
+  max-width: 195px;
+}
+
