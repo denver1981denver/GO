@@ -17,6 +17,16 @@
   font-size: 22px;
   line-height: 50px;
   text-transform: uppercase;
+  transition: color .3s ease-in-out;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: #cd06ff;
+}
+
+.navigation__link:active {
+  color: #6c0287;
 }
 
 .navigation__btn {

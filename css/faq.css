@@ -34,53 +34,41 @@
 }
 
 .line,
-.vertical
+.vertical,
 .circle {
-  transition: all .2s ease-in-out ;
+  transition: all .2s ease-out ;
 }
 
-
-.faq__btn--open .line {
+.faq__btn--open .line,
+.faq__item:hover .faq__btn--open,
+.faq__item:hover .faq__btn--open-purple .line {
   fill:#fff;
 }
 
-.faq__btn--open-purple .line {
+.faq__btn--open-purple .line,
+.faq__item:hover .faq__btn--open-purple,
+.faq__item:hover .line {
   fill:#6C0287;
 }
 
-.faq__btn--open:hover {
-  fill:#fff;
-}
-
-.circle:hover {
+.faq__item:hover .circle {
   stroke: transparent;
 }
 
-.faq__btn--open-purple:hover {
-  fill:#6C0287;
-}
-
-.faq__btn--open:hover .line {
-  fill:#6C0287;
-}
-
-.faq__btn--open-purple:hover .line {
-  fill: white;
-}
-
-.faq__btn--open:active .line {
+.faq__item:hover .faq__btn--open:active .line {
   fill: #fff;;
 }
 
-.faq__btn--open-purple:active .line {
-  fill: #6C0287;
+.faq__item:hover .faq__btn--open-purple:active .line {
+  fill: #6C0287;;
 }
 
-.circle:active {
+.faq__item:hover .faq__btn:active,
+.faq__item:hover .faq__btn:active .vertical {
+  fill: transparent;
+}
+
+.faq__item:hover .circle:active {
   stroke: #6C0287;
 }
 
-.faq__btn:active,
-.faq__btn:active .vertical {
-  fill: transparent;
-}
