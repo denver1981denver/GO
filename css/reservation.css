@@ -21,8 +21,9 @@
 }
 
 .form__radio-button-cinema {
-  width: 250px;
-  height: 55px;
+  align-items: center;
+  min-width: 250px;
+  min-height: 55px;
   padding: 7px 15px;
   font-weight: 700;
   font-size: 30px;
@@ -30,9 +31,30 @@
   text-align: center;
   text-transform: uppercase;
   background-color: #fff;
-  border-radius: 8px;
   color: #000;
+  border: 3px solid transparent;
+  border-radius: 8px;
   cursor: pointer;
+}
+
+.form__radio-button-cinema:hover,
+.visually-hidden:focus + .form__radio-button-cinema {
+  border-color: #640aa3;
+}
+
+.form__radio-button-cinema:hover {
+  background-color: #eadeed;
+}
+
+.visually-hidden:focus + .form__radio-button-cinema {
+  outline: none;
+}
+
+.visually-hidden:active + .form__radio-button-cinema,
+.visually-hidden:checked + .form__radio-button-cinema {
+  background-color: #6c0287;
+  color: #fff;
+  border-color: #fff;
 }
 
 .form__box {
@@ -42,7 +64,6 @@
 .form__entertainment-set {
   display: flex;
   justify-content: space-between;
-
   margin-bottom: 60px;
 }
 
@@ -72,30 +93,49 @@
   padding-left: 39px;
 }
 
-.form__input {
+.form__input-entertainment {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.form__input:after {
+.form__input-entertainment--radio-button:before {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 27px;
+  background-image: url(../images/substrate.svg);
 }
 
-.form__input--radio-button:after {
-  background-image: url(../images/rectangle.svg);
-  border-radius: 50%;
+.form__input-entertainment:after {
+  content: "";
+  position: absolute;
   width: 27px;
   height: 27px;
 }
 
-.form__input--checkbox:after {
+.form__input-entertainment:focus {
+  outline: none;
+}
+
+.form__input-entertainment--radio-button:after {
+  background-image: url(../images/rectangle.svg);
+  border-radius: 50%;
+}
+
+.form__input-entertainment--checkbox:after {
   background-image: url(../images/rectangle.svg);
 }
+
+.form__input-entertainment--checkbox:focus:after,
+.form__input-entertainment--checkbox:checked:after,
+.form__input-entertainment--radio-button:focus:before,
+.form__input-entertainment--radio-button:checked:before {
+  outline: 1px solid #cd06ff;
+  outline-offset: 3px;
+}
+
 
 .form__client-data {
   display: flex;
@@ -112,14 +152,22 @@
   gap: 32px;
 }
 
-.form__input-date {
-  width: 134px;
+.form__input {
+  display: block;
   height: 52px;
   padding: 18px 20px;
 }
 
+.form__input:focus {
+  outline: none;
+  border: 2px solid #cd06ff;
+}
+
+.form__input-date {
+  width: 134px;
+}
+
 .form__description-client-data {
-  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -127,21 +175,11 @@
 }
 
 .form__input-value {
-  display: block;
   width: 300px;
-  height: 52px;
 }
 
 .form__input-name {
-  display: block;
   width: 280px;
-  height: 52px;
-}
-
-.form__input-value,
-.form__input-name,
-.form__input-daten {
-  padding: 12px 27px 12px 20px;
 }
 
 .form__btn {
@@ -152,7 +190,26 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
+  background: #fff;
   color: #6c0287;
-  background: #ffffff;
+  border: 3px solid transparent;
   border-radius: 10px;
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  border-color: #6c0287;
+}
+
+.form__btn:focus {
+  outline: none;
+}
+
+.form__btn:hover,
+.form__btn:active {
+  background-color: #eadeed;
+}
+
+.form__btn:active {
+  border-color: transparent;
 }

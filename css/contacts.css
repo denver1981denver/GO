@@ -1,7 +1,7 @@
 .contacts {
   padding-top: 55px;
   padding-bottom: 156px;
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
 }
 
 .contacts__wrapper {
@@ -47,4 +47,23 @@
 .contacts__social {
   display: flex;
   gap: 26px;
+}
+
+.social__link {
+  display: block;
+  line-height: 0;
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: #eadeed;
+}
+
+.social__link:focus {
+  outline: 1px solid #cd06ff;
+}
+
+.social__link:active {
+  color: #cd06ff;
+  outline-color: transparent;
 }

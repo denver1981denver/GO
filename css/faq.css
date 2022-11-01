@@ -27,3 +27,44 @@
   font-size: 24px;
   color: inherit;
 }
+
+.faq__btn {
+  fill: transparent;
+}
+
+.faq__btn--open .line {
+  fill:#fff;
+}
+
+.faq__btn--open-purple .line {
+  fill:#6C0287;
+}
+
+.faq__btn--open:hover {
+  fill:#fff;
+}
+
+.faq__btn--open-purple:hover {
+  fill:#6C0287;
+}
+
+.faq__btn--open:hover .line {
+  fill:#6C0287;
+}
+
+.faq__btn--open-purple:hover .line {
+  fill: white;
+}
+
+.faq__btn--open:active .line {
+  fill: #fff;;
+}
+
+.faq__btn--open-purple:active .line {
+  fill: #6C0287;;
+}
+
+.faq__btn:active,
+.faq__btn:active .vertical {
+  fill: transparent;
+}

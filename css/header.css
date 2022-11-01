@@ -21,14 +21,28 @@
 
 .navigation__btn {
   align-self: center;
-  width: 280px;
-  height: 55px;
-  padding: 12px 29px;
+  min-width: 280px;
+  padding: 12px 0;
   font-weight: 700;
   font-size: 22px;
-  line-height: 30px;
+  line-height: 25px;
   text-transform: uppercase;
   background-color: transparent;
   border: 3px solid #cd06ff;
   border-radius: 10px;
+}
+
+.navigation__btn:hover,
+.navigation__btn:focus {
+  background-color: #6c0287;
+  border: 1px solid transparent !important;
+}
+
+.navigation__btn:focus {
+  outline: none;
+}
+
+.navigation__btn:active {
+  background-color: #640aa3;
+  border: 1px solid #000;
 }

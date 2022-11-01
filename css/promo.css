@@ -79,9 +79,54 @@
   border-radius: 10px;
 }
 
+.promo__btn:hover,
+.promo__btn:focus {
+  background-color: #840aa3;
+}
+
+.promo__btn:focus {
+  outline: none;
+}
+
+.promo__btn:active {
+  background-color: #640aa3;
+}
+
 .promo__btn-arrow-down {
   position: absolute;
   top: 686px;
   left: 50%;
   transform: translateX(-50%);
+  fill: transparent;
+}
+
+.rect {
+  fill: #fff;
+}
+
+.promo__btn-arrow-down:hover {
+  fill: #fff;
+}
+
+.promo__btn-arrow-down:hover .rect {
+  fill: #6c0287;
+}
+
+.promo__btn-arrow-down:focus {
+  outline: none;
+  border: 1px solid #cd06ff;
+}
+
+.promo__btn-arrow-down:active {
+  fill: #6c0287;
+  stroke: none;
+  border: none;
+}
+
+.promo__btn-arrow-down:active .circle {
+  stroke: none;
+}
+
+.promo__btn-arrow-down:active .rect {
+  fill: #fff;
 }
