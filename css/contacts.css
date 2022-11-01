@@ -44,7 +44,15 @@
   line-height: 28px;
 }
 
-.contacts__icon,
+.contacts__description {
+  transition: color .3s ease-in-out;
+}
+
+.contacts__icon {
+  transition: color .3s ease-in-out;
+  color: #cd06ff;
+}
+
 .contacts__link:hover .contacts__description {
   color: #cd06ff;
 }

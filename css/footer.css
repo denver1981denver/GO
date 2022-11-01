@@ -14,6 +14,10 @@
   margin-bottom: 6px;
 }
 
+.footer__design {
+  transition: color .3s ease-in-out;
+}
+
 .footer__design:hover,
 .footer__design:focus {
   color: #cd06ff;
