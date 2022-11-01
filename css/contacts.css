@@ -35,13 +35,27 @@
   display: flex;
 }
 
-.link {
+.contacts__link {
   display: flex;
   align-items: end;
   gap: 28px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.contacts__icon,
+.contacts__link:hover .contacts__description {
+  color: #cd06ff;
+}
+
+.contacts__link:hover .contacts__icon {
+  color: #eadeed;
+}
+
+.contacts__link:active .contacts__icon,
+.contacts__link:active .contacts__description  {
+  color: #640aa3;
 }
 
 .contacts__social {

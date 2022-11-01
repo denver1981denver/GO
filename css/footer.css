@@ -13,3 +13,12 @@
 .footer__copyright {
   margin-bottom: 6px;
 }
+
+.footer__design:hover,
+.footer__design:focus {
+  color: #cd06ff;
+}
+
+.footer__design:active {
+  color: #640aa3;
+}

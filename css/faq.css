@@ -40,31 +40,25 @@
   fill:#6C0287;
 }
 
-.faq__btn--open:hover {
+.faq__item:hover .faq__btn--open,
+.faq__item:hover .faq__btn--open-purple .line {
   fill:#fff;
 }
 
-.faq__btn--open-purple:hover {
+.faq__item:hover .faq__btn--open-purple,
+.faq__item:hover .line {
   fill:#6C0287;
 }
 
-.faq__btn--open:hover .line {
-  fill:#6C0287;
-}
-
-.faq__btn--open-purple:hover .line {
-  fill: white;
-}
-
-.faq__btn--open:active .line {
+.faq__item:hover .faq__btn--open:active .line {
   fill: #fff;;
 }
 
-.faq__btn--open-purple:active .line {
+.faq__item:hover .faq__btn--open-purple:active .line {
   fill: #6C0287;;
 }
 
-.faq__btn:active,
-.faq__btn:active .vertical {
+.faq__item:hover .faq__btn:active,
+.faq__item:hover .faq__btn:active .vertical {
   fill: transparent;
 }
