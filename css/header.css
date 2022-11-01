@@ -30,16 +30,14 @@
   background-color: transparent;
   border: 3px solid #cd06ff;
   border-radius: 10px;
+  outline: none;
+  transition: all .3s ease-in-out;
 }
 
 .navigation__btn:hover,
 .navigation__btn:focus {
   background-color: #6c0287;
   border: 1px solid transparent !important;
-}
-
-.navigation__btn:focus {
-  outline: none;
 }
 
 .navigation__btn:active {

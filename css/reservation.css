@@ -34,7 +34,9 @@
   color: #000;
   border: 3px solid transparent;
   border-radius: 8px;
+  outline: none;
   cursor: pointer;
+  transition: all .3s ease-in-out;
 }
 
 .form__radio-button-cinema:hover,
@@ -46,11 +48,7 @@
   background-color: #eadeed;
 }
 
-.visually-hidden:focus + .form__radio-button-cinema {
-  outline: none;
-}
-
-.visually-hidden:active + .form__radio-button-cinema,
+.form__radio-button-cinema:active,
 .visually-hidden:checked + .form__radio-button-cinema {
   background-color: #6c0287;
   color: #fff;
@@ -106,6 +104,7 @@
   width: 27px;
   height: 27px;
   background-image: url(../images/substrate.svg);
+  transition: outline .2s ease-in-out;
 }
 
 .form__input-entertainment:after {
@@ -115,9 +114,7 @@
   height: 27px;
 }
 
-.form__input-entertainment:focus {
-  outline: none;
-}
+
 
 .form__input-entertainment--radio-button:after {
   background-image: url(../images/rectangle.svg);
@@ -126,6 +123,7 @@
 
 .form__input-entertainment--checkbox:after {
   background-image: url(../images/rectangle.svg);
+  transition: outline .3s ease-in-out;
 }
 
 .form__input-entertainment--checkbox:focus:after,
@@ -156,11 +154,13 @@
   display: block;
   height: 52px;
   padding: 18px 20px;
+  transition: border .3s ease-in-out;
 }
 
 .form__input:focus {
   outline: none;
   border: 2px solid #cd06ff;
+
 }
 
 .form__input-date {
@@ -194,15 +194,13 @@
   color: #6c0287;
   border: 3px solid transparent;
   border-radius: 10px;
+  outline: none;
+  transition: background-color 3s cubic-bezier(.07,.5,.05,.9), border-color 1s cubic-bezier(.07,.5,.05,.9);
 }
 
 .form__btn:hover,
 .form__btn:focus {
   border-color: #6c0287;
-}
-
-.form__btn:focus {
-  outline: none;
 }
 
 .form__btn:hover,

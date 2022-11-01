@@ -22,3 +22,10 @@
   max-width: 195px;
 }
 
+.features__card {
+  transition: transform .4s ease-in-out;
+}
+
+.features__card:hover {
+  transform: scale(110%);
+}

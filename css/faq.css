@@ -30,7 +30,15 @@
 
 .faq__btn {
   fill: transparent;
+  transition: all .3s ease-in-out ;
 }
+
+.line,
+.vertical
+.circle {
+  transition: all .2s ease-in-out ;
+}
+
 
 .faq__btn--open .line {
   fill:#fff;
@@ -42,6 +50,10 @@
 
 .faq__btn--open:hover {
   fill:#fff;
+}
+
+.circle:hover {
+  stroke: transparent;
 }
 
 .faq__btn--open-purple:hover {
@@ -61,7 +73,11 @@
 }
 
 .faq__btn--open-purple:active .line {
-  fill: #6C0287;;
+  fill: #6C0287;
+}
+
+.circle:active {
+  stroke: #6C0287;
 }
 
 .faq__btn:active,

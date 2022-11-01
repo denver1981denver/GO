@@ -52,6 +52,7 @@
 .social__link {
   display: block;
   line-height: 0;
+  transition: all .3s ease-in-out;
 }
 
 .social__link:hover,

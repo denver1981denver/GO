@@ -74,9 +74,11 @@
   font-weight: 700;
   font-size: 26px;
   text-transform: uppercase;
-  background: #6c0287;
+  background-color: #6c0287;
   border: none;
   border-radius: 10px;
+  outline: none;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out, border-width .3s ease-in-out;
 }
 
 .promo__btn:hover,
@@ -84,9 +86,6 @@
   background-color: #840aa3;
 }
 
-.promo__btn:focus {
-  outline: none;
-}
 
 .promo__btn:active {
   background-color: #640aa3;
@@ -97,11 +96,14 @@
   top: 686px;
   left: 50%;
   transform: translateX(-50%);
+  outline: none;
   fill: transparent;
+  transition: all .3s ease-in-out;
 }
 
 .rect {
   fill: #fff;
+  transition: all .2s ease-in-out;
 }
 
 .promo__btn-arrow-down:hover {
@@ -113,14 +115,14 @@
 }
 
 .promo__btn-arrow-down:focus {
-  outline: none;
-  border: 1px solid #cd06ff;
+
+  outline: 1px solid #cd06ff;
 }
 
 .promo__btn-arrow-down:active {
   fill: #6c0287;
   stroke: none;
-  border: none;
+  outline: none;
 }
 
 .promo__btn-arrow-down:active .circle {
