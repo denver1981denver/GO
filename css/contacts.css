@@ -1,7 +1,7 @@
 .contacts {
   padding-top: 55px;
   padding-bottom: 156px;
-  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+  background: var(--contacts-gradient, linear-gradient(180deg, #1b1a1b 0%, #370a37 100%));
 }
 
 .contacts__wrapper {
@@ -50,20 +50,20 @@
 
 .contacts__icon {
   transition: color .3s ease-in-out;
-  color: #cd06ff;
+  color: var(--violet, hsl(288, 100%, 51%));
 }
 
 .contacts__link:hover .contacts__description {
-  color: #cd06ff;
+  color: var(--violet, hsl(288, 100%, 51%));
 }
 
 .contacts__link:hover .contacts__icon {
-  color: #eadeed;
+  color: var(--light, hsl(288, 29%, 90%));
 }
 
 .contacts__link:active .contacts__icon,
 .contacts__link:active .contacts__description {
-  color: #640aa3;
+  color: var(--dark-violet, hsl(275, 88%, 34%));
 }
 
 .contacts__social {
@@ -79,14 +79,17 @@
 
 .social__link:hover,
 .social__link:focus {
-  color: #eadeed;
+  color: var(--light, hsl(288, 29%, 90%));
 }
 
 .social__link:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--violet, hsl(288, 100%, 51%));
 }
 
 .social__link:active {
-  color: #cd06ff;
+  color: var(--violet, hsl(288, 100%, 51%));
   outline-color: transparent;
+  align-items: center;
+  justify-content: center;
 }
+

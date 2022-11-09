@@ -1,0 +1,15 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --additional-text: hsl(0, 5%, 12%);
+  --light: hsl(288, 29%, 90%);
+  --background: hsl(300, 2%, 10%);
+  --violet: hsl(288, 100%, 51%);
+  --blue-violet: hsl(288, 88%, 34%);
+  --medium-violet:hsl(288, 97%, 27%);
+  --purple:hsl(288, 69%, 19%);
+  --dark-violet: hsl(275, 88%, 34%);
+  --black: #000000;
+  --footer: hsl(300, 69%, 13%);
+  --reviews-gradient: radial-gradient(50% 50% at 50% 50%, hsla(0, 0%, 77%, 0) 0%, hsla(288, 97%, 27%, 0.502) 100%);
+  --contacts-gradient: linear-gradient(180deg, hsl(300, 2%, 10%) 0%, hsl(300, 69%, 13%) 100%);
+}

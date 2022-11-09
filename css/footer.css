@@ -1,5 +1,5 @@
 .footer {
-  background-color: #370A37;
+  background-color: var(--footer, hsl(300, 69%, 13%));
   padding-bottom: 10px;
 }
 
@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-
 }
 
 .footer__copyright {
@@ -20,9 +19,9 @@
 
 .footer__design:hover,
 .footer__design:focus {
-  color: #cd06ff;
+  color: var(--violet, hsl(288, 100%, 51%));
 }
 
 .footer__design:active {
-  color: #640aa3;
+  color: var(--dark-violet, hsl(275, 88%, 34%));
 }

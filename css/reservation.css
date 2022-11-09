@@ -1,6 +1,6 @@
 .reservation {
   padding: 80px 0;
-  background-color: #440f51;
+  background-color: var(--purple,  hsl(288, 69%, 19%));
 }
 
 .form__legend {
@@ -30,8 +30,8 @@
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--white, hsl(0, 0%, 100%));
+  color: var(--black,  hsl(0, 0%, 0%));
   border: 3px solid transparent;
   border-radius: 8px;
   outline: none;
@@ -41,18 +41,18 @@
 
 .form__radio-button-cinema:hover,
 .visually-hidden:focus + .form__radio-button-cinema {
-  border-color: #640aa3;
+  border-color: var(--dark-violet, hsl(275, 88%, 34%));
 }
 
 .form__radio-button-cinema:hover {
-  background-color: #eadeed;
+  background-color: var(--light, hsl(288, 29%, 90%));
 }
 
 .form__radio-button-cinema:active,
 .visually-hidden:checked + .form__radio-button-cinema {
-  background-color: #6c0287;
-  color: #fff;
-  border-color: #fff;
+  background-color: var(--medium-violet, hsl(288, 97%, 27%));
+  color: var(--white, hsl(0, 0%, 100%));
+  border-color: var(--white, hsl(0, 0%, 100%));
 }
 
 .form__box {
@@ -114,8 +114,6 @@
   height: 27px;
 }
 
-
-
 .form__input-entertainment--radio-button:after {
   background-image: url(../images/rectangle.svg);
   border-radius: 50%;
@@ -130,7 +128,7 @@
 .form__input-entertainment--checkbox:checked:after,
 .form__input-entertainment--radio-button:focus:before,
 .form__input-entertainment--radio-button:checked:before {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--violet, hsl(288, 100%, 51%));
   outline-offset: 3px;
 }
 
@@ -159,7 +157,7 @@
 
 .form__input:focus {
   outline: none;
-  border: 2px solid #cd06ff;
+  border: 2px solid var(--violet, hsl(288, 100%, 51%));
 
 }
 
@@ -190,8 +188,8 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  background: #fff;
-  color: #6c0287;
+  background: var(--white, hsl(0, 0%, 100%));
+  color: var(--medium-violet, hsl(288, 97%, 27%));
   border: 3px solid transparent;
   border-radius: 10px;
   outline: none;
@@ -200,12 +198,12 @@
 
 .form__btn:hover,
 .form__btn:focus {
-  border-color: #6c0287;
+  border-color: var(--medium-violet, hsl(288, 97%, 27%));
 }
 
 .form__btn:hover,
 .form__btn:active {
-  background-color: #eadeed;
+  background-color: var(--light, hsl(288, 29%, 90%));
 }
 
 .form__btn:active {

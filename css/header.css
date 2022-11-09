@@ -1,4 +1,7 @@
 .header {
+  --h: 288;
+  --s: 100%;
+  --l: 51%;
   padding-top: 30px;
 }
 
@@ -22,11 +25,11 @@
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: #cd06ff;
+  color: hsl(var(--h, 288), var(--s, 100%), var(--l, 51%));
 }
 
 .navigation__link:active {
-  color: #6c0287;
+  --l: 30%;
 }
 
 .navigation__btn {
@@ -38,7 +41,7 @@
   line-height: 25px;
   text-transform: uppercase;
   background-color: transparent;
-  border: 3px solid #cd06ff;
+  border: 3px solid var(--violet, hsl(288, 100%, 51%));
   border-radius: 10px;
   outline: none;
   transition: all .3s ease-in-out;
@@ -46,11 +49,11 @@
 
 .navigation__btn:hover,
 .navigation__btn:focus {
-  background-color: #6c0287;
+  background-color: var(--medium-violet, hsl(288, 97%, 27%));
   border: 1px solid transparent !important;
 }
 
 .navigation__btn:active {
-  background-color: #640aa3;
-  border: 1px solid #000;
+  background-color: var(--dark-violet, hsl(275, 88%, 34%));
+  border: 1px solid var(--black, hsl(0, 0%, 0%));
 }

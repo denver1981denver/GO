@@ -13,13 +13,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 70px;
-  background-color: #fff;
+  background-color: var(--white, hsl(0, 0%, 100%));
   color: #1c1a1a;
 }
 
 .faq__item--purple {
-  background-color: #440f51;
-  color: #fff;
+  background-color: var(--purple,  hsl(288, 69%, 19%));
+  color: var(--white, hsl(0, 0%, 100%));
 }
 
 .faq__description {
@@ -42,13 +42,13 @@
 .faq__btn--open .line,
 .faq__item:hover .faq__btn--open,
 .faq__item:hover .faq__btn--open-purple .line {
-  fill:#fff;
+  fill: var(--white, hsl(0, 0%, 100%));
 }
 
 .faq__btn--open-purple .line,
 .faq__item:hover .faq__btn--open-purple,
 .faq__item:hover .line {
-  fill:#6C0287;
+  fill: var(--medium-violet, hsl(288, 97%, 27%));
 }
 
 .faq__item:hover .circle {
@@ -56,11 +56,11 @@
 }
 
 .faq__item:hover .faq__btn--open:active .line {
-  fill: #fff;;
+  fill: var(--white, hsl(0, 0%, 100%));;
 }
 
 .faq__item:hover .faq__btn--open-purple:active .line {
-  fill: #6C0287;;
+  fill: var(--medium-violet, hsl(288, 97%, 27%));
 }
 
 .faq__item:hover .faq__btn:active,
@@ -69,6 +69,6 @@
 }
 
 .faq__item:hover .circle:active {
-  stroke: #6C0287;
+  stroke: var(--medium-violet, hsl(288, 97%, 27%));
 }
 
