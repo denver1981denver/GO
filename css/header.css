@@ -41,7 +41,7 @@
   line-height: 25px;
   text-transform: uppercase;
   background-color: transparent;
-  border: 3px solid var(--violet, hsl(288, 100%, 51%));
+  border: 3px solid var(--violet, #cd05ff);
   border-radius: 10px;
   outline: none;
   transition: all .3s ease-in-out;
@@ -49,11 +49,11 @@
 
 .navigation__btn:hover,
 .navigation__btn:focus {
-  background-color: var(--medium-violet, hsl(288, 97%, 27%));
+  background-color: var(--medium-violet, #6d0288);
   border: 1px solid transparent !important;
 }
 
 .navigation__btn:active {
-  background-color: var(--dark-violet, hsl(275, 88%, 34%));
-  border: 1px solid var(--black, hsl(0, 0%, 0%));
+  background-color: var(--dark-violet, #630aa3);
+  border: 1px solid var(--black, #000);
 }
