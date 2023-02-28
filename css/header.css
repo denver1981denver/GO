@@ -1,7 +1,4 @@
 .header {
-  --h: 288;
-  --s: 100%;
-  --l: 51%;
   padding-top: 30px;
 }
 
@@ -18,7 +15,7 @@
 
 .navigation__link {
   font-size: 22px;
-  line-height: 50px;
+  line-height: 2.27;
   text-transform: uppercase;
   transition: color .3s ease-in-out;
 }
