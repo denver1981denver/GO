@@ -1,0 +1,47 @@
+.call-order-btn {
+	width: 280px;
+	margin-top: 4px;
+	margin-right: -1px;
+	align-self: center;
+	padding: 12px 0 12px;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 25px;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 3px solid var(--violet, #cd05ff);
+	border-radius: 10px;
+	outline: none;
+	transition: background-color 0.3s ease-in-out, color 0.1s ease-in-out;
+}
+
+.call-order-btn:hover,
+.call-order-btn:focus-visible {
+	background-color: var(--medium-violet, #6c0287);
+	border-color: var(--medium-violet, #6c0287);
+}
+
+.call-order-btn:active {
+	background-color: var(--dark-violet, #640aa3);
+	border-color: var(--dark-violet, #640aa3);
+	outline: 1px solid var(--black, #000);
+	outline-offset: -1px;
+}
+
+@media (max-width: 1024px) {
+	.call-order-btn {
+		max-width: 229px;
+		max-height: 45px;
+		align-self: flex-start;
+		padding: 10px 0 10px;
+		font-size: 18px;
+		line-height: 1.33;
+		border-radius: 8px;
+	}
+}
+
+@media (max-width: 480px) {
+	.call-order-btn {
+		display: none;
+	}
+}

@@ -1,0 +1,34 @@
+.menu {
+	display: none;
+	align-self: center;
+	line-height: 0;
+	outline: none;
+}
+
+.menu__rect {
+	color: var(--medium-violet, #6c0287);
+	transition: all 0.3s ease-in-out;
+}
+
+.menu:hover .menu__rect {
+	color: var(--violet, #cd06ff);
+}
+
+.menu:focus-visible .menu__rect,
+.menu:active .menu__rect {
+	color: var(--blue-violet, #840aa3);
+}
+
+@media (max-width: 788px) {
+	.menu {
+		display: block;
+		order: -1;
+	}
+}
+
+@media (max-width: 320px) {
+	.menu {
+		max-width: 39px;
+		height: 20px;
+	}
+}
