@@ -1,0 +1,39 @@
+.reservation-link {
+  position: relative;
+	display: block;
+	width: 374px;
+	height: 80px;
+	padding: 25px 69px;
+	font-weight: 700;
+	font-size: 26px;
+  line-height: 30px;
+	text-transform: uppercase;
+	background-color: var(--medium-violet, #6c0287);
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+ .reservation-link:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--medium-violet, #6c0287);
+  border-radius: 10px;
+  filter: blur(10px);
+} 
+
+.reservation-link:hover,
+.reservation-link:focus-visible {
+	background-color: var(--blue-violet, #840aa3);
+}
+
+.reservation-link:active {
+	background-color: var(--dark-violet, #640aa3);
+}

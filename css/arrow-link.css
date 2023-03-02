@@ -1,0 +1,42 @@
+.arrow-link {
+	position: absolute;
+	top: 686px;
+	left: 50%;
+	z-index: 1;
+	height: 97px;
+	color: transparent;
+	transform: translateX(-50%);
+	transition: all 0.2s ease-in-out;
+}
+
+.arrow-link__rect {
+	color: var(--white, #fff);
+}
+
+.arrow-link__circle {
+	stroke: var(--white, #fff);
+}
+
+.arrow-link:hover {
+	color: inherit;
+}
+
+.arrow-link:hover .arrow-link__rect {
+	color: var(--medium-violet, #6c0287);
+}
+
+.arrow-link:focus {
+	outline: 1px solid var(--violet, #cd06ff);
+}
+
+.arrow-link:active {
+	color: var(--violet, #cd06ff);
+}
+
+.arrow-link:active .arrow-link__rect {
+	color: var(--white, #fff);
+}
+
+.arrow-link:active .arrow-link__circle {
+	stroke: var(--violet, #cd06ff);
+}
