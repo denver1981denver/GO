@@ -1,7 +1,7 @@
 .arrow-link {
 	position: absolute;
 	top: 686px;
-	left: 50%;
+	left: 49.5%;
 	z-index: 1;
 	height: 97px;
 	color: transparent;
@@ -39,4 +39,22 @@
 
 .arrow-link:active .arrow-link__circle {
 	stroke: var(--violet, #cd06ff);
+}
+
+
+@media (max-width: 1024px) {
+	.arrow-link {
+		width: 67px;
+		height: 67px;
+		top: 470px;
+		left: 50%;
+		height: 97px;
+		transform: translateX(-50%);
+	}
+}
+
+@media (max-width: 768px) {
+	.arrow-link {
+		display: none;
+	}
 }
