@@ -91,9 +91,9 @@ input::placeholder {
 }
 
 .container {
-  /* max-width: 1180px; */
   max-width: 1240px;
-  padding: 0 30px;
+  max-width: 1240px;
+  padding: 0 60px;
   margin: 0 auto;
 }
 
@@ -123,3 +123,10 @@ section {
   text-transform: uppercase;
 }
 
+@media (max-width: 1024px) {
+  .title {
+    margin-bottom: 36px;
+    font-size: 30px;
+    line-height: 1.33;
+  }
+}
