@@ -1,74 +1,180 @@
-.faq {
-  padding-bottom: 45px;
-}
 
 .faq__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: (auto);
   gap: 20px;
 }
 
 .faq__item {
+
+  
+}
+
+.faq__link {
+  padding: 30px 70px 29px;
+  height: 100%;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 70px;
-  background-color: var(--white, hsl(0, 0%, 100%));
-  color: #1c1a1a;
-}
-
-.faq__item--purple {
-  background-color: var(--purple,  hsl(288, 69%, 19%));
-  color: var(--white, hsl(0, 0%, 100%));
-}
-
-.faq__description {
   font-weight: 700;
   font-size: 24px;
-  color: inherit;
+  line-height: 1.17;
+  background-color: var(--white, #fff);
+  color: var(--dark, #1c1a1a);
 }
 
-.faq__btn {
-  fill: transparent;
-  transition: all .4s ease-in-out ;
+.faq__link:after {
+ content: "";
+ position: absolute;
+ right: 70px;
+ display: block;
+ width: 46px;
+ height: 46px;
+ transition: all .3s ease-in-out ;
 }
 
-.line,
-.vertical,
-.circle {
-  transition: all .2s ease-out ;
+
+.faq__link:after {
+  background-image: url("../images/open-purple.svg");
+ }
+
+.faq__link:hover:after {
+  background-image: url("../images/open-purple-hover.svg");
+ }
+
+ .faq__link:focus-visible:after {
+  background-image: url("../images/close-purple.svg");
+ }
+
+.faq__link--purple {
+  background-color: var(--purple,  #450f51);
+  color: var(--white, #fff);
 }
 
-.faq__btn--open .line,
-.faq__item:hover .faq__btn--open,
-.faq__item:hover .faq__btn--open-purple .line {
-  fill: var(--white, hsl(0, 0%, 100%));
+.faq__link--purple:after {
+  background-image: url("../images/open-white.svg");
+ }
+
+.faq__link--purple:hover:after {
+  background-image: url("../images/open-white-hover.svg");
+ }
+
+ .faq__link--purple:focus-visible:after {
+  background-image: url("../images/close-white.svg");
+ }
+
+.faq__description {
+ 
 }
 
-.faq__btn--open-purple .line,
-.faq__item:hover .faq__btn--open-purple,
-.faq__item:hover .line {
-  fill: var(--medium-violet, hsl(288, 97%, 27%));
+@media (max-width: 1024px) {
+  .faq__title {
+    margin-bottom: 26px;
+  }
+
+  .faq__item--disabled {
+    display: none;
+  }
+
+  .faq__link {
+    padding: 23px 25px;
+  }
+
+  .faq__link:after {
+    right: 20px;
+   }
+
+  .faq__link--purple {
+    background-color: var(--white, #fff);
+  color: var(--dark, #1c1a1a);
+  }
+  
+  .faq__link--purple:after {
+    background-image: url("../images/open-purple.svg");
+   }
+  
+  .faq__link--purple:hover:after {
+    background-image: url("../images/open-purple-hover.svg");
+   }
+  
+   .faq__link--purple:focus-visible:after {
+    background-image: url("../images/close-purple.svg");
+   }
+
+   .faq__description {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
-.faq__item:hover .circle {
-  stroke: transparent;
+@media (max-width: 768px) {
+  .faq__title {
+    margin-bottom: 30px;
+  }
+
+  .faq__link {
+    height: 70px;
+    padding: 23px 0 24px 54px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .faq__link:after {
+    right: 65px;
+   }
+
+   .faq__description {
+   
+  }
 }
 
-.faq__item:hover .faq__btn--open:active .line {
-  fill: var(--white, hsl(0, 0%, 100%));;
+@media (max-width: 650px) {
+  .faq__link {
+    padding-left: 10px;
+  }
+
+  .faq__link:after {
+    right: 10px;
+   }
+
+   .faq__description {
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
 
-.faq__item:hover .faq__btn--open-purple:active .line {
-  fill: var(--medium-violet, hsl(288, 97%, 27%));
+@media (max-width: 550px) {
+  .faq__link {
+    padding-right: 60px;
+  }
+
 }
 
-.faq__item:hover .faq__btn:active,
-.faq__item:hover .faq__btn:active .vertical {
-  fill: transparent;
-}
+@media (max-width: 400px) {
+  .faq__title {
+    margin-bottom: 15px;
+  }
 
-.faq__item:hover .circle:active {
-  stroke: var(--medium-violet, hsl(288, 97%, 27%));
-}
+  .faq__link {
+    height: 46px;
+    padding: 7px 60px 7px 10px;
+    font-size: 12px;
+  }
 
+  .faq__link:after {
+    right: 13px;
+   }
+
+   .faq__link:after {
+  
+    width: 30px;
+    height: 30px;
+    
+   }
+
+   .faq__link:after {
+    background-image: url("../images/open-mobile.svg");
+   }
+}

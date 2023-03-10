@@ -75,9 +75,11 @@ blockquote {
   margin: 0;
 }
 
-address {
+address,
+cite {
   font-style: normal;
 }
+
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -91,21 +93,21 @@ input::placeholder {
 }
 
 .container {
-  max-width: 1240px;
-  max-width: 1240px;
+  max-width: 1300px;
   padding: 0 60px;
   margin: 0 auto;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .container {
-    
-  
-    padding: 0 20px; 
-   
+    padding: 0 40px; 
   }
+}
 
-  
+@media (max-width: 500px) {
+  .container {
+    padding: 0 20px; 
+  }
 }
 
 
@@ -113,6 +115,13 @@ input::placeholder {
 section {
   padding: 50px 0;
 }
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 35px 0;
+  }
+}
+
 
 .title {
   margin-bottom: 40px;
@@ -125,8 +134,23 @@ section {
 
 @media (max-width: 1024px) {
   .title {
-    margin-bottom: 36px;
+    margin-bottom: 26px;
     font-size: 30px;
     line-height: 1.33;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.29;
   }
 }
