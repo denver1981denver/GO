@@ -122,6 +122,18 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 0;
+  }
+}
+
+  @media (max-width: 320px) {
+    .section {
+      padding: 15px 0;
+    }
+}
+
 
 .title {
   margin-bottom: 40px;
@@ -142,6 +154,7 @@ section {
 
 @media (max-width: 768px) {
   .title {
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 1.5;
   }
