@@ -1,47 +1,71 @@
 .reservation {
   padding: 80px 0;
-  background-color: var(--purple,  hsl(288, 69%, 19%));
+  background-color: var(--purple,  #450f51);
 }
 
 .form__legend {
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   text-align: center;
 }
 
-.form__legend--title {
+.form__legend-title {
   margin-bottom: 40px;
 }
 
-.form__hall {
+.form__halls {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
 }
 
-.form__radio-button-cinema {
-  align-items: center;
+.form__label-hall {
+  user-select: none;
+  cursor: pointer;
+}
+
+.form__description-cinema {
+  align-items: start;
   min-width: 250px;
   min-height: 55px;
   padding: 7px 15px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 40px;
+  /* line-height: 1.33; */
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--white, hsl(0, 0%, 100%));
-  color: var(--black,  hsl(0, 0%, 0%));
-  border: 3px solid transparent;
+  background-color: var(--white, #fff);
+  color: var(--black, #000);
+  border: 3px solid var(--white, #fff);
   border-radius: 8px;
-  outline: none;
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
 
-.form__radio-button-cinema:hover,
+.form__radio-button-cinema {
+  appearance: none;
+  position: absolute;
+}
+
+.form__radio-button-cinema:checked + .form__description-cinema {
+  background-color: var(--medium-violet, #6c0287);
+  color: var(--white, #fff);
+  border-color: var(--white, #fff);
+}
+
+.form__description-cinema:hover {
+  background-color: var(--light, #eadeed);
+  border-color: var(--dark-violet, #640aa3);
+}
+
+.form__radio-button-cinema:focus-visible + .form__description-cinema {
+  border-color: var(--dark-violet, #640aa3);
+}
+
+/* .form__radio-button-cinema:hover,
 .visually-hidden:focus + .form__radio-button-cinema {
-  border-color: var(--dark-violet, hsl(275, 88%, 34%));
+  border-color: var(--dark-violet, #630aa3);
 }
 
 .form__radio-button-cinema:hover {
@@ -50,10 +74,10 @@
 
 .form__radio-button-cinema:active,
 .visually-hidden:checked + .form__radio-button-cinema {
-  background-color: var(--medium-violet, hsl(288, 97%, 27%));
+  background-color: var(--medium-violet, #6d0288);
   color: var(--white, hsl(0, 0%, 100%));
   border-color: var(--white, hsl(0, 0%, 100%));
-}
+} */
 
 .form__box {
   padding: 0 100px;

@@ -53,7 +53,7 @@
             <button class="call-order-btn" type="button">Заказать звонок</button>
           </nav>
         </div>
-      </header>   -->
+      </header>    -->
 
       <main class="main">
          <!-- <section class="promo">
@@ -154,32 +154,42 @@
               </li>
             </ul>
           </div>
-        </section> 
+        </section> -->
 
-         <aside class="reservation" id="reservation">
+         <section class="reservation" id="reservation">
           <div class="container">
             <h2 class="title">Забронировать зал просто</h2>
 
             <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-              <fieldset class="form__hall">
-                <legend class="form__legend form__legend--title">Выбери зал</legend>
+              <fieldset class="form__halls">
+                <legend class="form__legend form__legend-title">Выбери зал</legend>
 
-                <input class="visually-hidden" id="80s-vibes" type="radio" name="hall" value="80s_vibes" >
-                <label class="form__radio-button-cinema" for="80s-vibes">80’s vibes</label>
+                <label class="form__label-hall" for="80s-vibes">
+                  <input class="form__radio-button-cinema" id="80s-vibes" type="radio" name="hall" value="80’s_vibes">
+                  <p class="form__description-cinema" >80’s vibes</p>
+                </label>
 
-                <input class="visually-hidden" id="star-wars" type="radio" name="hall" value="star_wars">
-                <label class="form__radio-button-cinema" for="star-wars">Star wars</label>
+                <label class="form__label-hall" for="star-wars">
+                  <input class="form__radio-button-cinema visually-hidden" id="star-wars" type="radio" name="hall" value="star_wars">
+                  <p class="form__description-cinema">Star wars</p>
+                </label>
+               
 
-                <input class="visually-hidden" id="wild-west" type="radio" name="hall" value="wild_west">
-                <label class="form__radio-button-cinema" for="wild-west">Wild west</label>
+                <label class="form__label-hall" for="wild-west">
+                  <input class="form__radio-button-cinema visually-hidden" id="wild-west" type="radio" name="hall" value="wild_west">
+                  <p class="form__description-cinema">Wild west</p>
+                </label>
+                
 
-                <input class="visually-hidden" id="neon-style" type="radio" name="hall" value="neon_style">
-                <label class="form__radio-button-cinema" for="neon-style">Neon style</label>
+                <label class="form__label-hall" for="neon-style">
+                  <input class="form__radio-button-cinema visually-hidden" id="neon-style" type="radio" name="hall" value="neon_style">
+                  <p class="form__description-cinema">Neon style</p>
+                </label>
               </fieldset>
 
               <div class="form__box">
                 <fieldset class="form__entertainment-set">
-                  <legend class="form__legend form__legend--title">Собери набор развлечений</legend>
+                  <legend class="form__legend form__legend-title">Собери набор развлечений</legend>
 
                   <fieldset class="form__input-wrapper-games">
                     <legend class="form__legend form__legend--subtitle form__legend--text-aligne--left">Приставка:</legend>
@@ -299,10 +309,10 @@
               </div>
             </form>
           </div>
-        </aside>  -->
+        </ыу>  
 
        
-        <section class="about" id="about">
+        <!-- <section class="about" id="about">
           <div class="container">
             <h2 class="title">О нас</h2>
 
@@ -332,14 +342,14 @@
                     <img class="about__author-img" src="images/author.png" height="80" alt="Аркадий Абакшин">
 
                     <p class="about__author-caption">
-                      <cite> Аркадий Абакшин</cite>, создатель игровой территории GAME OVER
+                      <cite> Аркадий Абакшин</cite>,<br>создатель игровой территории GAME OVER
                     </p>
                   </div>
                 </blockquote>
               </li>
             </ul>                                                          
           </div>
-        </section>  
+        </section>   -->
 
           <!-- <section class="reviews" id="reviews">
           <div class="container">

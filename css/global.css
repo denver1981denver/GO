@@ -27,7 +27,7 @@ img, svg {
 
 button {
   padding: 0;
-  line-height: 0;
+  /* line-height: 0; */
   background-color: transparent;
   color: inherit;
   border: 0;
