@@ -164,93 +164,90 @@
               <fieldset class="form__halls">
                 <legend class="form__legend form__legend-title">Выбери зал</legend>
 
-                <label class="form__label-hall" for="80s-vibes">
-                  <input class="form__radio-button-cinema" id="80s-vibes" type="radio" name="hall" value="80’s_vibes">
-                  <p class="form__description-cinema" >80’s vibes</p>
+                <label class="form__label" for="80s-vibes">
+                  <input class="form__input-hidden form__radio-button-cinema" id="80s-vibes" type="radio" name="hall" value="80’s_vibes">
+                  <p class="form__description-cinema" aria-label="Восьмидесятые Вайбз">80’s vibes</p>
                 </label>
 
-                <label class="form__label-hall" for="star-wars">
-                  <input class="form__radio-button-cinema visually-hidden" id="star-wars" type="radio" name="hall" value="star_wars">
+                <label class="form__label" for="star-wars">
+                  <input class="form__input-hidden form__radio-button-cinema" id="star-wars" type="radio" name="hall" value="star_wars">
                   <p class="form__description-cinema">Star wars</p>
                 </label>
-               
-
-                <label class="form__label-hall" for="wild-west">
-                  <input class="form__radio-button-cinema visually-hidden" id="wild-west" type="radio" name="hall" value="wild_west">
+            
+                <label class="form__label" for="wild-west">
+                  <input class="form__input-hidden form__radio-button-cinema" id="wild-west" type="radio" name="hall" value="wild_west">
                   <p class="form__description-cinema">Wild west</p>
                 </label>
                 
-
-                <label class="form__label-hall" for="neon-style">
-                  <input class="form__radio-button-cinema visually-hidden" id="neon-style" type="radio" name="hall" value="neon_style">
+                <label class="form__label" for="neon-style">
+                  <input class="form__input-hidden form__radio-button-cinema" id="neon-style" type="radio" name="hall" value="neon_style">
                   <p class="form__description-cinema">Neon style</p>
                 </label>
               </fieldset>
 
-              <div class="form__box">
-                <fieldset class="form__entertainment-set">
-                  <legend class="form__legend form__legend-title">Собери набор развлечений</legend>
+              <fieldset class="form__entertainment-set">
+                <legend class="form__legend form__legend-title">Собери набор развлечений</legend>
 
-                  <fieldset class="form__input-wrapper-games">
-                    <legend class="form__legend form__legend--subtitle form__legend--text-aligne--left">Приставка:</legend>
+                <fieldset class="form__wrapper-games">
+                  <legend class="form__legend form__legend-subtitle form__legend-console">Приставка:</legend>
 
-                    <div>
-                      <input class="form__input-entertainment form__input-entertainment--radio-button" id="playstation" type="radio" name="game_console" value="playstation">
-                      <label class="form__label form__label--ellipse" for="playstation">PlayStation 5</label>
-                    </div>
+                  <label class="form__label form__label-entertainment form__label-entertainment-radio-button" for="playstation">
+                    <input class="form__input-hidden form__radio-button-games" id="playstation" type="radio" name="game_console" value="playstation">
+                    <p>PlayStation 5</p>
+                  </label>
 
-                    <div>
-                      <input class="form__input-entertainment form__input-entertainment--radio-button" id="segamega-drive" type="radio" name="game_console" value="segamega_drive">
-                      <label class="form__label form__label--ellipse" for="segamega-drive">Sega Mega Drive</label>
-                    </div>
+                    <label class="form__label form__label-entertainment form__label-entertainment-radio-button" for="segamega-drive">
+                      <input class="form__input-hidden form__radio-button-games" id="segamega-drive" type="radio" name="game_console" value="segamega_drive">
+                      <p>Sega Mega Drive</p>
+                    </label>
 
-                    <div >
-                      <input class="form__input-entertainment form__input-entertainment--radio-button" id="xbox-one-s" type="radio" name="game_console" value="xbox_one_s">
-                    <label class="form__label form__label--ellipse" for="xbox-one-s">X-box One S</label>
-                    </div>
+                    <label class="form__label form__label-entertainment form__label-entertainment-radio-button" for="xbox-one-s">
+                      <input class="form__input-hidden form__radio-button-games" id="xbox-one-s" type="radio" name="game_console" value="xbox_one_s">
+                    <p>X-box One S</p>
+                    </label>
 
-                    <div>
-                      <input class="form__input-entertainment form__input-entertainment--radio-button" id="dendy" type="radio" name="game_console" value="dendy">
-                      <label class="form__label form__label--ellipse"  for="dendy">Dendy</label>
-                    </div>
+                    <label class="form__label form__label-entertainment form__label-entertainment-radio-button" for="dendy">
+                      <input class="form__input-hidden form__radio-button-games" id="dendy" type="radio" name="game_console" value="dendy">
+                      <p>Dendy</p>
+                    </label>
                   </fieldset>
 
-                  <fieldset class="form__input-wrapper-games">
-                    <legend class="form__legend form__legend--subtitle">Настольные игры:</legend>
+                  <fieldset class="form__wrapper-games">
+                    <legend class="form__legend form__legend-subtitle">Настольные игры</legend>
 
-                    <div>
-                      <input class="form__input-entertainment form__input-entertainment--checkbox" id="jenga" type="checkbox" name="game" value="jenga">
-                      <label class="form__label" for="jenga">Jenga</label>
-                    </div>
+                    <label class="form__label form__label-entertainment form__label-entertainment-checkbox" for="jenga">
+                      <input class="form__input-hidden form__checkbox" id="jenga" type="checkbox" name="game" value="jenga">
+                      <p>Jenga</p>
+                    </label>
 
-                    <div>
-                      <input class="form__input-entertainment form__input-entertainment--checkbox" id="monopoly" type="checkbox" name="game" value="monopoly">
-                      <label class="form__label" for="monopoly">Monopoly</label>
-                    </div>
+                    <label class="form__label form__label-entertainment form__label-entertainment-checkbox" for="monopoly">
+                      <input class="form__input-hidden form__checkbox" id="monopoly" type="checkbox" name="game" value="monopoly">
+                      <p>Monopoly</p>
+                    </label>
 
-                    <div>
-                      <input class="form__input-entertainment form__input-entertainment--checkbox" id="munchkin" type="checkbox" name="game" value="munchkin">
-                      <label class="form__label" for="munchkin"> Манчкин</label>
-                    </div>
+                    <label class="form__label form__label-entertainment form__label-entertainment-checkbox" for="munchkin">
+                      <input class="form__input-hidden form__checkbox" id="munchkin" type="checkbox" name="game" value="munchkin">
+                      <p> Манчкин</p>
+                    </label>
 
-                    <div>
-                      <input class="form__input-entertainment form__input-entertainment--checkbox" id="alias" type="checkbox" name="game" value="alias">
-                      <label class="form__label" for="alias">Alias</label>
-                    </div>
+                    <label class="form__label form__label-entertainment form__label-entertainment-checkbox" for="alias">
+                      <input class="form__input-hidden form__checkbox" id="alias" type="checkbox" name="game" value="alias">
+                      <p>Alias</p>
+                    </label>
                   </fieldset>
 
-                  <fieldset class="form__input-wrapper-games">
-                    <legend class="form__legend form__legend--subtitle">Дополнительно:</legend>
+                  <fieldset class="form__wrapper-games">
+                    <legend class="form__legend form__legend-subtitle">Дополнительно</legend>
 
-                    <div>
-                      <input class="form__input-entertainment form__input-entertainment--checkbox" id="karaoke" type="checkbox" name="additionally" value="karaoke">
-                      <label class="form__label" for="karaoke">Караоке</label>
-                    </div>
+                    <label class="form__label form__label-entertainment form__label-entertainment-checkbox" for="karaoke">
+                      <input class="form__input-hidden form__checkbox" id="karaoke" type="checkbox" name="additionally" value="karaoke">
+                      <p>Караоке</p>
+                    </label>
 
-                    <div>
-                      <input class="form__input-entertainment form__input-entertainment--checkbox" id="vr" type="checkbox" name="additionally" value="vr">
-                      <label class="form__label"  for="vr">VR</label>
-                    </div>
+                    <label class="form__label form__label-entertainment form__label-entertainment-checkbox" for="vr">
+                      <input class="form__input-hidden form__checkbox" id="vr" type="checkbox" name="additionally" value="vr">
+                      <p>VR</p>
+                    </label>
                   </fieldset>
                 </fieldset>
 
@@ -306,10 +303,10 @@
                 </fieldset>
 
                 <button class="form__btn" type="submit" formtarget="_blank">Забронировать</button>
-              </div>
+              
             </form>
           </div>
-        </ыу>  
+        </section>  
 
        
         <!-- <section class="about" id="about">
