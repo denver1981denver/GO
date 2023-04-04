@@ -1,0 +1,142 @@
+.form__entertainment-set {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	column-gap: 84px;
+	row-gap: 32px;
+	margin-bottom: 60px;
+}
+
+.form__wrapper-games {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.form__description-entertainment {
+	display: flex;
+	align-items: center;
+  height: 27px;
+	padding-left: 39px;
+	font-size: 22px;
+	
+}
+
+.form__input-entertainment {
+	outline: none;
+}
+
+.form__input-entertainment:before {
+	content: "";
+	position: absolute;
+  display: block;
+	top: 0;
+	left: 0;
+	width: 27px;
+	height: 27px;
+	background-color: var(--white, #fff);
+}
+
+/* .form__input-entertainment:after {
+	position: absolute;
+	content: "";
+	left: -3px;
+	top: -3px;
+	display: none;
+	width: 33px;
+	height: 33px;
+	border: 1px solid #cd06ff;
+} */
+
+.form__radio-button-games:before {
+	border-radius: 50%;
+}
+
+/* .form__input-entertainment:checked:after,
+.form__input-entertainment:focus-visible:after {
+	display: block;;
+} */
+
+.form__input-entertainment:checked,
+.form__input-entertainment:focus-visible {
+	width: 27px;
+	height: 27px;
+	outline: 1px solid #cd06ff;
+	outline-offset: 3px;
+}
+
+@media (max-width: 1024px) {
+ 
+}
+
+@media (max-width: 900px) {
+	.form__entertainment-set {
+
+		justify-content: flex-start;
+		 column-gap: 140px;
+	 
+
+	
+	}
+}
+
+@media (max-width: 768px) {
+	.form__entertainment-set {
+		margin-bottom: 50px;
+	}
+
+	.form__description-entertainment {
+		height: 40px;
+		padding-left: 60px;
+		
+	}
+
+	.form__input-entertainment:before {
+		width: 40px;
+		height: 40px;
+	}
+
+	.form__input-entertainment:checked,
+.form__input-entertainment:focus-visible {
+	width: 40px;
+	height: 40px;
+	
+	
+}
+}
+
+@media (max-width: 722px) {
+	.form__entertainment-set {
+		
+		column-gap: 240px;
+		
+	}
+	
+}
+
+@media (max-width: 360px) {
+	.form__entertainment-set {
+		row-gap: 25px;
+		margin-bottom: 30px;
+	}
+
+	.form__description-entertainment {
+		height: 30px;
+		padding-left: 50px;
+		font-size: 16px;
+	}
+	
+	.form__input-entertainment:before {
+		width: 30px;
+		height: 30px;
+		
+	}
+
+	.form__input-entertainment:checked,
+.form__input-entertainment:focus-visible {
+	width: 30px;
+	height: 30px;
+
+}
+	
+}

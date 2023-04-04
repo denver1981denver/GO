@@ -1,95 +1,59 @@
 .contacts {
-  padding-top: 55px;
-  padding-bottom: 156px;
-  background: var(--contacts-gradient, linear-gradient(180deg, #1b1a1b 0%, #370a37 100%));
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 145px;
 }
 
-.contacts__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.contacts__block {
-  display: flex;
-  flex-direction: column;
+.contacts__box {
+	display: flex;
+	flex-direction: column;
+	gap: 39px;
 }
 
 .contacts__address {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 38px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+	display: flex;
+	align-items: center;
+	gap: 28px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.17;
 }
 
 .contacts__list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 35px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 .contacts__item {
-  display: flex;
+	display: flex;
 }
 
 .contacts__link {
-  display: flex;
-  align-items: end;
-  gap: 28px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.contacts__description {
-  transition: color .3s ease-in-out;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.17;
+	transition: color 0.3s ease-in-out;
 }
 
 .contacts__icon {
-  transition: color .3s ease-in-out;
-  color: var(--violet, hsl(288, 100%, 51%));
+	color: var(--violet, #cd06ff);
+	transition: inherit;
 }
 
-.contacts__link:hover .contacts__description {
-  color: var(--violet, hsl(288, 100%, 51%));
+.contacts__data {
+	transition: inherit;
 }
 
-.contacts__link:hover .contacts__icon {
-  color: var(--light, hsl(288, 29%, 90%));
+.contacts__link:hover > .contacts__data,
+.contacts__link:focus > .contacts__data {
+	color: var(--dark-violet, #640aa3);
 }
 
-.contacts__link:active .contacts__icon,
-.contacts__link:active .contacts__description {
-  color: var(--dark-violet, hsl(275, 88%, 34%));
+.contacts__link:active > .contacts__data {
+	color: var(--light, #eadeed);
 }
-
-.contacts__social {
-  display: flex;
-  gap: 26px;
-}
-
-.social__link {
-  display: block;
-  line-height: 0;
-  transition: all .3s ease-in-out;
-}
-
-.social__link:hover,
-.social__link:focus {
-  color: var(--light, hsl(288, 29%, 90%));
-}
-
-.social__link:focus {
-  outline: 1px solid var(--violet, hsl(288, 100%, 51%));
-}
-
-.social__link:active {
-  color: var(--violet, hsl(288, 100%, 51%));
-  outline-color: transparent;
-  align-items: center;
-  justify-content: center;
-}
-

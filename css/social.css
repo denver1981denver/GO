@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  padding-top: 1px;
+  gap: 26px;
+}
+
+.social__link {
+  display: block;
+  transition: all .3s ease-in-out;
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: var(--light, #eadeed);
+}
+
+.social__link:focus-visible {
+  outline: 1px solid var(--violet, #cd06ff);
+}
+
+.social__link:active {
+  color: var(--violet, #cd06ff);
+  outline-color: transparent;
+ 
+}
+

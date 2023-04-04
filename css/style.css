@@ -11,8 +11,14 @@
 @import url(arrow-link.css);
 @import url(halls.css);
 @import url(reservation.css);
+@import url(form__halls.css);
+@import url(form__entertainment-set.css);
+@import url(form__client-data.css);
+@import url(form__btn.css);
 @import url(about.css);
 @import url(reviews.css);
 @import url(faq.css);
-@import url(contacts.css);
 @import url(footer.css);
+@import url(contacts.css);
+@import url(social.css);
+

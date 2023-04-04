@@ -14,7 +14,7 @@
 	transition: all 0.3s ease-in-out;
 }
 
- .reservation-link:before {
+.reservation-link:after {
   content: '';
   position: absolute;
   left: 0;
