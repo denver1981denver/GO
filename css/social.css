@@ -21,6 +21,32 @@
 .social__link:active {
   color: var(--violet, #cd06ff);
   outline-color: transparent;
- 
 }
+
+@media (max-width: 1024px) {
+  .social__icon {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media (max-width: 890px) {
+  .social {
+    padding-top: 0;
+    padding-right: 8px;
+
+  }
+}
+
+@media (max-width: 420px) {
+  .social {
+padding-right: 0;
+    gap: 20px;
+  }
+  .social__icon {
+		width: 30px;
+		height: 30px;
+	}
+}
+
 

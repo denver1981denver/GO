@@ -2,7 +2,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	gap: 20px;
 	margin-bottom: 145px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.17;
 }
 
 .contacts__box {
@@ -15,15 +19,16 @@
 	display: flex;
 	align-items: center;
 	gap: 28px;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 1.17;
+}
+
+.contacts__adress-street {
+	display: block;
 }
 
 .contacts__list {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 11px;
 }
 
 .contacts__item {
@@ -34,9 +39,6 @@
 	display: flex;
 	align-items: center;
 	gap: 24px;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 1.17;
 	transition: color 0.3s ease-in-out;
 }
 
@@ -49,11 +51,128 @@
 	transition: inherit;
 }
 
-.contacts__link:hover > .contacts__data,
-.contacts__link:focus > .contacts__data {
+.contacts__link:hover .contacts__data,
+.contacts__link:focus .contacts__data {
 	color: var(--dark-violet, #640aa3);
 }
 
-.contacts__link:active > .contacts__data {
+.contacts__link:active .contacts__data {
 	color: var(--light, #eadeed);
+}
+
+@media (max-width: 1024px) {
+	.contacts__box {
+		gap: 40px;
+	}
+
+	.contacts__list {
+		gap: 7px;
+	}
+
+	.contacts__svg {
+		width: 26px;
+		height: 26px;
+	}
+
+	.contacts__address,
+	.contacts__link {
+		gap: 13px;
+	}
+
+	.contacts__number {
+		word-spacing: -6px;
+	}
+}
+
+@media (max-width: 890px) {
+	.contacts {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		margin-bottom: 75px;
+	}
+
+	.contacts__box {
+		align-items: center;
+	}
+
+	.contacts__list {
+		align-items: center;
+	}
+
+	.contacts__address {
+		align-items: flex-start;
+		padding-left: 10px;
+	}
+
+
+	.contacts__adress-street {
+		margin-left: -52px;
+	}
+
+	.contacts__item {
+		padding-right: 45px;
+	}
+
+	.contacts__item-phone {
+		
+		padding-left: 2px;
+	}
+
+	.contacts__link-phone {
+		
+		gap: 16px;
+	}
+
+	.contacts__box,
+	.contacts__list {
+		gap: 28px; 
+	}
+}
+
+@media (max-width: 420px) {
+	.contacts {
+		gap: 35px;
+		margin-bottom: 63px;
+		font-size: 14px;
+		line-height: 1.3;
+	}
+
+	.contacts__box,
+	.contacts__list {
+		gap: 10px; 
+	}
+
+	.contacts__svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.contacts__number {
+		word-spacing: -3px;
+	}
+
+	.contacts__address {
+		gap: 10px;
+		padding-right: 10px;
+	}
+
+	.contacts__link
+	 {
+		gap: 7px;
+	}
+
+	.contacts__svg-location {
+		margin-top: -3px;
+	}
+
+	.contacts__adress-street {
+		margin-left: -30px;
+	}
+
+	.contacts__item {
+		padding-right: 30px;
+	}
+
+	
 }
