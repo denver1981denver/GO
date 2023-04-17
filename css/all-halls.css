@@ -19,27 +19,26 @@
 	background-image: url("../img/arrow-left.svg");
 	width: 30px;
 	height: 15px;
+	transition: color 0.3s ease-in-out;
 }
 
 .hero-hall__link:hover,
-.hero-hall__link:focus {
-
+.hero-hall__link:focus-visible {
+	color: var(--violet, #cd06ff);
 } 
 
 .hero-hall__link:active {
-	
+	color: var(--blue-violet, #840aa3);
 }
 
 .hero-hall__wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-
-	min-height: 750px;
+	min-height: 44vw;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0 90%;
+	background-position: center;
 }
 
 .hero-hall__wrapper--80s-vibes {
@@ -82,6 +81,9 @@
 
 .features-hall__banner {
 	min-width: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .features-hall__banner--80s-vibes {
@@ -110,8 +112,6 @@
 	line-height: 1.4;
 }
 
-
-
 .rooms-hall__list {
 	display: flex;
 	justify-content: space-between;
@@ -130,6 +130,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 1px 1px;
+
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 1.2;
@@ -153,20 +154,24 @@
 	background-image: url("../img/80’s vibes-room.jpg");
 }
 
-@media (max-width: 1024px) {
 
-	
+
+@media (max-width: 1024px) {
 	.hero-hall {
 		padding-top: 50px;
 	}
 
 	.hero-hall__wrapper {
-		min-height: 534px;
+		min-height: 52vw;
 	}
 
-	.hero-hall__wrapper--80s-vibes {
-		background-image: url("../img/banner-80’s-vibes-medium.jpg");
-	}
+	/* .hero-hall__wrapper {
+		min-height: 534px;
+	} */
+
+	/* .hero-hall__wrapper--80s-vibes {
+		background-image: url("../img/banner-80’s-vibes.jpg");
+	} */
 	
 	.hero-hall__wrapper--star-wars {
 		background-image: url("../img/banner-star-wars-medium.jpg");
@@ -181,44 +186,106 @@
 	}
 
 	.promo-hall__description {
-		
 		padding: 0 5%;
 		font-size: 20px;
-		
 	}
 
 	.features-hall__wrapper {
-
 		min-height: 326px;
-		
 		gap: 30px;
 	}
 	
 	.features-hall__banner {
 		min-width: 461px;
+		
+	
 	}
 	
-	.features-hall__banner--80s-vibes {
-		background-image: url("../img/features-80’s-vibes-medium.jpg");
-	}
 	
-	.features-hall__banner--star-wars {
-		background-image: url("../img/features-star-wars-medium.jpg");
-	}
-	
-	.features-hall__banner--wild-west {
-		background-image: url("../img/features-wild-west-medium.jpg");
-	}
-	
-	.features-hall__banner--neon-style {
-		background-image: url("../img/features-neon-style-medium.jpg");
-	}
-
 	.features-hall__description {
 		gap: 23px;
 		font-size: 18px;
 		line-height: 1.56;
 	}
 
+	.rooms-hall__link {
+		height: 172px;
+		background-position: 1px 1px;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1.2;
+	}
+}
+
+@media (max-width: 794px) {
+	.features-hall__banner {
+		min-width: 65%;
+		width: 65%;
 	
+	}
+}
+
+@media (max-width: 768px) {
+	.hero-hall {
+		padding-top: 40px;
+	}
+
+	.hero-hall__link {
+		font-size: 16px;
+		line-height: 1.75;
+	}
+	
+	.hero-hall__link:before {
+		margin-bottom: -1px;
+	}
+
+	/* .hero-hall__wrapper {
+		min-height: 402px;
+	}
+	 */
+	/* .hero-hall__wrapper--80s-vibes {
+		background-image: url("../img/banner-80’s-vibes.jpg");
+	} */
+	
+	
+	.title-hall {
+		font-size: 60px;
+	}
+	
+	.promo-hall__description {
+		padding: 0 15px;
+		font-size: 16px;
+	}
+
+	.features-hall__wrapper {
+		min-height: 326px;
+		gap: 46px;
+	}
+	
+	.features-hall__banner {
+		min-width: 329px;
+		
+	}
+	
+	.features-hall__description {
+		display: flex;
+		flex-direction: column;
+		gap: 27px;
+		max-width: 313px;
+		align-self: center;
+		font-size: 16px;
+		line-height: 1.75;
+	}
+	
+	.rooms-hall__list {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	.rooms-hall__link {
+		background-position: -4px 1px;
+		height: 134px;
+		font-size: 20px;
+	}
 }
