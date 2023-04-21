@@ -2,25 +2,30 @@
 	padding-top: 30px;
 }
 
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
 @media (max-width: 1024px) {
-	.logo__img {
+	.navigation__logo-img {
 		max-width: 87px;
 		height: 55px;
 	}
 }
 
-@media (max-width: 788px) {
+@media (max-width: 768px) {
 	.header {
 		padding-top: 32px;
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
 	.header {
 		padding-top: 20px;
 	}
 
-	.logo__img {
+	.navigation__logo-img {
 		max-width: 66px;
 		height: 42px;
 	}

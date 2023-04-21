@@ -1,0 +1,176 @@
+.info {
+	display: flex;
+	align-items: end;
+	gap: 40px;
+	margin-bottom: 150px;
+}
+
+.info__item {
+	text-align: center;
+}
+
+.info__title {
+	font-weight: 900;
+	line-height: 1.41;
+	color: var(--violet, #cd06ff);
+}
+
+.info__title--left {
+	font-size: 100px;
+}
+
+.info__title--right {
+	font-size: 75px;
+	font-variant: all-small-caps;
+	letter-spacing: 12px;
+}
+
+.info__description {
+	font-size: 30px;
+	line-height: 1.13;
+	text-align: center;
+}
+
+.info__description--left {
+	max-width: 193px;
+}
+
+.info__description--right {
+	max-width: 161px;
+	padding-left: 4px;
+}
+
+@media (max-width: 1024px) {
+	.info {
+		margin-bottom: 80px;
+	}
+
+	.info__title--left {
+		padding-left: 8px;
+		font-size: 80px;
+	}
+
+	.info__title--right {
+		padding-left: 16px;
+		font-size: 60px;
+		letter-spacing: 8px;
+	}
+
+	.info__description {
+		font-size: 26px;
+		line-height: 1.17;
+	}
+
+	.info__description--left {
+		max-width: 160px;
+	}
+
+	.info__description--right {
+		max-width: 140px;
+		padding-left: 8px;
+	}
+
+	.info__span-left {
+		padding-left: 7px;
+	}
+
+	.info__span-right {
+		padding-left: 7px;
+	}
+}
+
+@media (max-width: 768px) {
+	.info {
+		margin-bottom: 100px;
+		gap: 30px;
+	}
+
+	.info__title--left {
+		padding-left: 0;
+		font-size: 50px;
+		line-height: 1.42;
+	}
+
+	.info__title--right {
+		margin-bottom: 1px;
+		padding-left: 3px;
+		font-size: 40px;
+		line-height: 1.4;
+		letter-spacing: 5px;
+	}
+
+	.info__description {
+		padding-top: 1px;
+		font-size: 16px;
+		line-height: 1.12;
+	}
+
+	.info__description--left {
+		width: 103px;
+	}
+
+	.info__description--right {
+		width: 86px;
+		padding-left: 2px;
+	}
+
+	.info__span-left {
+		padding-left: 0;
+	}
+
+	.info__span-right {
+		padding-left: 2px;
+	}
+}
+
+@media (max-width: 500px) {
+	.info {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 450px) {
+	.info {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 420px) {
+	.info {
+		gap: 20px;
+	}
+
+	.info__title--left {
+		padding-top: 1px;
+		font-size: 26px;
+	}
+
+	.info__title--right {
+		margin-bottom: 0.5px;
+		padding-left: 3px;
+		font-size: 22px;
+		letter-spacing: 3px;
+	}
+
+	.info__description {
+		font-size: 10px;
+		line-height: 1.1;
+	}
+
+	.info__description--left {
+		width: 65px;
+	}
+
+	.info__description--right {
+		padding-left: 0;
+		width: 54px;
+	}
+
+	.info__span-left {
+		padding-left: 0;
+	}
+
+	.info__span-right {
+		padding-left: 0;
+	}
+}

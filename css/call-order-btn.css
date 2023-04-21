@@ -1,18 +1,16 @@
 .call-order-btn {
 	width: 280px;
+	min-height: 55px;
+	align-self: center;
 	margin-top: 4px;
 	margin-right: -1px;
-	align-self: center;
-	padding: 12px 0 12px;
+	padding: 13px 3px 12px 0;
 	font-weight: 700;
 	font-size: 22px;
-	line-height: 25px;
-	text-transform: uppercase;
-	background-color: transparent;
-	border: 3px solid var(--violet, #cd05ff);
+	line-height: 0;
+	border: 3px solid var(--violet, #cd06ff);
 	border-radius: 10px;
-	/* outline: none; */
-	transition: background-color 0.3s ease-in-out, color 0.1s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .call-order-btn:hover,
@@ -23,20 +21,25 @@
 
 .call-order-btn:active {
 	background-color: var(--dark-violet, #640aa3);
-	border-color: var(--dark-violet, #640aa3);
-	outline: 1px solid var(--black, #000);
-	outline-offset: -1px;
+	border: 1px solid var(--black, #000);
 }
 
 @media (max-width: 1024px) {
 	.call-order-btn {
 		max-width: 229px;
-		max-height: 45px;
-		align-self: flex-start;
-		padding: 10px 0 10px;
+		min-height: 45px;
+		margin-top: 1px;
+		margin-right: 0;
+		padding: 10px 0 11px;
 		font-size: 18px;
-		line-height: 1.33;
 		border-radius: 8px;
+	}
+}
+
+@media (max-width: 768px) {
+	.call-order-btn {
+		margin-top: 5px;
+		margin-right: 0;
 	}
 }
 

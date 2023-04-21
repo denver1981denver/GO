@@ -1,217 +1,238 @@
-
-.features__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 228px);
-  gap: 40px 20px;
+.promo__title {
+  padding-bottom: 3px;
 }
 
-.features__item {
-  display: flex;
-  align-items: end;
-  padding-left: 40px;
-  background-repeat: no-repeat;
-  background-size: cover;
+.promo__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 228px);
+	grid-template-areas:
+		"vr audio karaoke"
+		"game cinema ps5";
+	gap: 40px 20px;
+
+	padding-bottom: 70px;
 }
 
-.features__item-vr {
+.promo__item {
+width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: end;
+	padding-left: 40px;
   padding-bottom: 34px;
-  background-image: url("../images/vr.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.5s ease-in-out;
 }
 
-.features__item-audio {
+.promo__item:hover:not(:nth-child(even)),
+.promo__item:not(:nth-child(even)):hover + .promo__item {
+  transform: translateY(50px);
+}
+
+.promo__item--audio,
+.promo__item--cinema {
+  transform: translateY(70px);
+}
+
+.promo__item--vr {
+	grid-area: vr;
+	background-image: url("../images/vr.jpg");
+}
+
+.promo__item--audio {
+	grid-area: audio;
+	padding-bottom: 6px;
+	background-image: url("../images/audio.jpg");
+}
+
+.promo__item--karaoke {
+	grid-area: karaoke;
+	padding-right: 20px;
+	background-image: url("../images/karaoke.jpg");
+}
+
+.promo__item--board-games {
+	grid-area: game;
+	background-image: url("../images/board-games.jpg");
+}
+
+.promo__item--cinema {
+	grid-area: cinema;
+	padding-right: 40px;
   padding-bottom: 6px;
-  background-image: url("../images/audio.jpg");
+	background-image: url("../images/cinema.jpg");
 }
 
-.features__item-karaoke {
-  padding-right: 20px;
-  padding-bottom: 20px;
-  background-image: url("../images/karaoke.jpg");
+.promo__item--ps5 {
+	grid-area: ps5;
+	background-image: url("../images/ps5.jpg");
 }
 
-.features__item-board-games {
-  padding-bottom: 20px;
-  background-image: url("../images/board-games.jpg");
-}
-
-.features__item-cinema {
-  padding-right: 40px;
-  padding-bottom: 6px;
-  background-image: url("../images/cinema.jpg");
-}
-
-.features__item-ps5{
-  padding-bottom: 20px;
-  background-image: url("../images/ps5.jpg");
-}
-
-.features__title {
-font-weight: 700;
-font-size: 20px;
-line-height: 1.4;
+.promo__description {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.4;
 }
 
 @media (max-width: 1190px) {
-  .features__item-vr,
-  .features__item-board-games,
-  .features__item-cinema  {
-   background-position: 50%;
-  }
+	.promo__item--vr,
+	.promo__item--board-games,
+	.promo__item--cinema {
+		background-position: 50%;
+	}
 }
 
 @media (max-width: 1024px) {
-  .features__list {
-    grid-template-rows: repeat(2, 172px);
-    gap: 30px 22px;
-  }
+	.promo__list {
+		grid-template-rows: repeat(2, 172px);
+		gap: 30px 22px;
+	}
 
-  .features__item {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  
-  .features__item-vr {
-    padding-bottom: 30px;
-    background-image: url("../images/vr-medium.jpg");
-  }
-  
-  .features__item-audio {
-    padding-bottom: 2px;
-    background-image: url("../images/audio-medium.jpg");
-  }
-  
-  .features__item-karaoke {
-    padding-bottom: 16px;
-    background-image: url("../images/karaoke-medium.jpg");
-  }
-  
-  .features__item-board-games {
-    padding-bottom: 16px;
-    background-image: url("../images/board-games-medium.jpg");
-  }
-  
-  .features__item-cinema {
-    padding-bottom: 5px;
-    background-image: url("../images/cinema-medium.jpg");
-  }
-  
-  .features__item-ps5{
-    padding-bottom: 16px;
-    background-image: url("../images/ps5-medium.jpg");
-  }
+	.features__item {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.features__item-vr {
+		padding-bottom: 30px;
+		background-image: url("../images/vr-medium.jpg");
+	}
+
+	.features__item-audio {
+		padding-bottom: 2px;
+		background-image: url("../images/audio-medium.jpg");
+	}
+
+	.features__item-karaoke {
+		padding-bottom: 16px;
+		background-image: url("../images/karaoke-medium.jpg");
+	}
+
+	.features__item-board-games {
+		padding-bottom: 16px;
+		background-image: url("../images/board-games-medium.jpg");
+	}
+
+	.features__item-cinema {
+		padding-bottom: 5px;
+		background-image: url("../images/cinema-medium.jpg");
+	}
+
+	.features__item-ps5 {
+		padding-bottom: 16px;
+		background-image: url("../images/ps5-medium.jpg");
+	}
 }
 
 @media (max-width: 768px) {
-  .features__list {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 200px);
-    gap: 20px;
-  }
+	.features__list {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 200px);
+		gap: 20px;
+	}
 
-  .features__item {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-  
-  .features__item-vr {
-    padding-bottom: 40px;
-    background-image: url("../images/vr-small.jpg");
-  }
-  
-  .features__item-audio {
-    padding-bottom: 12px;
-    background-image: url("../images/audio-small.jpg");
-  }
-  
-  .features__item-karaoke {
-    padding-bottom: 40px;
-    background-image: url("../images/karaoke-small.jpg");
-  }
-  
-  .features__item-board-games {
-    padding-bottom: 40px;
-    background-image: url("../images/board-games-small.jpg");
-  }
-  
-  .features__item-cinema {
-    padding-bottom: 12px;
-    background-image: url("../images/cinema-small.jpg");
-  }
-  
-  .features__item-ps5{
-    padding-bottom: 40px;
-    background-image: url("../images/ps5-small.jpg");
-  }
+	.features__item {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.features__item-vr {
+		padding-bottom: 40px;
+		background-image: url("../images/vr-small.jpg");
+	}
+
+	.features__item-audio {
+		padding-bottom: 12px;
+		background-image: url("../images/audio-small.jpg");
+	}
+
+	.features__item-karaoke {
+		padding-bottom: 40px;
+		background-image: url("../images/karaoke-small.jpg");
+	}
+
+	.features__item-board-games {
+		padding-bottom: 40px;
+		background-image: url("../images/board-games-small.jpg");
+	}
+
+	.features__item-cinema {
+		padding-bottom: 12px;
+		background-image: url("../images/cinema-small.jpg");
+	}
+
+	.features__item-ps5 {
+		padding-bottom: 40px;
+		background-image: url("../images/ps5-small.jpg");
+	}
 }
 
 @media (max-width: 600px) {
-  .features__item-audio, 
-  .features__item-karaoke, 
-  .features__item-ps5  {
-   background-position: 50%;
-  }
+	.features__item-audio,
+	.features__item-karaoke,
+	.features__item-ps5 {
+		background-position: 50%;
+	}
 }
 
 @media (max-width: 500px) {
-  .features__list {
-    
-    gap: 10px;
-  }
+	.features__list {
+		gap: 10px;
+	}
 
-  .features__item {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+	.features__item {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 }
 
-
 @media (max-width: 420px) {
-  .features__list {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 200px);
-   
-  }
+	.features__list {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 200px);
+	}
 }
 
 @media (max-width: 340px) {
-  .features__list {
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 75px);
-  }
+	.features__list {
+		grid-template-columns: repeat(2, 2fr);
+		grid-template-rows: repeat(3, 75px);
+	}
 
-  .features__item-vr {
-    padding-bottom: 31px;
-    background-image: url("../images/vr-mobile.jpg");
-  }
-  
-  .features__item-audio {
-    padding-bottom: 17px;
-    background-image: url("../images/audio-mobile.jpg");
-  }
-  
-  .features__item-karaoke {
-    padding-bottom: 17px;
-    background-image: url("../images/karaoke-mobile.jpg");
-  }
-  
-  .features__item-board-games {
-    padding-bottom: 31px;
-    background-image: url("../images/board-games-mobile.jpg");
-  }
-  
-  .features__item-cinema {
-    padding-right: 8px;
-    padding-bottom: 3px;
-    background-image: url("../images/cinema-mobile.jpg");
-  }
-  
-  .features__item-ps5 {
-    padding-bottom: 31px;
-    background-image: url("../images/ps5-mobile.jpg");
-  }
+	.features__item- vr {
+		padding-bottom: 31px;
+		background-image: url("../images/vr-mobile.jpg");
+	}
 
-  .features__title {
-    font-size: 10px;
-    }
+	.features__item-audio {
+		padding-bottom: 17px;
+		background-image: url("../images/audio-mobile.jpg");
+	}
+
+	.features__item-karaoke {
+		padding-bottom: 17px;
+		background-image: url("../images/karaoke-mobile.jpg");
+	}
+
+	.features__item-board-games {
+		padding-bottom: 31px;
+		background-image: url("../images/board-games-mobile.jpg");
+	}
+
+	.features__item-cinema {
+		padding-right: 8px;
+		padding-bottom: 3px;
+		background-image: url("../images/cinema-mobile.jpg");
+	}
+
+	.features__item-ps5 {
+		padding-bottom: 31px;
+		background-image: url("../images/ps5-mobile.jpg");
+	}
+
+	.features__title {
+		font-size: 10px;
+	}
 }

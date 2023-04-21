@@ -2,7 +2,6 @@
   position: relative;
   z-index: 1;
   grid-area: button;
-
   align-self: end;
   height: 60px;
   padding: 16px 50px;

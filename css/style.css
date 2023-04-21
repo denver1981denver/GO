@@ -1,11 +1,13 @@
 @import url(normalize.css);
+@import url(fonts.css);
 @import url(var.css);
 @import url(global.css);
 @import url(header.css);
-@import url(navigation.css);
+@import url(navigation-list.css);
 @import url(menu.css);
 @import url(call-order-btn.css);
-@import url(promo.css);
+@import url(hero.css);
+@import url(info.css);
 @import url(features.css);
 @import url(reservation-link.css);
 @import url(arrow-link.css);
@@ -21,5 +23,5 @@
 @import url(footer.css);
 @import url(contacts.css);
 @import url(social.css);
-@import url(all-halls.css);
+/* @import url(all-halls.css); */
 

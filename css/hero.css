@@ -1,0 +1,158 @@
+.hero__wrapper {
+	position: relative;
+	padding-bottom: 154px;
+}
+
+.hero__wrapper:after {
+	position: absolute;
+	display: block;
+	content: "";
+	right: 0;
+	bottom: 0;
+	max-width: 675px;
+	width: 675px;
+	max-height: 100%;
+	height: 762px;
+	background-image: url(../images/hero-vr.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.hero__title {
+	font-weight: 900;
+	font-size: 150px;
+	line-height: 1;
+	letter-spacing: -0.1em;
+}
+
+.hero__subtitle {
+	margin-bottom: 30px;
+	padding-left: 100px;
+	font-size: 28px;
+	line-height: 1.79;
+}
+
+@media (max-width: 1024px) {
+	.hero {
+		padding-top: 30px;
+	}
+
+	.hero__wrapper {
+		padding-bottom: 65px;
+	}
+
+	.hero__wrapper:after {
+		width: 453px;
+		height: 520px;
+		background-image: url("../images/hero-vr-medium.png");
+	}
+
+	.hero__title {
+		margin-bottom: 20px;
+		font-size: 120px;
+	}
+
+	.hero__subtitle {
+		font-size: 22px;
+		line-height: 1.36;
+	}
+}
+
+@media (max-width: 800px) {
+	.hero__wrapper:after {
+		width: 409px;
+		height: 479px;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero__wrapper {
+		padding-bottom: 104px;
+	}
+
+	.hero__wrapper:after {
+		width: 409px;
+		height: 479px;
+		background-image: url(../images/hero-vr-small.png);
+	}
+
+	.hero__title {
+		margin-bottom: 20px;
+		padding-left: 3px;
+		font-size: 86px;
+	}
+
+	.hero__subtitle {
+		margin-bottom: 49px;
+		padding-top: 1px;
+		padding-left: 70px;
+		font-size: 18px;
+		line-height: 1.33;
+	}
+}
+
+@media (max-width: 650px) {
+	.hero__wrapper:after {
+		width: 55vw;
+	}
+}
+
+@media (max-width: 550px) {
+	.hero__wrapper:after {
+		width: 50vw;
+	}
+
+	.hero__title {
+		font-size: 56px;
+	}
+}
+
+@media (max-width: 500px) {
+	.hero__wrapper:after {
+		background-position: 0 20px;
+	}
+
+	.hero__subtitle {
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 450px) {
+	.hero__wrapper:after {
+		background-position: center;
+	}
+
+	.hero__subtitle {
+		margin-bottom: 9px;
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 420px) {
+	.hero {
+		padding-top: 20px;
+	}
+
+	.hero__wrapper {
+		padding-bottom: 22px;
+	}
+
+	.hero__wrapper:after {
+		width: 161px;
+		height: 179px;
+		background-image: url(../images/hero-vr-mobile.png);
+	}
+
+	.hero__title {
+		margin-bottom: 5px;
+		padding-left: 1px;
+		font-size: 35px;
+		letter-spacing: -0.08em;
+	}
+
+	.hero__subtitle {
+		font-size: 10px;
+		line-height: 1.4;
+	}
+}

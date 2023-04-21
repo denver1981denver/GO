@@ -1,92 +1,84 @@
 .reservation-link {
-  position: relative;
-  z-index: 99;
+	position: relative;
 	display: block;
-	width: 374px;
-	height: 80px;
+	max-width: 374px;
+	min-height: 80px;
 	padding: 25px 69px;
 	font-weight: 700;
 	font-size: 26px;
-  line-height: 1.15;
+	line-height: 1.13;
 	text-transform: uppercase;
 	background-color: var(--medium-violet, #6c0287);
 	border-radius: 10px;
 	transition: all 0.3s ease-in-out;
 }
 
-.reservation-link:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: var(--medium-violet, #6c0287);
-  border-radius: 10px;
-  filter: blur(10px);
-} 
+.reservation-link:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--medium-violet, #6c0287);
+	border-radius: 10px;
+	filter: blur(10px);
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+}
 
 .reservation-link:hover,
-.reservation-link:focus-visible {
+.reservation-link:focus-visible,
+.reservation-link:hover:before,
+.reservation-link:focus-visible:before {
 	background-color: var(--blue-violet, #840aa3);
 }
 
-.reservation-link:active {
+.reservation-link:active,
+.reservation-link:active:before {
 	background-color: var(--dark-violet, #640aa3);
 }
 
+@media (max-width: 1084px) {
+	.reservation-link {
+		max-width: 296px;
+		min-height: 64px;
+		padding: 17px 48px;
+		font-size: 22px;
+		line-height: 1.36;
+	}
+}
 
 @media (max-width: 1024px) {
 	.reservation-link {
-    width: 296px;
-    height: 64px;
-    padding: 17px 48px;
-    font-size: 22px;
-    line-height: 1.36;
-    transform: translateX(39px);
-  }
+		transform: translateX(39px);
+	}
 }
 
-@media (max-width: 790px) {
+@media (max-width: 840px) {
 	.reservation-link {
-  
-    transform: translateX(0);
-  }
+		transform: translateX(0);
+	}
 }
 
 @media (max-width: 768px) {
 	.reservation-link {
-    width: 214px;
-    height: 46px;
-    padding: 11px 34px;
-    font-size: 16px;
-    line-height: 1.5;
-    border-radius: 4px;
-   
-  }
+		max-width: 214px;
+		min-height: 46px;
+		padding: 11px 34px;
+		font-size: 16px;
+		line-height: 1.5;
+		border-radius: 4px;
+	}
 }
 
-
-@media (max-width: 620px) {
-  
-  }
-
-
-
-
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	.reservation-link {
-    width: 117px;
-    height: 27px;
-    padding: 8px 13px;
-    font-size: 10px;
-    line-height: 1.2;
-    border-radius: 4px;
-   
-  }
+		max-width: 117px;
+		min-height: 27px;
+		padding: 8px 13px 7px;
+		font-size: 10px;
+		line-height: 1.2;
+		border-radius: 4px;
+	}
 }
-

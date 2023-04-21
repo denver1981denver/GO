@@ -1,34 +1,40 @@
 .menu {
 	display: none;
-	align-self: center;
 	line-height: 0;
-	outline: none;
-}
-
-.menu__rect {
+	outline: 0 solid var(--violet, #cd06ff);
+	outline-offset: 2px;
 	color: var(--medium-violet, #6c0287);
 	transition: all 0.3s ease-in-out;
 }
 
-.menu:hover .menu__rect {
+.menu:hover {
 	color: var(--violet, #cd06ff);
 }
 
-.menu:focus-visible .menu__rect,
-.menu:active .menu__rect {
+.menu:focus-visible,
+.menu:active {
 	color: var(--blue-violet, #840aa3);
 }
 
-@media (max-width: 788px) {
+.menu:focus-visible {
+	outline-width: 1px;
+}
+
+@media (max-width: 780px) {
 	.menu {
 		display: block;
+		align-self: stretch;
+		margin-top: 5px;
 		order: -1;
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
 	.menu {
 		max-width: 39px;
-		height: 20px;
+		align-self: center;
+		margin-top: 8px;
 	}
 }
+
+
