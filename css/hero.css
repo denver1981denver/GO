@@ -36,6 +36,7 @@
 @media (max-width: 1024px) {
 	.hero {
 		padding-top: 30px;
+		padding-bottom: 48px;
 	}
 
 	.hero__wrapper {
@@ -67,6 +68,9 @@
 }
 
 @media (max-width: 768px) {
+	.hero {
+		padding-bottom: 49px;
+	}
 	.hero__wrapper {
 		padding-bottom: 104px;
 	}
@@ -132,6 +136,7 @@
 @media (max-width: 420px) {
 	.hero {
 		padding-top: 20px;
+		padding-bottom: 31px;
 	}
 
 	.hero__wrapper {
