@@ -186,41 +186,50 @@
 
 @media (max-width: 420px) {
 	.promo__list {
-		grid-template-columns: repeat(2, 2fr);
+		grid-template-columns: 135px 135px;
 		grid-template-rows: repeat(3, 75px);
+		justify-content: center;
 		grid-template-areas:
 			"vr audio"
 			"karaoke games"
 			"cinema ps5";
+			gap: 10px;
+	}
+
+	.promo__item {
+		padding-left: 10px;
+		background-position: center;
 	}
 
 	.promo__item--vr {
 		padding-bottom: 31px;
+		background-image: url("../images/vr-mobile.jpg");
+	}
+
+	.promo__item--audio {
+		padding-right: 10px;
+		padding-bottom: 17px;
+
 		
 	}
 
-	.features__item--audio {
-		padding-bottom: 17px;
-		/* background-image: url("../images/audio-mobile.jpg"); */
-	}
-
-	.features__item--karaoke {
+	.promo__item--karaoke {
 		padding-bottom: 17px;
 		/* background-image: url("../images/karaoke-mobile.jpg"); */
 	}
 
-	.features__item-board--games {
+	.promo__item--board-games {
 		padding-bottom: 31px;
-		/* background-image: url("../images/board-games-mobile.jpg"); */
+		background-image: url("../images/board-games-mobile.jpg");
 	}
 
-	.features__item--cinema {
+	.promo__item--cinema {
 		padding-right: 8px;
 		padding-bottom: 3px;
 		/* background-image: url("../images/cinema-mobile.jpg"); */
 	}
 
-	.features__item--ps5 {
+	.promo__item--ps5 {
 		padding-bottom: 31px;
 		/* background-image: url("../images/ps5-mobile.jpg"); */
 	}

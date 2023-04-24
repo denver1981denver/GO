@@ -143,12 +143,15 @@
 	.info__title--left {
 		padding-top: 1px;
 		font-size: 26px;
+		line-height: 37px;
 	}
 
 	.info__title--right {
-		margin-bottom: 0.5px;
+
+margin-bottom: 0;
 		padding-left: 3px;
 		font-size: 22px;
+
 		letter-spacing: 3px;
 	}
 
