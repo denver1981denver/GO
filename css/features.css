@@ -1,9 +1,9 @@
-
 .features__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 349px);
   gap: 20px;
+  padding-top: 6.5px;
 }
 
 .features__item {
@@ -13,14 +13,27 @@
 
 .features__link {
   display: flex;
+  width: 100%;
   height: 100%;
 }
+  .features__link-vibes {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vibes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
 
 .features__item-vibes {
-  background-image: url(../images/vibes.jpg);
+ 
+  /* background-image: url(../images/vibes.jpg); */
 }
 
 .features__item-star-wars {
+  
+ 
   background-image: url(../images/star-wars.jpg);
 }
 
@@ -34,11 +47,16 @@
 
 .features__description {
   margin: auto;
+  padding-left: 1px;
   font-weight: 700;
   font-size: 70px;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
+}
+
+.features__description--star-wars {
+  padding-left: 13px;
 }
 
 @media (max-width: 1024px) {
@@ -55,6 +73,7 @@
   }
   
   .features__item-star-wars {
+    
     background-image: url(../images/star-wars-medium.jpg);
   }
   
@@ -66,7 +85,7 @@
     background-image: url(../images/neon-style-medium.jpg);
   }
   
-  .features__title {
+  .features__description {
     font-size: 50px;
     line-height: 1.2;
   }
@@ -97,7 +116,7 @@
     background-image: url(../images/neon-style-small.jpg);
   }
   
-  .features__title {
+  .features__description {
     font-size: 40px;
     line-height: 1.25;
   }
@@ -130,7 +149,7 @@
     background-image: url(../images/neon-style-mobile.jpg);
   }
   
-  .features__title {
+  .features__description {
     font-size: 40px;
     line-height: 1.25;
   }

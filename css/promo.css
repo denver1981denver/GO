@@ -14,7 +14,7 @@
 		"vr audio karaoke"
 		"games cinema ps5";
 	gap: 40px 20px;
-	padding-bottom: 70px;
+	padding-bottom: 69px;
 }
 
 .promo__item {
@@ -185,6 +185,10 @@
 }
 
 @media (max-width: 420px) {
+	.promo__title-first-line {
+		padding-right: 4px;
+	}
+
 	.promo__list {
 		grid-template-columns: 135px 135px;
 		grid-template-rows: repeat(3, 75px);
@@ -209,13 +213,13 @@
 	.promo__item--audio {
 		padding-right: 10px;
 		padding-bottom: 17px;
-
+		background-image: url("../images/audio-mobile.jpg");
 		
 	}
 
 	.promo__item--karaoke {
 		padding-bottom: 17px;
-		/* background-image: url("../images/karaoke-mobile.jpg"); */
+		background-image: url("../images/karaoke-mobile.jpg");
 	}
 
 	.promo__item--board-games {
@@ -226,12 +230,12 @@
 	.promo__item--cinema {
 		padding-right: 8px;
 		padding-bottom: 3px;
-		/* background-image: url("../images/cinema-mobile.jpg"); */
+		background-image: url("../images/cinema-mobile.jpg");
 	}
 
 	.promo__item--ps5 {
 		padding-bottom: 31px;
-		/* background-image: url("../images/ps5-mobile.jpg"); */
+		background-image: url("../images/ps5-mobile.jpg");
 	}
 
 	.promo__description {
