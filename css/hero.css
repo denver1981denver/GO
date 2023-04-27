@@ -71,6 +71,7 @@
 	.hero {
 		padding-bottom: 49px;
 	}
+
 	.hero__wrapper {
 		padding-bottom: 104px;
 	}
@@ -97,6 +98,14 @@
 }
 
 @media (max-width: 650px) {
+	.hero {
+		padding-bottom: 40px;
+	}
+
+	.hero__wrapper {
+		padding-bottom: 5%;
+	}
+
 	.hero__wrapper:after {
 		width: 55vw;
 	}
@@ -104,7 +113,7 @@
 
 @media (max-width: 550px) {
 	.hero__wrapper:after {
-		width: 50vw;
+		width: 49vw;
 	}
 
 	.hero__title {
