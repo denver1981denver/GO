@@ -26,6 +26,10 @@
 	line-height: 1.4;
 }
 
+.about__text-bottom-pseudo {
+	display: none;
+}
+
 .about__author {
 	grid-area: author;
 	padding-top: 11px;
@@ -84,10 +88,6 @@
 	line-height: 1.36;
 }
 
-.about__text-bottom-pseudo {
-	display: none;
-}
-
 @media (max-width: 1260px) {
 	.about__list {
 		column-gap: 3.5%;
@@ -127,9 +127,7 @@
 	.about__quote {
 		max-width: 444px;
 		margin-bottom: 26px;
-		padding-top: 1px;
-		padding-left: 26px;
-		padding-right: 15px;
+		padding: 1px 15px 0 26px;
 		font-size: 30px;
 		line-height: 1.2;
 	}
@@ -151,7 +149,6 @@
 	}
 
 	.about__author-wrapper {
-		display: flex;
 		gap: 35px;
 	}
 
@@ -161,11 +158,11 @@
 
 	.about__author-caption {
 		max-width: 225px;
-		padding-right: 10px;
+		margin-top: -5px;
 		margin-bottom: 1px;
+		padding-right: 10px;
 		font-size: 18px;
 		line-height: 1.44;
-		margin-top: -5px;
 	}
 }
 
@@ -195,8 +192,8 @@
 	.about__quote {
 		max-width: 100%;
 		margin-bottom: 28px;
-		padding-left: 22px;
 		padding-right: 22px;
+		padding-left: 22px;
 		font-size: 30px;
 		line-height: 1.2;
 	}
@@ -258,8 +255,9 @@
 			"text"
 			"banner"
 			"author";
-		gap: 0;
 		justify-content: start;
+		gap: 0;
+		
 	}
 
 	.about__banner {
@@ -289,11 +287,12 @@
 	.about {
 		padding-top: 14px;
 	}
+
 	.about__title {
 		margin-bottom: 14px;
 	}
+
 	.about__banner {
-		/* max-width: 280px; */
 		margin-bottom: 10px;
 		min-height: 280px;
 		background-image: url(../images/about-mobile.jpg);
@@ -302,8 +301,8 @@
 	.about__text {
 		margin-top: 0;
 		margin-bottom: 13px;
-		font-size: 12px;
 		gap: 14px;
+		font-size: 12px;
 	}
 
 	.about__quote {
@@ -339,8 +338,8 @@
 	}
 
 	.about__author-caption {
-		margin-bottom: 3px;
 		align-self: end;
+		margin-bottom: 3px;
 		padding-right: 16px;
 		font-size: 12px;
 		line-height: 1.33;

@@ -1,5 +1,9 @@
+.faq__title {
+margin-top: -1px;
+}
 
 .faq__list {
+  padding-top: 6px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: (auto);
