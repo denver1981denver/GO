@@ -1,8 +1,8 @@
 .form__entertainment-set {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
-	column-gap: 84px;
+	column-gap: 171px;
 	row-gap: 32px;
 	margin-bottom: 60px;
 }
@@ -13,82 +13,95 @@
 	gap: 20px;
 }
 
+.form__wrapper-games-additionally {
+	padding-left: 15px;
+}
+
 .form__description-entertainment {
 	display: flex;
 	align-items: center;
-  height: 27px;
-	padding-left: 39px;
+	height: 25px;
+	padding-left: 37px;
 	font-size: 22px;
-	
 }
 
-.form__input-entertainment {
-	outline: none;
+.form__description-entertainment-radio-button-games {
+	height: 27px;
+	padding-top: 1px;
+	padding-left: 39px;
+}
+
+.form__description-entertainment--vr {
+	padding-top: 5px;
+	padding-left: 36.5px;
 }
 
 .form__input-entertainment:before {
 	content: "";
 	position: absolute;
-  display: block;
+	display: block;
 	top: 0;
 	left: 0;
-	width: 27px;
-	height: 27px;
+	width: 25px;
+	height: 25px;
 	background-color: var(--white, #fff);
 }
 
-/* .form__input-entertainment:after {
-	position: absolute;
-	content: "";
-	left: -3px;
-	top: -3px;
-	display: none;
-	width: 33px;
-	height: 33px;
-	border: 1px solid #cd06ff;
-} */
-
 .form__radio-button-games:before {
+	width: 27px;
+	height: 27px;
 	border-radius: 50%;
 }
 
-/* .form__input-entertainment:checked:after,
-.form__input-entertainment:focus-visible:after {
-	display: block;;
-} */
-
 .form__input-entertainment:checked,
 .form__input-entertainment:focus-visible {
-	width: 27px;
-	height: 27px;
+	width: 25px;
+	height: 25px;
 	outline: 1px solid #cd06ff;
 	outline-offset: 3px;
 }
 
+.form__radio-button-games:checked,
+.form__radio-button-games:focus-visible {
+	width: 27px;
+	height: 27px;
+}
+
+@media (max-width: 1040px) {
+	.form__entertainment-set {
+		column-gap: 15vw;
+	}
+}
+
 @media (max-width: 1024px) {
- 
+	.form__entertainment-set {
+		column-gap: 10.8vw;
+	}
+
+	.form__wrapper-games-additionally {
+		padding-left: 4px;
+	}
+
+	.form__description-entertainment--vr {
+		padding-left: 37px;
+	}
 }
 
 @media (max-width: 900px) {
-	.form__entertainment-set {
-
-		justify-content: flex-start;
-		 column-gap: 140px;
-	 
-
-	
+	.form__wrapper-games-additionally {
+		padding-left: 0;
 	}
 }
 
 @media (max-width: 768px) {
 	.form__entertainment-set {
+		column-gap: 17.8vw;
 		margin-bottom: 50px;
 	}
 
 	.form__description-entertainment {
 		height: 40px;
 		padding-left: 60px;
-		
 	}
 
 	.form__input-entertainment:before {
@@ -97,46 +110,54 @@
 	}
 
 	.form__input-entertainment:checked,
-.form__input-entertainment:focus-visible {
-	width: 40px;
-	height: 40px;
-	
-	
-}
-}
-
-@media (max-width: 722px) {
-	.form__entertainment-set {
-		
-		column-gap: 240px;
-		
+	.form__input-entertainment:focus-visible {
+		width: 40px;
+		height: 40px;
 	}
-	
+
+	.form__description-entertainment--vr {
+		padding-top: 9px;
+	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
 	.form__entertainment-set {
 		row-gap: 25px;
 		margin-bottom: 30px;
 	}
 
+	.form__wrapper-games {
+		gap: 15px;
+	}
+
+	.form__wrapper-games-additionally,
+	.form__wrapper-games-board-games {
+		gap: 20px;
+	}
+
 	.form__description-entertainment {
 		height: 30px;
+		padding-top: 5px;
 		padding-left: 50px;
 		font-size: 16px;
 	}
-	
+
+	.form__description-entertainment-board-games {
+		padding-top: 4px;
+	}
+
+	.form__description-entertainment--vr {
+		padding-top: 13px;
+	}
+
 	.form__input-entertainment:before {
 		width: 30px;
 		height: 30px;
-		
 	}
 
 	.form__input-entertainment:checked,
-.form__input-entertainment:focus-visible {
-	width: 30px;
-	height: 30px;
-
-}
-	
+	.form__input-entertainment:focus-visible {
+		width: 30px;
+		height: 30px;
+	}
 }

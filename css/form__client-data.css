@@ -9,12 +9,11 @@
 		"...       ...  	 button";
 	row-gap: 14px;
 	column-gap: 30px;
-
 }
 
 .form__input {
-	max-height: 52px;
-	padding: 12px 20px;
+	height: 52px;
+	padding: 13px 18px 11px;
 	font-size: 18px;
 	color: var(--additional-text, #211e1e);
 	outline: none;
@@ -55,9 +54,7 @@
 	grid-area: e-mail;
 }
 
-
-
-.form__label-client-data {
+.form__label-client-data-aligne-self-end {
 	align-self: end;
 }
 
@@ -72,9 +69,7 @@
 @media (max-width: 1024px) {
 	.form__client-data {
 		grid-template-columns: minmax(auto, 300px) minmax(auto, 251px) minmax(auto, 254px);
-		margin-bottom: 50px;
 		column-gap: 20px;
-		
 	}
 }
 
@@ -88,7 +83,6 @@
 	.form__time {
 		min-width: 106px;
 	}
-	
 
 	.form__client-data {
 		grid-template-columns: 230px minmax(auto, 251px) minmax(auto, 254px);
@@ -97,19 +91,18 @@
 
 @media (max-width: 810px) {
 	.form__client-data {
-		grid-template-columns: minmax(auto, 280px) minmax(auto, 300px);
-	grid-template-rows: 80px repeat(2, 74px) 94px;
-	justify-content: space-between;
-	grid-template-areas:
-		"date-time persons" 
-		"name      phone"
-		"surname   e-mail"
-		"...       button";
-	
+		grid-template-columns: minmax(auto, 282px) minmax(auto, 300px);
+		grid-template-rows: 80px repeat(2, 74px) 94px;
+		justify-content: space-between;
+		grid-template-areas:
+			"date-time persons"
+			"name      phone"
+			"surname   e-mail"
+			"...       button";
 	}
 
 	.form__input {
-		padding: 12px 20px;
+		padding: 12px 18px;
 	}
 
 	.form__wrapper-date-time {
@@ -117,25 +110,31 @@
 		gap: 14px;
 	}
 
+	.form__name {
+		width: 280px;
+		justify-self: end;
+	}
+
+	.form__surname {
+		max-width: 280px;
+	}
+
 	.form__persons {
 		align-self: start;
 	}
-}
 
-	@media (max-width: 722px) {
-		/* .form__client-data {
-			grid-template-columns: minmax(auto, 280px) minmax(auto, 280px);
-		} */
+	.form__description-client-data {
+		padding-bottom: 5px;
+	}
 }
 
 @media (max-width: 660px) {
 	.form__client-data {
-
-		grid-template-columns: 300px;
+		grid-template-columns: 350px;
 		grid-template-rows: 52px 72px repeat(2, 74px) repeat(2, 94px);
 		justify-content: center;
 		grid-template-areas:
-			"date-time" 
+			"date-time"
 			"persons "
 			"name "
 			"surname"
@@ -145,48 +144,37 @@
 		row-gap: 15px;
 	}
 
-	.form__wrapper-date-time {
-		grid-area: date-time;
-		display: flex;
-		justify-content: space-between;
-		gap: 20px;
-	}
-	
-	.form__date-time {
-		max-width: 134px;
-	}
-	
-	.form__persons {
-		grid-area: persons;
-	}
-	
-	.form__name {
-		grid-area: name;
-	}
-	
-	.form__phone {
-		grid-area: phone;
-	}
-	
+	.form__name,
 	.form__surname {
-		grid-area: surname;
+		max-width: 100%;
+		width: 100%;
 	}
-	
+
 	.form__e-mail {
 		align-self: start;
 	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
 	.form__client-data {
-
+		padding-top: 10px;
 		grid-template-columns: 280px;
-		
-}
+	}
 
-.form__input {
-	padding: 17px 20px;
-	font-size: 14px;
-}
+	.form__wrapper-date-time {
+		gap: 12px;
+	}
 
+	.form__input {
+		padding: 17px 20px 17px 18px;
+		font-size: 14px;
+	}
+
+	.form__description-client-data {
+		padding-bottom: 6px;
+	}
+
+	.form__description-client-data--e-mail {
+		padding-bottom: 5px;
+	}
 }

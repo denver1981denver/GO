@@ -147,11 +147,9 @@
 	}
 
 	.info__title--right {
-
-margin-bottom: 0;
+		margin-bottom: 0;
 		padding-left: 3px;
 		font-size: 22px;
-
 		letter-spacing: 3px;
 	}
 

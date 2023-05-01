@@ -1,12 +1,13 @@
 .about__list {
 	display: grid;
 	grid-template-columns: 1.2fr 1fr;
-	grid-template-rows: 222px 325px;
+	grid-template-rows: 222px 326px;
 	grid-template-areas:
 		"banner text"
 		"banner author";
 	column-gap: 80px;
 	row-gap: 48px;
+	padding-top: 6px;
 }
 
 .about__banner {
@@ -14,77 +15,53 @@
 	background-image: url(../images/about.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-  
 }
 
 .about__text {
 	grid-area: text;
 	display: flex;
 	flex-direction: column;
-	gap: 25px;
+	gap: 28px;
 	font-size: 20px;
 	line-height: 1.4;
 }
 
 .about__author {
-  grid-area: author;
+	grid-area: author;
+	padding-top: 11px;
 }
 
 .about__quote {
-	/* position: relative; */
-  max-width: 460px;
-	margin-bottom: 39px;
-	padding-left: 30px;
+	max-width: 460px;
+	margin-bottom: 32px;
+	padding-left: 31px;
 	padding-right: 70px;
 	font-size: 44px;
 	line-height: 1.14;
 	text-transform: uppercase;
-	
 }
 
-/* .about__quote::before {
-	content: open-quote;
-	top: -12px;
-	left: 0;
-} */
-
-/* .about__quote::after {
-	content: close-quote;
-	bottom: 0;
-	right: 70px;
-} */
-
-/* .about__quote::before,
-.about__quote::after {
-	position: absolute;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.14;
-	color: var(--medium-violet, #6c0287);
-} */
-
 .about__quotes {
-  position: relative;
-  quotes: "\201c""\201d";
+	position: relative;
+	quotes: "\201c""\201d";
 }
 
 .about__opening-quotes:before {
-  content: open-quote;
-  top: -12px;
-  left: -30px;
-  
+	content: open-quote;
+	top: -11px;
+	left: -31px;
 }
 
 .about__closing-quotes:after {
-  content: close-quote;
-	top: -3px;
+	content: close-quote;
+	top: -1px;
 	right: -33px;
 }
 
 .about__quotes:before,
 .about__quotes:after {
-  position: absolute;
-  font-weight: 900;
+	position: absolute;
+	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.14;
 	color: var(--medium-violet, #6c0287);
@@ -104,7 +81,11 @@
 	max-width: 279px;
 	padding-right: 10px;
 	font-size: 20px;
-	line-height: 1.4;
+	line-height: 1.36;
+}
+
+.about__text-bottom-pseudo {
+	display: none;
 }
 
 @media (max-width: 1260px) {
@@ -113,224 +94,265 @@
 	}
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+	.about__title {
+		margin-bottom: 25px;
+	}
+}
+
 @media (max-width: 1024px) {
 	.about__list {
-    grid-template-columns: 1fr 1.06fr;
-    grid-template-rows: 195px 217px;
-    column-gap: 40px;
-    row-gap: 26px;
-  }
-  
-  .about__banner {
-    max-width: 420px;
-    max-height: 417px;
-    background-image: url(../images/about-medium.jpg);
-    background-position: 1px 1px;
-  }
-  
-  .about__text {
-    width: 444px;
-    gap: 30px;
-    font-size: 18px;
-    line-height: 1.33;
-  }
-  
-  .about__quote {
-    max-width: 444px;
-    margin-bottom: 26px;
-    padding-left: 25px;
-    padding-right: 15px;
-    font-size: 30px;
-    line-height: 1.2;
-  }
+		grid-template-columns: 1fr 1.06fr;
+		grid-template-rows: 195px 217px;
+		column-gap: 40px;
+		row-gap: 26px;
+		padding-top: 0;
+	}
 
-  .about__opening-quotes:before {
-     top: -12px;
-  left: -25px;
-  }
+	.about__banner {
+		max-width: 420.46px;
+		max-height: 417.66px;
+		background-image: url(../images/about-medium.png);
+		background-position: 0 1px;
+	}
 
-  .about__closing-quotes:after {
-    top: -3px;
-	right: -25px;
-  }
-  
-  .about__quotes:before,
-.about__quotes:after {
-  font-size: 30px;
-  line-height: 1.2;
- 
-}
-  
-  .about__author-wrapper {
-    display: flex;
-    gap: 35px;
-  }
-  
-  .about__author-img {
-    height: 70px;
-  }
-  
-  .about__author-caption {
-    max-width: 225px;
-    padding-right: 10px;
-    font-size: 18px;
-    line-height: 1.44;
-  }
+	.about__text {
+		width: 444px;
+		gap: 24px;
+		padding-top: 2px;
+		font-size: 18px;
+		line-height: 1.33;
+	}
+
+	.about__quote {
+		max-width: 444px;
+		margin-bottom: 26px;
+		padding-top: 1px;
+		padding-left: 26px;
+		padding-right: 15px;
+		font-size: 30px;
+		line-height: 1.2;
+	}
+
+	.about__opening-quotes:before {
+		top: -12px;
+		left: -25px;
+	}
+
+	.about__closing-quotes:after {
+		top: -3px;
+		right: -23px;
+	}
+
+	.about__quotes:before,
+	.about__quotes:after {
+		font-size: 30px;
+		line-height: 1.2;
+	}
+
+	.about__author-wrapper {
+		display: flex;
+		gap: 35px;
+	}
+
+	.about__author-img {
+		height: 70px;
+	}
+
+	.about__author-caption {
+		max-width: 225px;
+		padding-right: 10px;
+		margin-bottom: 1px;
+		font-size: 18px;
+		line-height: 1.44;
+		margin-top: -5px;
+	}
 }
 
 @media (max-width: 1000px) {
-  .about__list {
-    column-gap: 2%;
-  }
+	.about__list {
+		column-gap: 2%;
+	}
 }
 
 @media (max-width: 900px) {
-  .about__list {
-    grid-template-columns: 1.2fr 1fr;
-	grid-template-rows: 418px auto;
-    grid-template-areas:
-		"banner text"
-		"author author";
-    column-gap: 28px;
-    row-gap: 30px;
-    
-  }
+	.about__list {
+		grid-template-columns: 1.2fr 1fr;
+		grid-template-rows: 418px auto;
+		grid-template-areas:
+			"banner text"
+			"author author";
+		column-gap: 28px;
+		row-gap: 30px;
+	}
 
-  .about__text {
-    max-width: 300px;
-    width: auto;
-    align-self: center;
-  }
+	.about__text {
+		max-width: 300px;
+		width: auto;
+		align-self: center;
+	}
 
-  .about__quote {
-    max-width: 100%;
-    margin-bottom: 16px;
-    padding-left: 22px;
-    padding-right: 22px;
-    font-size: 30px;
-    line-height: 1.2;
-  }
+	.about__quote {
+		max-width: 100%;
+		margin-bottom: 28px;
+		padding-left: 22px;
+		padding-right: 22px;
+		font-size: 30px;
+		line-height: 1.2;
+	}
 
-  .about__opening-quotes:before {
-    top: -12px;
- left: -20px;
- }
+	.about__closing-quotes:after {
+		top: -1px;
+		right: -25px;
+	}
 
-  .about__author-wrapper {
-   justify-content: end;
-   gap: 25px;
-  }
+	.about__opening-quotes:before {
+		top: -10px;
+		left: -22px;
+	}
+
+	.about__author-wrapper {
+		justify-content: end;
+		gap: 25px;
+	}
 }
 
 @media (max-width: 768px) {
-  .about__list {
-    grid-template-columns: 1.38fr 1fr;
-	grid-template-rows: 380px auto;
-  }
+	.about__list {
+		grid-template-columns: 1.38fr 1fr;
+		grid-template-rows: 380px auto;
+		column-gap: 27px;
+	}
 
-  .about__banner {
-    background-image: url(../images/about-small.jpg);
-  }
-  
-  .about__text {
-    font-size: 16px;
-    line-height: 1.38;
-  }
-  
-  .about__quote {
-    font-size: 32px;
-    line-height: 1.12;
-  }
-  
-  .about__quotes:before,
-  .about__quotes:after {
-    font-size: 32px;
-    line-height: 1.12;
-  }
+	.about__banner {
+		max-width: 382px;
+		background-image: url(../images/about-small.jpg);
+		background-position: center;
+	}
+
+	.about__text {
+		gap: 22px;
+		margin-top: -4px;
+		padding-top: 0;
+		font-size: 16px;
+		line-height: 1.38;
+	}
+
+	.about__quote {
+		font-size: 32px;
+		line-height: 1.12;
+	}
+
+	.about__quotes:before,
+	.about__quotes:after {
+		font-size: 32px;
+		line-height: 1.12;
+	}
 }
 
 @media (max-width: 520px) {
-  .about__list {
-    grid-template-columns: auto;
-	grid-template-rows: auto;
-    grid-template-areas:
-		"text"
-    "banner" 
-		"author";
-    
-   gap: 0;
-    
-  }
+	.about__list {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"text"
+			"banner"
+			"author";
+		gap: 0;
+		justify-content: start;
+	}
 
-  .about__banner {
-    max-width: 100%;
-    min-height: 380px;
-    margin-bottom: 21px;
-    background-size: contain;
-  }
+	.about__banner {
+		max-width: 100%;
+		width: 100%;
+		min-height: 380px;
+		margin-bottom: 21px;
+		background-size: contain;
+	}
 
-  .about__text {
-    max-width: 100%;
-    margin-bottom: 15px;
-  }
+	.about__text {
+		max-width: 100%;
+		margin-bottom: 15px;
+	}
 
-  .about__quote {
-    margin-bottom: 21px;
-  }
+	.about__quote {
+		margin-bottom: 21px;
+	}
 
-  .about__author-wrapper {
-    justify-content: flex-start;
-    gap: 11px;
-   }
+	.about__author-wrapper {
+		justify-content: flex-start;
+		gap: 11px;
+	}
 }
 
-@media (max-width: 360px) {
-  .about__banner {
-    /* max-width: 280px; */
-    min-height: 280px;
-    background-image: url(../images/about-mobile.jpg);
-  }
+@media (max-width: 420px) {
+	.about {
+		padding-top: 14px;
+	}
+	.about__title {
+		margin-bottom: 14px;
+	}
+	.about__banner {
+		/* max-width: 280px; */
+		margin-bottom: 10px;
+		min-height: 280px;
+		background-image: url(../images/about-mobile.jpg);
+	}
 
-  .about__text {
-    font-size: 12px;
-  }
+	.about__text {
+		margin-top: 0;
+		margin-bottom: 13px;
+		font-size: 12px;
+		gap: 14px;
+	}
 
-  .about__quote {
-    margin-bottom: 21px;
-    padding-left: 15px;
-    font-size: 18px;
-    line-height: 1.44;
-  }
+	.about__quote {
+		margin-bottom: 9px;
+		padding-left: 15px;
+		font-size: 18px;
+		line-height: 1.44;
+	}
 
-  .about__opening-quotes:before {
-    top: -22px;
- left: -14px;
- }
+	.about__opening-quotes:before {
+		top: -22px;
+		left: -15px;
+	}
 
- .about__closing-quotes:after {
-   top: -14px;
- right: -16px;
- }
+	.about__closing-quotes:after {
+		top: -14px;
+		right: -15px;
+	}
 
-  .about__quotes:before,
-  .about__quotes:after {
-    font-size: 22px;
-    line-height: 2.27;
-  }
+	.about__quotes:before,
+	.about__quotes:after {
+		font-size: 22px;
+		line-height: 2.27;
+	}
 
-  .about__author-wrapper {
-    justify-content: flex-start;
-    gap: 11px;
-   }
+	.about__author-wrapper {
+		justify-content: flex-start;
+		gap: 11px;
+	}
 
-   .about__author-img {
-    height: 56px;
-  }
+	.about__author-img {
+		height: 56px;
+	}
 
-  .about__author-caption {
-    padding-right: 16px;
-    font-size: 12px;
-    line-height: 1.33;
-  }
+	.about__author-caption {
+		margin-bottom: 3px;
+		align-self: end;
+		padding-right: 16px;
+		font-size: 12px;
+		line-height: 1.33;
+	}
 }
 
+@media (max-width: 320px) {
+	.about__text-bottom {
+		display: none;
+	}
+
+	.about__text-bottom-pseudo {
+		display: block;
+	}
+}

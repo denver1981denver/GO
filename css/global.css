@@ -154,6 +154,8 @@ section {
 		font-size: 30px;
 		line-height: 1.33;
 	}
+
+	
 }
 
 @media (max-width: 768px) {
@@ -166,6 +168,7 @@ section {
 
 @media (max-width: 420px) {
 	.title {
+
 		margin-bottom: 15px;
 		font-size: 14px;
 		line-height: 1.29;

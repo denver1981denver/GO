@@ -1,5 +1,9 @@
+.form__reservation {
+	padding-top: 6px;
+}
+
 .reservation__wrapper {
-	background-color: var(--purple, #450f51);
+	background-color: var(--purple, #440f51);
 	padding: 80px 0;
 }
 
@@ -11,15 +15,20 @@
 }
 
 .form__legend-title {
-	margin-bottom: 40px;
+	margin-bottom: 39px;
+}
+
+.form__legend-title-client-data {
+	margin-bottom: 38px;
 }
 
 .form__legend-subtitle {
-	margin-bottom: 24px;
+	margin-bottom: 23px;
+	text-align: left;
 }
 
-.form__legend-console {
-	text-align: left;
+.form__legend-subtitle-board-games {
+	margin-bottom: 24px;
 }
 
 .form__label {
@@ -36,7 +45,7 @@
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .form__box {
@@ -45,12 +54,12 @@
 }
 
 @media (max-width: 1024px) {
-	.reservation__wrapper {
-		padding: 60px 0;
+	.form__reservation {
+		padding-top: 5px;
 	}
 
-	.reservation__title {
-		margin-bottom: 25px;
+	.reservation__wrapper {
+		padding: 60px 0;
 	}
 
 	.form__legend-title {
@@ -59,44 +68,28 @@
 }
 
 @media (max-width: 768px) {
-	.reservation__wrapper {
-		padding: 60px 0;
+	.form__reservation {
+		padding-top: 12px;
 	}
-	.reservation__title {
-		margin-bottom: 40px;
+
+	.reservation__wrapper {
+		padding: 50px 0;
 	}
 
 	.form__legend-title {
 		margin-bottom: 30px;
 	}
+
+	.form__legend-subtitle-console {
+		margin-bottom: 24px;
+	}
 }
 
-@media (max-width: 422px) {
-	
-	.reservation__title {
-		font-size: 17px;
+@media (max-width: 420px) {
+	.form__reservation {
+		padding-top: 0;
 	}
 
-	.form__legend {
-		font-size: 20px;
-		
-	}
-
-	
-}
-
-@media (max-width: 360px) {
-	
-	/* .reservation__title {
-		margin-bottom: 13px;
-		font-size: 14px;
-		line-height: 1.43;
-	} */
-
-	
-}
-
-@media (max-width: 320px) {
 	.reservation__wrapper {
 		padding: 30px 0;
 	}
@@ -111,7 +104,6 @@
 		margin-bottom: 15px;
 		font-size: 14px;
 		line-height: 1.29;
-		
 	}
 
 	.form-title-client-data {
