@@ -23,8 +23,17 @@
       <div class="container">
         <nav class="navigation">
           <a class="navigation__logo" href="/">
+            <!-- <img class="navigation__logo-img" src="images/logo.svg" alt="Логотип компании GO"> -->
+            <picture>
+            <source srcset="images/logo-mobile.svg" media="(max-width: 420px)">
+            <source srcset="images/logo-tablet.svg" media="(max-width: 768px)">
+            <source srcset="images/logo-laptop.svg" media="(max-width: 1024px)">
+            <source srcset="images/logo.svg">
             <img class="navigation__logo-img" src="images/logo.svg" alt="Логотип компании GO">
+          </picture>
+          
           </a>
+          
             
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -450,7 +459,7 @@
               </li>
 
               <li class="faq__item">
-                <button class="faq__link" type="button">
+                <button class="faq__btn" type="button">
                   Какая комната самая популярная?
                 </button>
               </li>

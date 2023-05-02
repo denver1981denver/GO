@@ -46,12 +46,16 @@
 	background-image: url("../images/open-purple.svg");
 }
 
-.faq__btn:hover:after {
-	background-image: url("../images/open-purple-hover.svg");
-}
+
 
 .faq__btn:focus:after {
 	background-image: url("../images/close-purple.svg");
+}
+
+@media (min-width: 421px) {
+	.faq__btn:hover:after {
+	background-image: url("../images/open-purple-hover.svg");
+}
 }
 
 @media (min-width: 1025px) {
@@ -147,7 +151,6 @@
 	}
 
 	.faq__btn {
-		
 	padding-left: 59px;
 		font-size: 18px;
 		line-height: 1.33;
@@ -164,7 +167,6 @@
   .faq__btn-one:after {
 		top: 12px;
 	}
-
 }
 
 @media (max-width: 650px) {
@@ -177,7 +179,6 @@
 	.faq__btn:after {
 		right: 10px;
 	}
-
 }
 
 @media (max-width: 550px) {
@@ -222,4 +223,8 @@
 	.faq__btn:after {
 		background-image: url("../images/open-mobile.svg");
 	}
+
+	.faq__btn:focus:after {
+	background-image: url("../images/close-purple-mobile.svg");
+}
 }
