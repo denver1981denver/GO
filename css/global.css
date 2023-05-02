@@ -29,7 +29,7 @@ img,svg {
 
 button {
 	padding: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 	background-color: transparent;
 	color: inherit;
 	border: 0;
@@ -84,7 +84,13 @@ cite {
 
 input {
 	width: 100%;
+	background-color: #fff;
+
 }
+
+/* input:-webkit-autofill {
+  transition: all 5000s ease-in-out 0s;
+} */
 
 input::placeholder {
 	color: inherit;
@@ -159,6 +165,7 @@ section {
 
 @media (max-width: 768px) {
 	.title {
+		/* margin-top: -3px; */
 		margin-bottom: 30px;
 		font-size: 24px;
 		line-height: 1.5;

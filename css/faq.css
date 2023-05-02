@@ -1,184 +1,225 @@
+.faq {
+	padding-bottom: 45px;
+}
+
 .faq__title {
-margin-top: -1px;
+	margin-top: -1px;
 }
 
 .faq__list {
-  padding-top: 6px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: (auto);
-  gap: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: (auto);
+	gap: 20px;
+	padding-top: 6px;
 }
 
-.faq__item {
-
-  
+.faq__btn {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 70px 29px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.17;
+  text-align: left;
+	background-color: var(--white, #fff);
+	color: var(--dark, #1c1a1a);
 }
 
-.faq__link {
-  padding: 30px 70px 29px;
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  background-color: var(--white, #fff);
-  color: var(--dark, #1c1a1a);
+.faq__btn:after {
+	position: absolute;
+	content: "";
+	right: 70px;
+	display: block;
+	width: 46px;
+	height: 46px;
+  background-repeat: no-repeat;
+
+	transition: all 0.3s ease-in-out;
 }
 
-.faq__link:after {
- content: "";
- position: absolute;
- right: 70px;
- display: block;
- width: 46px;
- height: 46px;
- transition: all .3s ease-in-out ;
+.faq__btn:after {
+	background-image: url("../images/open-purple.svg");
 }
 
-
-.faq__link:after {
-  background-image: url("../images/open-purple.svg");
- }
-
-.faq__link:hover:after {
-  background-image: url("../images/open-purple-hover.svg");
- }
-
- .faq__link:focus-visible:after {
-  background-image: url("../images/close-purple.svg");
- }
-
-.faq__link--purple {
-  background-color: var(--purple,  #450f51);
-  color: var(--white, #fff);
+.faq__btn:hover:after {
+	background-image: url("../images/open-purple-hover.svg");
 }
 
-.faq__link--purple:after {
-  background-image: url("../images/open-white.svg");
- }
+.faq__btn:focus:after {
+	background-image: url("../images/close-purple.svg");
+}
 
-.faq__link--purple:hover:after {
-  background-image: url("../images/open-white-hover.svg");
- }
+@media (min-width: 1025px) {
+	.faq__item:nth-child(even) .faq__btn {
+		background-color: var(--purple, #440f51);
+		color: var(--white, #fff);
+	}
 
- .faq__link--purple:focus-visible:after {
-  background-image: url("../images/close-white.svg");
- }
+	.faq__item:nth-child(even) .faq__btn:after {
+		background-image: url("../images/open-white.svg");
+	}
 
-.faq__description {
- 
+	.faq__item:nth-child(even):hover .faq__btn:after {
+		background-image: url("../images/open-white-hover.svg");
+	}
+
+	.faq__item:nth-child(even) .faq__btn:focus:after {
+		background-image: url("../images/close-white.svg");
+	}
 }
 
 @media (max-width: 1024px) {
-  .faq__title {
-    margin-bottom: 26px;
+  .faq {
+    padding-bottom: 58px;
   }
 
-  .faq__item--disabled {
-    display: none;
-  }
+	.faq__title {
+		margin-top: 0;
+		margin-bottom: 26px;
+	}
 
-  .faq__link {
-    padding: 23px 25px;
-  }
+	.faq__list {
+		grid-template-rows: repeat(4, 70px);
+		gap: 16px;
+		padding-top: 0;
+	}
 
-  .faq__link:after {
+	.faq__item:last-child {
+		display: none;
+	}
+
+	.faq__item-two {
+		height: 69px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.faq__item-three {
+		align-self: end;
+		height: 69px;
+	}
+
+	.faq__item-four {
+		height: 69px;
+	}
+
+	.faq__btn {
+		padding: 30px 25px;
+		font-size: 20px;
+		line-height: 1.2;
+	}
+
+	.faq__btn:after {
     right: 20px;
-   }
+		background-image: url("../images/open-purple-laptop.svg");
+	}
 
-  .faq__link--purple {
-    background-color: var(--white, #fff);
-  color: var(--dark, #1c1a1a);
-  }
-  
-  .faq__link--purple:after {
-    background-image: url("../images/open-purple.svg");
-   }
-  
-  .faq__link--purple:hover:after {
-    background-image: url("../images/open-purple-hover.svg");
-   }
-  
-   .faq__link--purple:focus-visible:after {
-    background-image: url("../images/close-purple.svg");
-   }
+	.faq__btn-two:after {
+		top: 12px;
+	}
 
-   .faq__description {
-    font-size: 20px;
-    line-height: 1.2;
-  }
+  .faq__btn-two {
+	
+		padding-top: 4px;
+		padding-bottom: 0;
+	}
+
+	.faq__btn-one
+
+	{
+		padding-left: 23px;
+	}
 }
 
 @media (max-width: 768px) {
-  .faq__title {
-    margin-bottom: 30px;
+  .faq {
+    padding-top: 25px;
+    padding-bottom: 60px;
   }
 
-  .faq__link {
-    height: 70px;
-    padding: 23px 0 24px 54px;
-    font-size: 18px;
-    line-height: 1.33;
+	.faq__title {
+		margin-bottom: 25px;
+	}
+
+	.faq__btn {
+		
+	padding-left: 59px;
+		font-size: 18px;
+		line-height: 1.33;
+	}
+
+  .faq__btn-one {
+    padding-left: 54px;
   }
 
-  .faq__link:after {
-    right: 65px;
-   }
+	.faq__btn:after {
+		right: 65px;
+	}
 
-   .faq__description {
-   
-  }
+  .faq__btn-one:after {
+		top: 12px;
+	}
+
 }
 
 @media (max-width: 650px) {
-  .faq__link {
-    padding-left: 10px;
-  }
-
-  .faq__link:after {
-    right: 10px;
-   }
-
-   .faq__description {
+	.faq__btn {
+		padding-left: 10px;
     font-size: 18px;
-    line-height: 1.33;
-  }
+		line-height: 1.33;
+	}
+
+	.faq__btn:after {
+		right: 10px;
+	}
+
 }
 
 @media (max-width: 550px) {
-  .faq__link {
-    padding-right: 60px;
-  }
-
+	.faq__btn {
+		padding-right: 60px;
+	}
 }
 
-@media (max-width: 400px) {
-  .faq__title {
-    margin-bottom: 15px;
-  }
+@media (max-width: 420px) {
+	.faq__title {
+		margin-bottom: 15px;
+	}
 
-  .faq__link {
+  .faq__list {
+		grid-template-rows: repeat(4, 46px);
+		gap: 10px;
+		padding-top: 0;
+	}
+
+  .faq__item {
     height: 46px;
-    padding: 7px 60px 7px 10px;
-    font-size: 12px;
   }
 
-  .faq__link:after {
-    right: 13px;
-   }
+	.faq__btn {
 
-   .faq__link:after {
+		padding: 5px 33px 5px 13px;
+		font-size: 12px;
+	}
+
   
-    width: 30px;
-    height: 30px;
-    
-   }
 
-   .faq__link:after {
-    background-image: url("../images/open-mobile.svg");
-   }
+	.faq__btn:after {
+		right: 13px;
+	}
+
+	.faq__btn:after {
+    top: 7px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.faq__btn:after {
+		background-image: url("../images/open-mobile.svg");
+	}
 }
