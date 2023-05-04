@@ -170,6 +170,7 @@
 
 	.reviews__list {
 		gap: 20px;
+		padding-bottom: 25px;
 	}
 
 	.reviews__wrapper {

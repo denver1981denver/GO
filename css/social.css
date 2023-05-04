@@ -24,6 +24,17 @@
 }
 
 @media (max-width: 1024px) {
+  .social {
+    gap: 25px;
+  }
+
+.social__link {
+  padding-left: 1px;
+
+}
+
+
+
   .social__icon {
 		width: 40px;
 		height: 40px;
@@ -33,20 +44,25 @@
 @media (max-width: 890px) {
   .social {
     padding-top: 0;
-    padding-right: 8px;
+
 
   }
 }
 
 @media (max-width: 420px) {
   .social {
-padding-right: 0;
+
     gap: 20px;
   }
   .social__icon {
 		width: 30px;
 		height: 30px;
 	}
+
+  .social__link {
+    padding: 0;
+  
+  }
 }
 
 

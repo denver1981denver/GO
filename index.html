@@ -23,18 +23,15 @@
       <div class="container">
         <nav class="navigation">
           <a class="navigation__logo" href="/">
-            <!-- <img class="navigation__logo-img" src="images/logo.svg" alt="Логотип компании GO"> -->
-            <picture>
+            <picture class="navigation__logo-img">
             <source srcset="images/logo-mobile.svg" media="(max-width: 420px)">
             <source srcset="images/logo-tablet.svg" media="(max-width: 768px)">
             <source srcset="images/logo-laptop.svg" media="(max-width: 1024px)">
             <source srcset="images/logo.svg">
-            <img class="navigation__logo-img" src="images/logo.svg" alt="Логотип компании GO">
-          </picture>
-          
+            <img src="images/logo.svg" alt="Логотип компании GO">
+            </picture>
           </a>
           
-            
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#features">залы</a>
@@ -83,13 +80,15 @@
               <li class="info__item">
                 <p class="info__title info__title--left">4</p>
                 <p class="info__description info__description--left">Тематических 
-                  <span class="info__span-left">зала</span> </p>
+                  <span class="info__span-left">зала</span> 
+                </p>
               </li>
 
               <li class="info__item">
                 <p class="info__title info__title--right">new</p>
                 <p class="info__description info__description--right"> 
-                  <span class="info__span-right">Новейшая</span> аппаратура</p>
+                  <span class="info__span-right">Новейшая</span> аппаратура
+                </p>
               </li>
             </ul>
 
@@ -108,7 +107,7 @@
 
       <section class="promo" id="promo">
         <div class="container">
-          <h2 class="title promo__title">
+          <h2 class="title">
             <span class="promo__title-first-line">У нас есть все для классного</span>
             <br> отдыха с друзьями!</h2>
 
@@ -179,7 +178,7 @@
           <div class="container">
             <h2 class="title">Забронировать зал просто</h2>
 
-            <form class="form__reservation form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
+            <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
               <fieldset class="form__halls">
                 <legend class="form__legend form__legend-title">Выбери зал</legend>
                 
@@ -276,7 +275,7 @@
 
                   <div class="form__client-data">
                     <div class="form__wrapper-date-time form__label-client-data-aligne-self-end">
-                      <label class="form__date-time" for="date">
+                      <label class="form__date-time form__label-white" for="date">
                         <input class="form__input" id="date" type="text" name="date" list="date-list" placeholder="Дата">
                       </label>
     
@@ -284,7 +283,7 @@
                         <option value="06-10-2023"></option>
                       </datalist>
       
-                      <label class="form__date-time form__time" for="time">
+                      <label class="form__date-time form__time form__label-white" for="time">
                         <input class="form__input" id="time" type="text" name="time" list="time-list" placeholder="Время">
                       </label>
       
@@ -294,7 +293,7 @@
                       </datalist>
                     </div>
                 
-                    <label class="form__persons form__label-client-data-aligne-self-end " for="persons">
+                    <label class="form__persons form__label-client-data-aligne-self-end form__label-white" for="persons">
                       <input class="form__input" id="persons" type="text" name="persons"
                         list="date-persons" placeholder="Сколько человек">
                     </label>
@@ -303,22 +302,22 @@
                       <option value="20"></option>
                     </datalist>
                     
-                    <label class="form__label form__name form__label-client-data-aligne-self-end" for="name">
+                    <label class="form__label form__name form__label-client-data-aligne-self-end form__label-white" for="name">
                       <span class="form__description-client-data">Имя</span>
-                      <input class="form__input" id="name" type="text" name="name">
+                      <input class="form__input" id="name" type="text" name="name"> 
                     </label>
       
-                    <label class="form__label form__phone form__label-client-data-aligne-self-end" for="phone">
+                    <label class="form__label form__phone form__label-client-data-aligne-self-end form__label-white" for="phone">
                       <span class="form__description-client-data">Телефон</span>
                       <input class="form__input" id="phone" type="tel" name="phone">
                     </label>
       
-                    <label class="form__label form__surname form__label-client-data-aligne-self-end" for="surname">
+                    <label class="form__label form__surname form__label-client-data-aligne-self-end form__label-white" for="surname">
                       <span class="form__description-client-data">Фамилия</span>
                       <input class="form__input" id="surname" type="text" name="surname">
                     </label>
       
-                    <label class="form__label form__e-mail form__label-client-data-aligne-self-end" for="e-mail">
+                    <label class="form__label form__e-mail form__label-client-data-aligne-self-end form__label-white" for="e-mail">
                       <span class="form__description-client-data form__description-client-data--e-mail">E-mail</span>
                       <input class="form__input" id="e-mail" type="email" name="e-mail">
                     </label>
@@ -350,7 +349,6 @@
                 Вас топовыми игровыми разработками со&nbsp;всего&nbsp;мира.
               </p>
 
-             
               <p class="about__text-bottom-pseudo">
                 Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать 
                 Вас топовыми игровыми разработками <br> со всего мира.
@@ -468,49 +466,46 @@
       </section>  
     </main>  
 
-   <!-- <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
           <h2 class="title footer__title">Контакты</h2>
   
-          <div class="footer__contacts-wrapper contacts">
+          <div class="contacts">
             <div class="contacts__box">
               <div class="contacts__address">
-              
                 <svg class="contacts__svg contacts__svg-location" width="32" height="32" viewBox="0 0 32 32">
                   <use href="#location"></use>
                 </svg>
 
-                <address> г. Москва 
-                  <span class="contacts__adress-street">ул. Усачёва, 29 к3</span>
+                <address> <span class="city">г. Москва</span>  <span class="contacts__adress-street">ул. Усачёва, 29 к3 </span>  
                 </address>
               </div>
   
               <ul class="contacts__list">
-                <li class="contacts__item contacts__item-phone">
+                <li>
                   <a class="contacts__link contacts__link-phone" href="tel:89509302893">
-                      
-                    <svg class="contacts__svg contacts__icon contacts__data" width="32" height="32" viewBox="0 0 32 32">
-                      <use href="#phone" ></use>
+                    <svg class="contacts__svg contacts__icon contacts__interactive" width="32" height="32" viewBox="0 0 32 32">
+                      <use href="#icon_phone"></use>
                     </svg>
 
-                    <p class="contacts__data">8 (950) <span class="contacts__number">930 - 28 - 93</span></p>
+                    <p class="contacts__interactive contacts__text-phone">8 (950) <span class="contacts__number">930 - 28 - 93</span></p>
                   </a>
                 </li>
   
-                <li class="contacts__item">
-                  <a class="contacts__link" href="mailto:GameOver@gmail.com?subject=ПомощьссайтаGameOver@gmail.com&body=ПриветствуемВас">
+                <li>
+                  <a class="contacts__link contacts__link-e-mail" href="mailto:GameOver@gmail.com?subject=ПомощьссайтаGameOver@gmail.com&body=ПриветствуемВас">
   
-                    <svg class="contacts__svg contacts__icon contacts__data" width="32" height="32" viewBox="0 0 32 32">
-                      <use href="#e-mail"></use>
+                    <svg class="contacts__svg contacts__icon contacts__interactive contacts__e-mail" width="32" height="32" viewBox="0 0 32 32">
+                      <use href="#icon_e-mail"></use>
                     </svg>
   
-                    <p class="contacts__data">GameOver@gmail.com</p>
+                    <p class="contacts__interactive contacts__text-e-mail">GameOver@gmail.com</p>
                   </a>
                 </li>
               </ul>
   
-              <ul class="contacts__social social">
-                <li class="social__item">
+              <ul class="social">
+                <li>
                   <a class="social__link" href="https://vk.com/" target="_blank">
                     <svg class="social__icon" width="50" height="50" viewBox="0 0 50 50">
                       <use href="#vk"></use>
@@ -518,7 +513,7 @@
                   </a>
                 </li>
   
-                <li class="social__item">
+                <li>
                   <a class="social__link" href="https://desktop.telegram.org/" target="_blank">
                     <svg class="social__icon" width="50" height="50" viewBox="0 0 50 50">
                       <use href="#telegram"></use>
@@ -526,7 +521,7 @@
                   </a>
                 </li>
   
-                <li class="social__item">
+                <li>
                   <a class="social__link" href="#" target="_blank">
                     <svg class="social__icon" width="50" height="50" viewBox="0 0 50 50">
                       <use href="#pinterest"></use>
@@ -534,7 +529,7 @@
                   </a>
                 </li>
   
-                <li class="social__item">
+                <li>
                   <a class="social__link" href="#" target="_blank">
                     <svg class="social__icon" width="50" height="50" viewBox="0 0 50 50">
                       <use href="#stumbleupon"></use>
@@ -543,28 +538,27 @@
                 </li>
               </ul>
             </div>
-                
-                <picture>
-                  <source srcset="images/map-mobile.jpg, images/map-retina.jpg 2x" media="(max-width: 420px)">
-                  <source srcset="images/map-small.jpg" media="(max-width: 768px)">
-                  <source srcset="images/map-medium.jpg" media="(max-width: 1200px)">
-                  <source srcset="images/map.jpg">
-                  <img class="footer__map" src="images/map.jpg" alt="Навигационная карта карта с координатами компании">
-                </picture>
-                  
+
+            <picture class="footer__wrapper-map">
+              <source srcset="images/map-mobile.jpg, images/map-retina.jpg 2x" media="(max-width: 420px)">
+              <source srcset="images/map-small.jpg" media="(max-width: 768px)">
+              <source srcset="images/map-medium.jpg" media="(max-width: 1200px)">
+              <source srcset="images/map.jpg">
+              <img class="footer__map" src="images/map.jpg" alt="Навигационная карта карта с координатами компании">
+            </picture> 
           </div>
   
           <div class="footer__inner">
             <p class="footer__copyright">© Game Over, 2022</p>
 
             <a class="footer__design" href="mailto:ilina9825@gmail.com">
-              <p>Design by Anastasia Ilina</p>
+              <p class="footer__designer">Design by Anastasia Ilina</p>
   
-              <p>ilina9825@gmail.com</p>
+              <p class="footer__designer-e-mail">ilina9825@gmail.com</p>
             </a>
           </div>
         </div>
-      </footer>    -->
+      </footer>     
 
       <svg style="display: none;">
         <symbol id="menu">
@@ -578,7 +572,7 @@
           <path d="M23.329 21.5435L18.6083 28.9239C17.3864 30.829 14.6068 30.8228 13.3907 28.9257L8.66238 21.5454C4.50213 22.5073 1.9375 24.2693 1.9375 26.375C1.9375 30.0289 9.183 32 16 32C22.817 32 30.0625 30.0289 30.0625 26.375C30.0625 24.2678 27.4943 22.5048 23.329 21.5435Z" fill="#CD06FF"/>
         </symbol>
 
-        <symbol id="phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon_phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M26.6667 14.6654H29.3333C29.3333 7.82541 24.1693 2.66675 17.32 2.66675V5.33341C22.736 5.33341 26.6667 9.25741 26.6667 14.6654Z"/>
           <path d="M17.3333 10.6667C20.1373 10.6667 21.3333 11.8627 21.3333 14.6667H24C24 10.3667 21.6333 7.99999 17.3333 7.99999V10.6667ZM21.896 17.924C21.6398 17.6911 21.3031 17.5669 20.9571 17.5776C20.611 17.5883 20.2827 17.7331 20.0413 17.9813L16.8507 21.2627C16.0827 21.116 14.5387 20.6347 12.9493 19.0493C11.36 17.4587 10.8787 15.9107 10.736 15.148L14.0147 11.956C14.2632 11.7148 14.4082 11.3864 14.4189 11.0403C14.4296 10.6941 14.3052 10.3574 14.072 10.1013L9.14534 4.68399C8.91207 4.42714 8.58785 4.27133 8.24155 4.24967C7.89525 4.22801 7.55414 4.3422 7.29068 4.56799L4.39734 7.04933C4.16682 7.28068 4.02924 7.58859 4.01068 7.91466C3.99068 8.24799 3.60934 16.144 9.73201 22.2693C15.0733 27.6093 21.764 28 23.6067 28C23.876 28 24.0413 27.992 24.0853 27.9893C24.4114 27.9711 24.7191 27.8329 24.9493 27.6013L27.4293 24.7067C27.6553 24.4434 27.7697 24.1024 27.7483 23.7561C27.7269 23.4098 27.5713 23.0855 27.3147 22.852L21.896 17.924Z"/>
         </symbol>
@@ -588,7 +582,7 @@
           <path d="M18.9382 10.6667C22.0019 10.6667 23.3086 11.8627 23.3086 14.6667H26.2222C26.2222 10.3667 23.6364 7.99999 18.9382 7.99999V10.6667ZM23.9234 17.924C23.6435 17.6911 23.2756 17.5669 22.8975 17.5776C22.5194 17.5883 22.1607 17.7331 21.897 17.9813L18.4109 21.2627C17.5718 21.116 15.8848 20.6347 14.1483 19.0493C12.4118 17.4587 11.8859 15.9107 11.73 15.148L15.3123 11.956C15.5839 11.7148 15.7422 11.3864 15.7539 11.0403C15.7656 10.6941 15.6297 10.3574 15.3749 10.1013L9.9921 4.68399C9.73722 4.42714 9.38298 4.27133 9.00462 4.24967C8.62625 4.22801 8.25356 4.3422 7.9657 4.56799L4.80447 7.04933C4.55261 7.28068 4.40228 7.58859 4.382 7.91466C4.36015 8.24799 3.94351 16.144 10.6331 22.2693C16.469 27.6093 23.7792 28 25.7924 28C26.0867 28 26.2674 27.992 26.3154 27.9893C26.6716 27.9711 27.0079 27.8329 27.2594 27.6013L29.9691 24.7067C30.2159 24.4434 30.341 24.1024 30.3176 23.7561C30.2942 23.4098 30.1242 23.0855 29.8438 22.852L23.9234 17.924Z"/>
         </symbol>
 
-        <symbol id="e-mail" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon_e-mail" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.667993 5.94725C5.05987 9.66669 12.7662 16.2103 15.0312 18.2506C15.3353 18.526 15.6614 18.666 16 18.666C16.3379 18.666 16.6634 18.5273 16.9668 18.2533C19.2337 16.2109 26.9401 9.66669 31.332 5.94725C31.6055 5.71612 31.6472 5.30987 31.4258 5.02731C30.914 4.37437 30.151 4 29.3333 4H2.66668C1.84899 4 1.08593 4.37438 0.574244 5.02738C0.352869 5.30988 0.394556 5.71612 0.667993 5.94725Z"/>
           <path d="M31.6133 7.96303C31.377 7.85303 31.099 7.89141 30.9024 8.05941C26.0319 12.1883 19.8158 17.4807 17.86 19.243C16.7623 20.2338 15.2389 20.2338 14.1386 19.2417C12.054 17.3634 5.0735 11.4292 1.09763 8.05934C0.899688 7.89134 0.621063 7.85428 0.386687 7.96297C0.151062 8.07241 0 8.30809 0 8.56784V25.3335C0 26.8042 1.19594 28.0002 2.66669 28.0002H29.3334C30.8041 28.0002 32 26.8042 32 25.3335V8.56784C32 8.30809 31.8489 8.07178 31.6133 7.96303Z"/>
         </symbol>

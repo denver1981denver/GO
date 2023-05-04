@@ -58,12 +58,17 @@
 	align-self: end;
 }
 
+.form__label-white {
+	background-color: var(--white, #fff);
+}
+
 .form__description-client-data {
 	display: block;
 	padding-bottom: 6px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
+	background-color: var(--purple, #440f51);
 }
 
 @media (max-width: 1024px) {
