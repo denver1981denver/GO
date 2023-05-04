@@ -22,7 +22,7 @@
 	margin-bottom: 40px;
 }
 
-.contacts__adress-street {
+.contacts__address-street {
 	display: block;
 }
 
@@ -56,14 +56,14 @@
 	transition: color 0.3s ease-in-out;
 }
 
-.contacts__text-e-mail {
-	display: inline-block;
-	padding-bottom: 4px;
-}
-
 .contacts__number {
 	display: inline-block;
 	padding-top: 3px;
+}
+
+.contacts__text-e-mail {
+	display: inline-block;
+	padding-bottom: 4px;
 }
 
 .contacts__link:hover .contacts__interactive,
@@ -94,10 +94,9 @@
 	.contacts__link-phone {
 		gap: 14px;
 	}
-	
-	.contacts__link-e-mail {
-		gap: 13px;
-		padding-left: 1px;
+
+	.contacts__number {
+		word-spacing: -6.5px;
 	}
 
 	.contacts__text-phone {
@@ -105,18 +104,18 @@
 		padding-bottom: 4px;
 	}
 
+	.contacts__link-e-mail {
+		gap: 13px;
+		padding-left: 1px;
+	}
+
 	.contacts__text-e-mail {
-	
 		padding-bottom: 0;
 	}
 
 	.contacts__svg {
 		width: 26px;
 		height: 26px;
-	}
-
-	.contacts__number {
-		word-spacing: -6.5px;
 	}
 }
 
@@ -147,8 +146,7 @@
 		gap: 0;
 	}
 
-
-	.city {
+	.contacts__address-city {
 		display: inline-block;
 		padding-top: 1px;
 		padding-left: 11px;
@@ -156,12 +154,7 @@
 
 	.contacts__adress-street {
 		margin-left: -41px;
-	
 		padding-left: 2px;
-	}
-
-	.contacts__item {
-		padding-right: 45px;
 	}
 
 	.contacts__link-phone {
@@ -172,16 +165,7 @@
 	.contacts__text-phone {
 		padding-bottom: 2px;
 	}
-
-	
-
 }
-
-/* @media (max-width: 520px) {
-	.contacts {
-		margin-bottom: 0;
-	}
-} */
 
 @media (max-width: 420px) {
 	.contacts {
@@ -191,6 +175,24 @@
 		line-height: 1.3;
 	}
 
+	.contacts__svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.contacts__address {
+		margin-bottom: 9px;
+		padding-left: 0;
+	}
+
+	.city {
+		padding-left: 9px;
+		padding-top: 3px;
+	}
+
+	.contacts__adress-street {
+		margin-left: -23px;
+	}
 
 	.contacts__list {
 		gap: 8px;
@@ -198,56 +200,19 @@
 		padding-right: 28px;
 	}
 
-	.contacts__svg {
-		width: 20px;
-		height: 20px;
-	}
-
-	.contacts__number {
-		word-spacing: -3px;
-	}
-
-	.contacts__address {
-		margin-bottom: 9px;
-	padding-left: 0;
-	}
-
-	.city {
-padding-left: 9px;
-		padding-top: 3px;
-	
-	}
-
-	
-
-	.contacts__svg-location {
-		
-	}
-
-	.contacts__adress-street {
-		margin-left: -23px;
-	}
-
-	.contacts__item {
-		padding-right: 30px;
-	}
-
 	.contacts__link-phone {
 		gap: 5px;
 		padding-left: 23px;
 	}
-
-	 .contacts__link-e-mail {
-		gap: 6px;
-		
-	} 
-
 	.contacts__number {
 		word-spacing: -4px;
 	}
+	
+	.contacts__link-e-mail {
+		gap: 6px;
+	}
 
 	.contacts__text-e-mail {
-	padding-top: 1px;
-
+		padding-top: 1px;
 	}
 }

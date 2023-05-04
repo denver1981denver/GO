@@ -12,7 +12,5 @@
 	--background: #1b1a1b;
 	--black: #000;
 	--reviews-gradient: radial-gradient(50% 50% at 50% 50%, #c4c4c400 0%, #6c028780 100%);
-
-	/* --width: 850;
-	--screen: 1440; */
+	--footer-gradient: linear-gradient(180deg, var(--background, #1b1a1b) 0%, var(--footer, #370a37) 100%);
 }
