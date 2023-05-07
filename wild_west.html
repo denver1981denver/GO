@@ -6,10 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wild West</title>
 
+  <link rel="preload" href="fonts/arial-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/arial-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/arial-black.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <a class="navigation__logo" href="/">
+          <picture class="navigation__logo-img">
+            <source srcset="images/logo-mobile.svg" media="(max-width: 420px)">
+            <source srcset="images/logo-tablet.svg" media="(max-width: 768px)">
+            <source srcset="images/logo-laptop.svg" media="(max-width: 1024px)">
+            <source srcset="images/logo.svg">
+            <img src="images/logo.svg" alt="Логотип компании GO">
+          </picture>
+        </a>
+        
+        <ul class="navigation__list">
+          <li class="navigation__item x">
+            <a class="navigation__link" href="../index.html#features">залы</a>
+          </li>
 
+          <li class="navigation__item">
+            <a class="navigation__link" href="../index.html#about">О нас</a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="../index.html#reservation">Бронь</a>
+          </li>
+
+          <li class="navigation__item navigation__item--tranform">
+            <a class="navigation__link" href="../index.html#reviews">отзывы</a>
+          </li>
+
+          <li class="navigation__item navigation__item--tranform">
+            <a class="navigation__link" href="../index.html#contacts">Контакты</a>
+          </li>
+        </ul> 
+
+        <button class="menu" type="button">
+          <svg class="menu__icon" width="54" height="29" viewBox="0 0 54 29"
+              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <use href="#menu"></use>
+          </svg>
+        </button>
+
+        <button class="call-order-btn" type="button">Заказать звонок</button>
+      </nav>
+    </div>
+  </header>    
 
   <main>
     <section class="hero-hall">
@@ -46,7 +95,7 @@
         <div class="features-hall__wrapper">
           <div class="features-hall__banner features-hall__banner--wild-west"></div>
           <div class="features-hall__description">
-            <p>
+            <p class="features-hall__text features-hall__text--wild-west">
               В комнате присутствует большое количество элементов из любимых историй дикого запада. Револьверы, кожаные вещи, шляпы, сапоги и многое другое. 
             </p>
             <p>
@@ -65,21 +114,155 @@
           
 
           <li class="rooms-hall__item">
-            <a class="rooms-hall__link rooms-hall__link--star-wars" href="#">star <br> wars</a>
+            <a class="rooms-hall__link rooms-hall__link--star-wars" href="star_wars.html">star <br> wars</a>
           </li>
 
           <li class="rooms-hall__item">
-            <a class="rooms-hall__link rooms-hall__link--neon-style" href="#">neon <br> style</a>
+            <a class="rooms-hall__link rooms-hall__link--neon-style" href="neon_style.html">neon <br> style</a>
           </li>
 
           <li class="rooms-hall__item">
-            <a class="rooms-hall__link rooms-hall__link--80s-vibes" href="#">80’s vibes</a>
+            <a class="rooms-hall__link rooms-hall__link--80s-vibes" href="80’s_vibes.html">80’s vibes</a>
           </li>
         </ul>
       </div>
     </section>
   </main>
 
- 
+  <footer class="footer footer-all-hall" id="contacts">
+    <div class="container">
+      <h2 class="title footer__title footer__title-all-hall">Контакты</h2>
+
+      <div class="contacts">
+        <div class="contacts__box">
+          <div class="contacts__address">
+            <svg class="contacts__svg contacts__svg-location" width="32" height="32" viewBox="0 0 32 32">
+              <use href="#location"></use>
+            </svg>
+
+            <address> 
+              <span class="contacts__address-city">г. Москва</span>  
+              <span class="contacts__address-street">ул. Усачёва, 29 к3 </span>  
+            </address>
+          </div>
+
+          <ul class="contacts__list">
+            <li>
+              <a class="contacts__link contacts__link-phone" href="tel:89509302893">
+                <svg class="contacts__svg contacts__icon contacts__interactive" width="32" height="32" viewBox="0 0 32 32">
+                  <use href="#icon_phone"></use>
+                </svg>
+
+                <p class="contacts__interactive contacts__text-phone">8 (950) <span class="contacts__number">930 - 28 - 93</span></p>
+              </a>
+            </li>
+
+            <li>
+              <a class="contacts__link contacts__link-e-mail" href="mailto:GameOver@gmail.com?subject=ПомощьссайтаGameOver@gmail.com&body=ПриветствуемВас">
+                <svg class="contacts__svg contacts__icon contacts__interactive contacts__e-mail" width="32" height="32" viewBox="0 0 32 32">
+                  <use href="#icon_e-mail"></use>
+                </svg>
+
+                <p class="contacts__interactive contacts__text-e-mail">GameOver@gmail.com</p>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="social social-all-hall">
+            <li>
+              <a class="social__link social__link-all-hall" href="https://vk.com/" target="_blank">
+                <svg class="social__icon" width="50" height="50" viewBox="0 0 50 50">
+                  <use href="#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="social__link social__link-all-hall" href="https://desktop.telegram.org/" target="_blank">
+                <svg class="social__icon" width="50" height="50" viewBox="0 0 50 50">
+                  <use href="#telegram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="social__link social__link-all-hall" href="#" target="_blank">
+                <svg class="social__icon" width="50" height="50" viewBox="0 0 50 50">
+                  <use href="#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="social__link social__link-all-hall" href="#" target="_blank">
+                <svg class="social__icon" width="50" height="50" viewBox="0 0 50 50">
+                  <use href="#stumbleupon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <picture class="footer__wrapper-map">
+          <source srcset="images/map-mobile.jpg, images/map-retina.jpg 2x" media="(max-width: 420px)">
+          <source srcset="images/map-small.jpg" media="(max-width: 768px)">
+          <source srcset="images/map-medium.jpg" media="(max-width: 1200px)">
+          <source srcset="images/map.jpg">
+          <img class="footer__map" src="images/map.jpg" alt="Навигационная карта карта с координатами компании">
+        </picture> 
+      </div>
+
+      <div class="footer__inner">
+        <p class="footer__copyright">© Game Over, 2022</p>
+
+        <a class="footer__design" href="mailto:ilina9825@gmail.com">
+          <p class="footer__designer">Design by Anastasia Ilina</p>
+
+          <p class="footer__designer-e-mail">ilina9825@gmail.com</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <svg style="display: none;">
+    <symbol id="menu">
+      <rect width="54" height="5" rx="2"/>
+      <rect y="12" width="54" height="5" rx="2"/>
+      <rect y="24" width="31" height="5" rx="2"/>
+    </symbol>
+
+    <symbol id="location" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 0C10.3772 0 5.6875 4.52938 5.6875 10.3125C5.6875 12.5126 6.34862 14.4745 7.61744 16.3129L15.2108 28.1616C15.5792 28.7376 16.4216 28.7365 16.7892 28.1616L24.4155 16.2726C25.657 14.5175 26.3125 12.4567 26.3125 10.3125C26.3125 4.62619 21.6863 0 16 0ZM16 15C13.4154 15 11.3125 12.8971 11.3125 10.3125C11.3125 7.72794 13.4154 5.625 16 5.625C18.5846 5.625 20.6875 7.72794 20.6875 10.3125C20.6875 12.8971 18.5846 15 16 15Z" fill="#CD06FF"/>
+      <path d="M23.329 21.5435L18.6083 28.9239C17.3864 30.829 14.6068 30.8228 13.3907 28.9257L8.66238 21.5454C4.50213 22.5073 1.9375 24.2693 1.9375 26.375C1.9375 30.0289 9.183 32 16 32C22.817 32 30.0625 30.0289 30.0625 26.375C30.0625 24.2678 27.4943 22.5048 23.329 21.5435Z" fill="#CD06FF"/>
+    </symbol>
+
+    <symbol id="icon_phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M26.6667 14.6654H29.3333C29.3333 7.82541 24.1693 2.66675 17.32 2.66675V5.33341C22.736 5.33341 26.6667 9.25741 26.6667 14.6654Z"/>
+      <path d="M17.3333 10.6667C20.1373 10.6667 21.3333 11.8627 21.3333 14.6667H24C24 10.3667 21.6333 7.99999 17.3333 7.99999V10.6667ZM21.896 17.924C21.6398 17.6911 21.3031 17.5669 20.9571 17.5776C20.611 17.5883 20.2827 17.7331 20.0413 17.9813L16.8507 21.2627C16.0827 21.116 14.5387 20.6347 12.9493 19.0493C11.36 17.4587 10.8787 15.9107 10.736 15.148L14.0147 11.956C14.2632 11.7148 14.4082 11.3864 14.4189 11.0403C14.4296 10.6941 14.3052 10.3574 14.072 10.1013L9.14534 4.68399C8.91207 4.42714 8.58785 4.27133 8.24155 4.24967C7.89525 4.22801 7.55414 4.3422 7.29068 4.56799L4.39734 7.04933C4.16682 7.28068 4.02924 7.58859 4.01068 7.91466C3.99068 8.24799 3.60934 16.144 9.73201 22.2693C15.0733 27.6093 21.764 28 23.6067 28C23.876 28 24.0413 27.992 24.0853 27.9893C24.4114 27.9711 24.7191 27.8329 24.9493 27.6013L27.4293 24.7067C27.6553 24.4434 27.7697 24.1024 27.7483 23.7561C27.7269 23.4098 27.5713 23.0855 27.3147 22.852L21.896 17.924Z"/>
+    </symbol>
+      
+    <symbol id="icon_e-mail" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.667993 5.94725C5.05987 9.66669 12.7662 16.2103 15.0312 18.2506C15.3353 18.526 15.6614 18.666 16 18.666C16.3379 18.666 16.6634 18.5273 16.9668 18.2533C19.2337 16.2109 26.9401 9.66669 31.332 5.94725C31.6055 5.71612 31.6472 5.30987 31.4258 5.02731C30.914 4.37437 30.151 4 29.3333 4H2.66668C1.84899 4 1.08593 4.37438 0.574244 5.02738C0.352869 5.30988 0.394556 5.71612 0.667993 5.94725Z"/>
+      <path d="M31.6133 7.96303C31.377 7.85303 31.099 7.89141 30.9024 8.05941C26.0319 12.1883 19.8158 17.4807 17.86 19.243C16.7623 20.2338 15.2389 20.2338 14.1386 19.2417C12.054 17.3634 5.0735 11.4292 1.09763 8.05934C0.899688 7.89134 0.621063 7.85428 0.386687 7.96297C0.151062 8.07241 0 8.30809 0 8.56784V25.3335C0 26.8042 1.19594 28.0002 2.66669 28.0002H29.3334C30.8041 28.0002 32 26.8042 32 25.3335V8.56784C32 8.30809 31.8489 8.07178 31.6133 7.96303Z"/>
+    </symbol>
+
+    <symbol id="vk" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M25 0C11.1927 0 0 11.1927 0 25C0 38.8073 11.1927 50 25 50C38.8073 50 50 38.8073 50 25C50 11.1927 38.8073 0 25 0ZM34.6146 28.2057C34.6146 28.2057 36.8255 30.388 37.3698 31.401C37.3854 31.4219 37.3932 31.4427 37.3984 31.4531C37.6198 31.8255 37.6719 32.1146 37.5625 32.3307C37.3802 32.6901 36.7552 32.8672 36.5417 32.8828H32.6354C32.3646 32.8828 31.7969 32.8125 31.1094 32.3385C30.5807 31.9687 30.0599 31.362 29.5521 30.7708C28.7943 29.8906 28.138 29.1302 27.4766 29.1302C27.3926 29.1301 27.309 29.1432 27.2292 29.1693C26.7292 29.3307 26.0885 30.0443 26.0885 31.9453C26.0885 32.5391 25.6198 32.8802 25.2891 32.8802H23.5C22.8906 32.8802 19.7161 32.6667 16.9036 29.7005C13.4609 26.0677 10.362 18.7812 10.3359 18.7135C10.1406 18.2422 10.5443 17.9896 10.9844 17.9896H14.9297C15.4557 17.9896 15.6276 18.3099 15.7474 18.5937C15.888 18.9245 16.4036 20.2396 17.25 21.7187C18.6224 24.1302 19.4635 25.1094 20.138 25.1094C20.2645 25.1079 20.3887 25.0757 20.5 25.0156C21.3802 24.526 21.2161 21.388 21.1771 20.737C21.1771 20.6146 21.1745 19.3333 20.724 18.7187C20.401 18.2734 19.8516 18.1042 19.5182 18.0417C19.6531 17.8555 19.8309 17.7045 20.0365 17.6016C20.6406 17.2995 21.7292 17.2552 22.8099 17.2552H23.4115C24.5833 17.2708 24.8854 17.3464 25.3099 17.4531C26.1693 17.6589 26.1875 18.2135 26.112 20.112C26.0885 20.651 26.0651 21.2604 26.0651 21.9792C26.0651 22.1354 26.0573 22.3021 26.0573 22.4792C26.0312 23.4453 26 24.5417 26.6823 24.9922C26.7713 25.048 26.8741 25.0778 26.9792 25.0781C27.2161 25.0781 27.9297 25.0781 29.862 21.763C30.4579 20.696 30.9758 19.5872 31.4115 18.4453C31.4505 18.3776 31.5651 18.1693 31.7005 18.0885C31.8005 18.0376 31.9113 18.0117 32.0234 18.013H36.6615C37.1667 18.013 37.513 18.0885 37.5781 18.2839C37.6927 18.5937 37.5573 19.5391 35.4401 22.4062L34.4948 23.6536C32.5755 26.1693 32.5755 26.2969 34.6146 28.2057V28.2057Z" fill="white"/>
+    </symbol>
+      
+    <symbol id="telegram" fill="currentColor"   xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 25C50 31.6304 47.3661 37.9893 42.6777 42.6777C37.9893 47.3661 31.6304 50 25 50C18.3696 50 12.0107 47.3661 7.32233 42.6777C2.63392 37.9893 0 31.6304 0 25C0 18.3696 2.63392 12.0107 7.32233 7.32233C12.0107 2.63392 18.3696 0 25 0C31.6304 0 37.9893 2.63392 42.6777 7.32233C47.3661 12.0107 50 18.3696 50 25V25ZM25.8969 18.4563C23.4656 19.4688 18.6031 21.5625 11.3156 24.7375C10.1344 25.2062 9.5125 25.6687 9.45625 26.1187C9.3625 26.8781 10.3156 27.1781 11.6125 27.5875L12.1594 27.7594C13.4344 28.175 15.1531 28.6594 16.0437 28.6781C16.8562 28.6969 17.7594 28.3656 18.7562 27.6781C25.5656 23.0813 29.0813 20.7594 29.3 20.7094C29.4563 20.6719 29.675 20.6281 29.8187 20.7594C29.9656 20.8875 29.95 21.1344 29.9344 21.2C29.8406 21.6031 26.1 25.0781 24.1656 26.8781C23.5625 27.4406 23.1344 27.8375 23.0469 27.9281C22.8542 28.125 22.6583 28.3188 22.4594 28.5094C21.2719 29.6531 20.3844 30.5094 22.5063 31.9094C23.5281 32.5844 24.3469 33.1375 25.1625 33.6937C26.05 34.3 26.9375 34.9031 28.0875 35.6594C28.3781 35.8469 28.6594 36.05 28.9313 36.2437C29.9656 36.9812 30.9 37.6438 32.0469 37.5375C32.7156 37.475 33.4063 36.85 33.7563 34.975C34.5844 30.5469 36.2125 20.9562 36.5875 17.0031C36.6104 16.6745 36.5968 16.3444 36.5469 16.0187C36.5175 15.756 36.3903 15.5139 36.1906 15.3406C35.9063 15.1443 35.5673 15.0427 35.2219 15.05C34.2844 15.0656 32.8375 15.5688 25.8969 18.4563V18.4563Z" fill="white"/>
+    </symbol>
+      
+    <symbol id="pinterest" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M25.0005 0C11.1947 0 -0.000152588 11.1936 -0.000152588 25.0006C-0.000152588 35.2378 6.15562 44.0314 14.9646 47.8981C14.8941 46.1526 14.9511 44.0558 15.3998 42.159C15.8806 40.1282 18.6165 28.5359 18.6165 28.5359C18.6165 28.5359 17.8178 26.9397 17.8178 24.5808C17.8178 20.8763 19.9652 18.1077 22.6383 18.1077C24.912 18.1077 26.0107 19.8154 26.0107 21.8609C26.0107 24.1468 24.5537 27.5635 23.8037 30.7327C23.1768 33.3859 25.1338 35.5481 27.7498 35.5481C32.4864 35.5481 35.6761 29.4647 35.6761 22.2558C35.6761 16.7782 31.9864 12.6769 25.2742 12.6769C17.6902 12.6769 12.9659 18.3321 12.9659 24.6487C12.9659 26.8282 13.6082 28.3635 14.6146 29.5513C15.0768 30.0981 15.1409 30.318 14.9736 30.9462C14.8537 31.4058 14.5781 32.5128 14.4646 32.9519C14.2986 33.5853 13.7857 33.8109 13.2127 33.5776C9.71972 32.1513 8.0928 28.3263 8.0928 24.0263C8.0928 16.9237 14.0819 8.40898 25.9601 8.40898C35.5056 8.40898 41.7877 15.316 41.7877 22.732C41.7877 32.5378 36.3351 39.8647 28.2979 39.8647C25.5998 39.8647 23.0607 38.4051 22.1909 36.7487C22.1909 36.7487 20.7396 42.5077 20.4325 43.6218C19.9024 45.5494 18.8646 47.4763 17.9159 48.9769C20.2162 49.6571 22.6024 50.0025 25.0011 50.0026C38.8063 50.0013 49.9998 38.8071 49.9998 25.0006C49.9998 11.1936 38.8063 0 25.0005 0Z"/>
+    </symbol>
+
+    <symbol id="stumbleupon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463 49.9999 24.9999C49.9999 38.8051 38.805 49.9999 25.0006 49.9999C15.2871 49.9999 6.86597 44.4576 2.72751 36.3647H13.6237C18.816 36.3647 22.4429 33.566 22.4429 29.0923C22.4429 19.6108 11.5051 23.4737 11.5051 20.1089C11.5051 18.4878 12.8057 17.898 15.1858 17.898H22.7692C24.8711 17.898 27.3435 18.275 27.3435 20.5685V28.1243C27.3435 33.5955 31.6159 36.364 36.0441 36.364C40.548 36.364 44.7435 33.5955 44.7435 28.1243V9.66919H44.7441Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262 39.0626 4.33079V28.3013C39.0626 29.9628 37.7037 31.3224 36.0447 31.3224C34.3838 31.3224 33.0261 29.9628 33.0261 28.3013V21.1186C33.0261 15.3846 30.1242 12.9994 26.3447 12.9994H14.0441C9.59088 12.9994 5.89665 15.834 5.89665 20.3289C5.89665 22.6289 6.8819 25.9994 11.5415 26.8353C15.337 27.5186 16.8351 27.3199 16.8351 29.3506C16.8351 31.3224 14.6261 31.3224 11.7101 31.3224H0.808189C0.269676 29.2582 -0.0019826 27.1334 -0.000143311 25C-0.000143311 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z"/>
+    </symbol>
+  </svg>  
+
 </body>
 </html>

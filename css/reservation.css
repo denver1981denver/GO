@@ -8,6 +8,7 @@
 }
 
 .form__legend {
+	
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 1.17;
@@ -15,6 +16,7 @@
 }
 
 .form__legend-title {
+	margin: 0 auto;
 	margin-bottom: 39px;
 }
 

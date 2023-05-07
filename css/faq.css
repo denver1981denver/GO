@@ -52,7 +52,7 @@
 }
 
 .faq__btn:focus:after {
-	background-image: url("../images/close-purple.svg");
+	background-image: url("../images/close.svg");
 }
 
 @media (min-width: 1025px) {

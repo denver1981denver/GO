@@ -2,6 +2,11 @@
 	display: flex;
 	align-self: center;
 	gap: 40px;
+	padding-right: 4px;
+}
+
+.navigation__item--tranform {
+	transform: translateX(2px);
 }
 
 .navigation__link {

@@ -25,6 +25,16 @@
 	letter-spacing: 12px;
 }
 
+.info__n {
+	display: inline-block;
+	transform: translateX(5px);
+}
+
+.info__e {
+	display: inline-block;
+	transform: translateX(5px);
+}
+
 .info__description {
 	font-size: 30px;
 	line-height: 1.13;
@@ -54,6 +64,14 @@
 		padding-left: 16px;
 		font-size: 60px;
 		letter-spacing: 8px;
+	}
+
+	.info__n {
+		transform: translateX(0.5px);
+	}
+	
+	.info__e {
+		transform: translateX(0);
 	}
 
 	.info__description {
@@ -97,6 +115,10 @@
 		font-size: 40px;
 		line-height: 1.4;
 		letter-spacing: 5px;
+	}
+
+	.info__n {
+		transform: translateX(0);
 	}
 
 	.info__description {
@@ -147,7 +169,7 @@
 	}
 
 	.info__title--right {
-		margin-bottom: 0;
+		margin-bottom: -1px;
 		padding-left: 3px;
 		font-size: 22px;
 		letter-spacing: 3px;

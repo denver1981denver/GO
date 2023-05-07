@@ -10,8 +10,18 @@
     <link rel="preload" href="fonts/arial-bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/arial-black.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="icon" type="image/svg+xml" href="images/icon.svg">
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="favicon/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1ead4e">
+    <meta name="apple-mobile-web-app-title" content="GO">
+    <meta name="application-name" content="GO">
+    <meta name="msapplication-TileColor" content="#46b181">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#74d5b0">
 
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -26,7 +36,7 @@
               <source srcset="images/logo-tablet.svg" media="(max-width: 768px)">
               <source srcset="images/logo-laptop.svg" media="(max-width: 1024px)">
               <source srcset="images/logo.svg">
-              <img src="images/logo.svg" alt="Логотип компании GO" aria-label="Гоу">
+              <img src="images/logo.svg" alt="Логотип компании GO">
             </picture>
           </a>
           
@@ -43,11 +53,11 @@
               <a class="navigation__link" href="#reservation">Бронь</a>
             </li>
 
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--tranform">
               <a class="navigation__link" href="#reviews">отзывы</a>
             </li>
 
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--tranform">
               <a class="navigation__link" href="#contacts">Контакты</a>
             </li>
           </ul> 
@@ -83,7 +93,8 @@
               </li>
 
               <li class="info__item">
-                <p class="info__title info__title--right">new</p>
+                <p class="info__title info__title--right"><span class="info__n">n</span><span class="info__e">e</span>w
+                </p>
                 <p class="info__description info__description--right"> 
                   <span class="info__span-right">Новейшая</span> аппаратура
                 </p>
@@ -107,24 +118,25 @@
         <div class="container">
           <h2 class="title">
             <span class="promo__title-first-line">У нас есть все для классного</span>
-            <br> отдыха с друзьями!</h2>
+            <br> отдыха с друзьями!
+          </h2>
 
-            <ul class="promo__list">
-              <li class="promo__item promo__item--vr">
-                <p class="promo__description">VR очки</p>
-              </li>
+          <ul class="promo__list">
+            <li class="promo__item promo__item--vr">
+              <p class="promo__description">VR очки</p>
+            </li>
 
-              <li class="promo__item promo__item--board-games">
-                <p class="promo__description">Настольные игры</p>
-              </li>
-              
-              <li class="promo__item promo__item--audio">
-                <p class="promo__description">Аудио-система 5.1 <br> с отличным звуком</p>
-              </li>
+            <li class="promo__item promo__item--board-games">
+              <p class="promo__description">Настольные игры</p>
+            </li>
+            
+            <li class="promo__item promo__item--audio">
+              <p class="promo__description">Аудио-система 5.1 <br> с отличным звуком</p>
+            </li>
 
-              <li class="promo__item promo__item--cinema">
-                <p class="promo__description">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
-              </li>
+            <li class="promo__item promo__item--cinema">
+              <p class="promo__description">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+            </li>
 
             <li class="promo__item promo__item--karaoke">
               <p class="promo__description">Караоке (4 микрофона)</p>
@@ -152,14 +164,12 @@
               <a class="features__link" href="star_wars.html">
                 <p class="features__description features__description--star-wars">Star <br> wars</p>
               </a>
-              
             </li>
 
             <li class="features__item features__item--wild-west">
               <a class="features__link" href="wild_west.html">
                 <p class="features__description features__description--wild-west">wild <br> west</p>
               </a>
-              
             </li>
 
             <li class="features__item features__item--neon-style">
@@ -471,7 +481,7 @@
         <div class="contacts">
           <div class="contacts__box">
             <div class="contacts__address">
-              <svg class="contacts__svg contacts__svg-location" width="32" height="32" viewBox="0 0 32 32">
+              <svg class="contacts__svg" width="32" height="32" viewBox="0 0 32 32">
                 <use href="#location"></use>
               </svg>
 
