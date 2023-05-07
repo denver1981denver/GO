@@ -12,7 +12,7 @@
 
 .about__banner {
 	grid-area: banner;
-	background-image: url(../images/about.jpg);
+	background-image: url(../img/about.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -112,7 +112,7 @@
 	.about__banner {
 		max-width: 420.46px;
 		max-height: 417.66px;
-		background-image: url(../images/about-medium.png);
+		background-image: url(../img/about-medium.png);
 		background-position: 0 1px;
 	}
 
@@ -223,7 +223,7 @@
 
 	.about__banner {
 		max-width: 382px;
-		background-image: url(../images/about-small.jpg);
+		background-image: url(../img/about-small.jpg);
 		background-position: center;
 	}
 
@@ -295,7 +295,7 @@
 	.about__banner {
 		margin-bottom: 10px;
 		min-height: 280px;
-		background-image: url(../images/about-mobile.jpg);
+		background-image: url(../img/about-mobile.jpg);
 	}
 
 	.about__text {

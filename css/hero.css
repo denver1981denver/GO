@@ -13,7 +13,7 @@
 	width: 675px;
 	max-height: 100%;
 	height: 762px;
-	background-image: url(../images/hero-vr.png);
+	background-image: url(../img/hero-vr.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -47,7 +47,7 @@
 	.hero__wrapper:after {
 		width: 453px;
 		height: 520px;
-		background-image: url("../images/hero-vr-medium.png");
+		background-image: url("../img/hero-vr-medium.png");
 	}
 
 	.hero__title {
@@ -80,7 +80,7 @@
 	.hero__wrapper:after {
 		width: 409px;
 		height: 479px;
-		background-image: url(../images/hero-vr-small.png);
+		background-image: url(../img/hero-vr-small.png);
 	}
 
 	.hero__title {
@@ -156,7 +156,7 @@
 	.hero__wrapper:after {
 		width: 161px;
 		height: 179px;
-		background-image: url(../images/hero-vr-mobile.png);
+		background-image: url(../img/hero-vr-mobile.png);
 	}
 
 	.hero__title {

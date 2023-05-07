@@ -10,6 +10,19 @@
   <link rel="preload" href="fonts/arial-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/arial-black.woff2" as="font" type="font/woff2" crossorigin>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="favicon/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1ead4e">
+  <meta name="apple-mobile-web-app-title" content="GO">
+  <meta name="application-name" content="GO">
+  <meta name="msapplication-TileColor" content="#46b181">
+  <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#74d5b0">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,11 +31,11 @@
       <nav class="navigation">
         <a class="navigation__logo" href="/">
           <picture class="navigation__logo-img">
-            <source srcset="images/logo-mobile.svg" media="(max-width: 420px)">
-            <source srcset="images/logo-tablet.svg" media="(max-width: 768px)">
-            <source srcset="images/logo-laptop.svg" media="(max-width: 1024px)">
-            <source srcset="images/logo.svg">
-            <img src="images/logo.svg" alt="Логотип компании GO">
+            <source srcset="img/logo-mobile.svg" media="(max-width: 420px)">
+            <source srcset="img/logo-tablet.svg" media="(max-width: 768px)">
+            <source srcset="img/logo-laptop.svg" media="(max-width: 1024px)">
+            <source srcset="img/logo.svg">
+            <img src="img/logo.svg" alt="Логотип компании GO">
           </picture>
         </a>
         
@@ -66,25 +79,23 @@
         <a class="hero-hall__link" href="/">Вернуться назад</a>
       </div>
       
-
       <div class="hero-hall__wrapper hero-hall__wrapper--wild-west">
         <div class="container">
-            <h1 class="hero-hall__title">wild west</h1>
+          <h1 class="hero-hall__title">wild west</h1>
 
           <h2 class="visually-hidden">Это атмосфера дикого запада</h2>
+        </div>
       </div>
-      </div>
-      
     </section> 
 
     <section class="promo-hall">
       <div class="container">
-        <article>
-          <h2 class="visually-hidden">Описание комнаты</h2>
-          <p class="promo-hall__description">
-           Ох этот замечательный мир «Дикого Запада». Здесь вы сможете примерить на себя ковбойскую шляпу, кожаный жилет, ковбойские сапоги и даже сесть верхом на лошадь. И не важно, вы будете одним из омерзительной восьмерки или отправитесь в путь освобождать Джанго.
-          </p>
-        </article>
+        <h2 class="visually-hidden">Описание комнаты</h2>
+
+        <p class="promo-hall__description">
+          Ох этот замечательный мир «Дикого Запада». Здесь вы сможете примерить на себя ковбойскую шляпу, кожаный жилет, ковбойские сапоги и даже сесть верхом на лошадь. И не важно, вы будете одним из омерзительной восьмерки или отправитесь в путь освобождать Джанго.
+        </p>
+        
       </div>
     </section>
   
@@ -93,11 +104,14 @@
         <h2 class="title">Что есть в комнате?</h2>
 
         <div class="features-hall__wrapper">
-          <div class="features-hall__banner features-hall__banner--wild-west"></div>
+          <div class="features-hall__banner features-hall__banner--wild-west">
+          </div>
+
           <div class="features-hall__description">
             <p class="features-hall__text features-hall__text--wild-west">
               В комнате присутствует большое количество элементов из любимых историй дикого запада. Револьверы, кожаные вещи, шляпы, сапоги и многое другое. 
             </p>
+
             <p>
               Вы сможете воспользоваться динамическими игровыми платформами в виде лошадей, старинного поезда или дома в стиле вестерна. 
             </p>
@@ -111,8 +125,6 @@
         <h2 class="title">Другие комнаты</h2>
 
         <ul class="rooms-hall__list">
-          
-
           <li class="rooms-hall__item">
             <a class="rooms-hall__link rooms-hall__link--star-wars" href="star_wars.html">star <br> wars</a>
           </li>
@@ -204,11 +216,11 @@
         </div>
 
         <picture class="footer__wrapper-map">
-          <source srcset="images/map-mobile.jpg, images/map-retina.jpg 2x" media="(max-width: 420px)">
-          <source srcset="images/map-small.jpg" media="(max-width: 768px)">
-          <source srcset="images/map-medium.jpg" media="(max-width: 1200px)">
-          <source srcset="images/map.jpg">
-          <img class="footer__map" src="images/map.jpg" alt="Навигационная карта карта с координатами компании">
+          <source srcset="img/map-mobile.jpg, images/map-retina.jpg 2x" media="(max-width: 420px)">
+          <source srcset="img/map-small.jpg" media="(max-width: 768px)">
+          <source srcset="img/map-medium.jpg" media="(max-width: 1200px)">
+          <source srcset="img/map.jpg">
+          <img class="footer__map" src="img/map.jpg" alt="Навигационная карта карта с координатами компании">
         </picture> 
       </div>
 

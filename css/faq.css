@@ -42,17 +42,17 @@
 }
 
 .faq__btn:after {
-	background-image: url("../images/open-purple.svg");
+	background-image: url("../img/open-purple.svg");
 }
 
 @media (min-width: 1024px) {
 	.faq__btn:hover:after {
-		background-image: url("../images/open-purple-hover.svg");
+		background-image: url("../img/open-purple-hover.svg");
 	}
 }
 
 .faq__btn:focus:after {
-	background-image: url("../images/close.svg");
+	background-image: url("../img/close.svg");
 }
 
 @media (min-width: 1025px) {
@@ -62,15 +62,15 @@
 	}
 
 	.faq__item:nth-child(even) .faq__btn:after {
-		background-image: url("../images/open-white.svg");
+		background-image: url("../img/open-white.svg");
 	}
 
 	.faq__item:nth-child(even):hover .faq__btn:after {
-		background-image: url("../images/open-white-hover.svg");
+		background-image: url("../img/open-white-hover.svg");
 	}
 
 	.faq__item:nth-child(even) .faq__btn:focus:after {
-		background-image: url("../images/close-white.svg");
+		background-image: url("../img/close-white.svg");
 	}
 }
 
@@ -119,7 +119,7 @@
 
 	.faq__btn:after {
 		right: 20px;
-		background-image: url("../images/open-purple-laptop.svg");
+		background-image: url("../ims/open-purple-laptop.svg");
 	}
 
 	.faq__btn-two:after {
@@ -246,10 +246,10 @@
 	}
 
 	.faq__btn:after {
-		background-image: url("../images/open-mobile.svg");
+		background-image: url("../img/open-mobile.svg");
 	}
 
 	.faq__btn:focus:after {
-		background-image: url("../images/close-purple-mobile.svg");
+		background-image: url("../img/close-purple-mobile.svg");
 	}
 }

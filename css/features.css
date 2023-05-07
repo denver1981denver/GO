@@ -13,19 +13,19 @@
 }
 
 .features__item--80s-vibes {
-	background-image: url(../images/80’s_vibes.jpg);
+	background-image: url(../img/80’s_vibes.jpg);
 }
 
 .features__item--star-wars {
-	background-image: url(../images/star-wars.jpg);
+	background-image: url(../img/star-wars.jpg);
 }
 
 .features__item--wild-west {
-	background-image: url(../images/wild-west.jpg);
+	background-image: url(../img/wild-west.jpg);
 }
 
 .features__item--neon-style {
-	background-image: url(../images/neon-style.jpg);
+	background-image: url(../img/neon-style.jpg);
 }
 
 .features__link {
@@ -64,19 +64,19 @@
 	}
 
 	.features__item--80s-vibes {
-		background-image: url(../images/80’s_vibes-medium.jpg);
+		background-image: url(../img/80’s_vibes-medium.jpg);
 	}
 
 	.features__item--star-wars {
-		background-image: url(../images/star-wars-medium.jpg);
+		background-image: url(../img/star-wars-medium.jpg);
 	}
 
 	.features__item--wild-west {
-		background-image: url(../images/wild-west-medium.jpg);
+		background-image: url(../img/wild-west-medium.jpg);
 	}
 
 	.features__item--neon-style {
-		background-image: url(../images/neon-style-medium.jpg);
+		background-image: url(../img/neon-style-medium.jpg);
 	}
 
 	.features__description {
@@ -113,19 +113,19 @@
 	}
 
 	.features__item--80s-vibes {
-		background-image: url(../images/80’s_vibes-small.jpg);
+		background-image: url(../img/80’s_vibes-small.jpg);
 	}
 
 	.features__item--star-wars {
-		background-image: url(../images/star-wars-small.jpg);
+		background-image: url(../img/star-wars-small.jpg);
 	}
 
 	.features__item--wild-west {
-		background-image: url(../images/wild-west-small.jpg);
+		background-image: url(../img/wild-west-small.jpg);
 	}
 
 	.features__item--neon-style {
-		background-image: url(../images/neon-style-small.jpg);
+		background-image: url(../img/neon-style-small.jpg);
 	}
 
 	.features__description {
@@ -180,19 +180,19 @@
 	}
 
 	.features__item--80s-vibes {
-		background-image: url(../images/80’s_vibes-mobile.jpg);
+		background-image: url(../img/80’s_vibes-mobile.jpg);
 	}
 
 	.features__item--star-wars {
-		background-image: url(../images/star-wars-mobile.jpg);
+		background-image: url(../img/star-wars-mobile.jpg);
 	}
 
 	.features__item--wild-west {
-		background-image: url(../images/wild-west-mobile.jpg);
+		background-image: url(../img/wild-west-mobile.jpg);
 	}
 
 	.features__item--neon-style {
-		background-image: url(../images/neon-style-mobile.jpg);
+		background-image: url(../img/neon-style-mobile.jpg);
 	}
 
 	.features__item {

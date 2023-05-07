@@ -34,7 +34,7 @@
 .promo__item--vr {
 	grid-area: vr;
 	max-height: 228px;
-	background-image: url("../images/vr.jpg");
+	background-image: url("../img/vr.jpg");
 }
 
 .promo__item--audio {
@@ -42,31 +42,31 @@
 	max-height: 228px;
 	align-self: end;
 	padding-bottom: 6px;
-	background-image: url("../images/audio.jpg");
+	background-image: url("../img/audio.jpg");
 }
 
 .promo__item--karaoke {
 	grid-area: karaoke;
 	max-height: 228px;
 	padding-right: 20px;
-	background-image: url("../images/karaoke.jpg");
+	background-image: url("../img/karaoke.jpg");
 }
 
 .promo__item--board-games {
 	grid-area: games;
-	background-image: url("../images/board-games.jpg");
+	background-image: url("../img/board-games.jpg");
 }
 
 .promo__item--cinema {
 	grid-area: cinema;
 	padding-right: 40px;
 	padding-bottom: 6px;
-	background-image: url("../images/cinema.jpg");
+	background-image: url("../img/cinema.jpg");
 }
 
 .promo__item--ps5 {
 	grid-area: ps5;
-	background-image: url("../images/ps5.jpg");
+	background-image: url("../img/ps5.jpg");
 }
 
 .promo__description {
@@ -108,32 +108,32 @@
 	.promo__item--vr {
 		max-width: 287px;
 		max-height: 172px;
-		background-image: url("../images/vr-medium.jpg");
+		background-image: url("../img/vr-medium.jpg");
 	}
 
 	.promo__item--audio {
 		padding-bottom: 2px;
 		max-height: 172px;
-		background-image: url("../images/audio-medium.jpg");
+		background-image: url("../img/audio-medium.jpg");
 	}
 
 	.promo__item--karaoke {
 		max-height: 172px;
-		background-image: url("../images/karaoke-medium.jpg");
+		background-image: url("../img/karaoke-medium.jpg");
 	}
 
 	.promo__item--board-games {
 		max-width: 287px;
-		background-image: url("../images/board-games-medium.jpg");
+		background-image: url("../img/board-games-medium.jpg");
 	}
 
 	.promo__item--cinema {
 		padding-bottom: 5px;
-		background-image: url("../images/cinema-medium.jpg");
+		background-image: url("../img/cinema-medium.jpg");
 	}
 
 	.promo__item--ps5 {
-		background-image: url("../images/ps5-medium.jpg");
+		background-image: url("../img/ps5-medium.jpg");
 	}
 }
 
@@ -173,34 +173,34 @@
 	.promo__item--vr {
 		max-width: 100%;
 		max-height: 100%;
-		background-image: url("../images/vr-small.jpg");
+		background-image: url("../img/vr-small.jpg");
 	}
 
 	.promo__item--audio {
 		max-height: 100%;
-		background-image: url("../images/audio-small.jpg");
+		background-image: url("../img/audio-small.jpg");
 	}
 
 	.promo__item--karaoke {
 		max-height: 100%;
-		background-image: url("../images/karaoke-small.jpg");
+		background-image: url("../img/karaoke-small.jpg");
 	}
 
 	.promo__item--board-games {
 		max-width: 100%;
-		background-image: url("../images/board-games-small.jpg");
+		background-image: url("../img/board-games-small.jpg");
 	}
 
 	.promo__item--cinema {
 		grid-area: cinema;
 		padding-right: 40px;
 		padding-bottom: 6px;
-		background-image: url("../images/cinema-small.jpg");
+		background-image: url("../img/cinema-small.jpg");
 	}
 
 	.promo__item--ps5 {
 		grid-area: ps5;
-		background-image: url("../images/ps5-small.jpg");
+		background-image: url("../img/ps5-small.jpg");
 	}
 
 	.promo__item--audio,
@@ -251,34 +251,34 @@
 
 	.promo__item--vr {
 		padding-bottom: 31px;
-		background-image: url("../images/vr-mobile.jpg");
+		background-image: url("../img/vr-mobile.jpg");
 	}
 
 	.promo__item--audio {
 		padding-right: 10px;
 		padding-bottom: 17px;
-		background-image: url("../images/audio-mobile.jpg");
+		background-image: url("../img/audio-mobile.jpg");
 	}
 
 	.promo__item--karaoke {
 		padding-bottom: 17px;
-		background-image: url("../images/karaoke-mobile.jpg");
+		background-image: url("../img/karaoke-mobile.jpg");
 	}
 
 	.promo__item--board-games {
 		padding-bottom: 31px;
-		background-image: url("../images/board-games-mobile.jpg");
+		background-image: url("../img/board-games-mobile.jpg");
 	}
 
 	.promo__item--cinema {
 		padding-right: 8px;
 		padding-bottom: 3px;
-		background-image: url("../images/cinema-mobile.jpg");
+		background-image: url("../img/cinema-mobile.jpg");
 	}
 
 	.promo__item--ps5 {
 		padding-bottom: 31px;
-		background-image: url("../images/ps5-mobile.jpg");
+		background-image: url("../img/ps5-mobile.jpg");
 	}
 
 	.promo__description {
