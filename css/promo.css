@@ -26,9 +26,9 @@
 	transition: all 0.5s ease-in-out;
 }
 
-.promo__item:hover:not(:nth-child(even)),
-.promo__item:not(:nth-child(even)):hover + .promo__item {
-	transform: translateY(70px);
+.promo__item:hover {
+	transform: translateY(70px) scale(1.1);
+	
 }
 
 .promo__item--vr {
