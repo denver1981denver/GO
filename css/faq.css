@@ -7,11 +7,15 @@
 }
 
 .faq__list {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: (auto);
-	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px; 
 	padding-top: 6px;
+}
+
+.faq__item {
+	background-color: var(--white, #fff);
+	
 }
 
 .faq__btn {
@@ -26,8 +30,29 @@
 	font-size: 24px;
 	line-height: 1.17;
 	text-align: left;
-	background-color: var(--white, #fff);
 	color: var(--dark, #1c1a1a);
+}
+
+.faq__text-wrapper {
+	height: 0;
+	background-color: transition;
+	overflow: hidden;
+	transition: height 0.4s ease-in-out;
+}
+
+.faq__item-active .faq__text-wrapper {
+	height: auto;
+}
+
+.faq__text {
+	padding: 57px 70px 100px 69px;
+	color: var(--black);
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.faq__text-span {
+	font-weight: 700;
 }
 
 .faq__btn:after {
@@ -159,7 +184,6 @@
 
 	.faq__btn-two {
 		padding-top: 3px;
-
 	}
 
 	.faq__btn:after {
