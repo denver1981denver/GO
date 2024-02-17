@@ -1,4 +1,5 @@
 html {
+-moz-scroll-behavior: smooth;
 	scroll-behavior: smooth;
 	position: relative;
 	box-sizing: border-box;

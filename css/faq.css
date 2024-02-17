@@ -9,13 +9,12 @@
 .faq__list {
 	display: flex;
 	flex-direction: column;
-	gap: 20px; 
+	gap: 20px;
 	padding-top: 6px;
 }
 
 .faq__item {
 	background-color: var(--white, #fff);
-	
 }
 
 .faq__btn {
@@ -70,14 +69,20 @@
 	background-image: url("../img/open-purple.svg");
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 	.faq__btn:hover:after {
 		background-image: url("../img/open-purple-hover.svg");
 	}
 }
 
-.faq__btn:focus:after {
+.faq__close-purple .faq__btn:after {
 	background-image: url("../img/close.svg");
+}
+
+@media (min-width: 1025px) {
+	.faq__close-white .faq__btn:after {
+		background-image: url("../img/close-white.svg") !important;
+	}
 }
 
 @media (min-width: 1025px) {
@@ -93,13 +98,12 @@
 	.faq__item:nth-child(even):hover .faq__btn:after {
 		background-image: url("../img/open-white-hover.svg");
 	}
-
-	.faq__item:nth-child(even) .faq__btn:focus:after {
-		background-image: url("../img/close-white.svg");
-	}
 }
 
 @media (max-width: 1024px) {
+	.faq__close-white .faq__btn:after {
+		background-image: url("../img/close.svg");
+	}
 	.faq {
 		padding-bottom: 58px;
 	}
@@ -144,7 +148,7 @@
 
 	.faq__btn:after {
 		right: 20px;
-		background-image: url("../ims/open-purple-laptop.svg");
+		background-image: url("../img/open-purple-laptop.svg");
 	}
 
 	.faq__btn-two:after {
@@ -273,7 +277,8 @@
 		background-image: url("../img/open-mobile.svg");
 	}
 
-	.faq__btn:focus:after {
+	.faq__close-purple .faq__btn:after,
+	.faq__close-white .faq__btn:after {
 		background-image: url("../img/close-purple-mobile.svg");
 	}
 }
