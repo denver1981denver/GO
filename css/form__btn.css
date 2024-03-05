@@ -32,8 +32,8 @@
 
 .form__btn:hover,
 .form__btn:hover:before,
-.form__btn:focus,
-.form__btn:focus:before {
+.form__btn:focus-visible,
+.form__btn:focus-visible:before {
 	background-color: var(--light, #eadeed);
 }
 
@@ -43,9 +43,6 @@
 	color: var(--white, #fff);
 }
 
-.form__btn:active {
-	color: var(--white, #fff);
-}
 
 @media (max-width: 1024px) {
 	.form__btn {
