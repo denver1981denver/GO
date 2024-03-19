@@ -11,14 +11,16 @@
 	color: var(--violet, #cd06ff);
 }
 
-.menu:focus-visible,
+.menu:focus {
+	outline: 1px solid #cd06ff;
+}
+
+.menu:focus,
 .menu:active {
 	color: var(--blue-violet, #840aa3);
 }
 
-.menu:focus-visible {
-	outline-width: 1px;
-}
+
 
 @media (max-width: 780px) {
 	.menu {
