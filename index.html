@@ -30,7 +30,7 @@
 
   <body class="page">
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="navigation">
           <a class="navigation__logo" href="/">
             <picture class="navigation__logo-img">
@@ -64,25 +64,43 @@
             </li>
           </ul> 
 
-          <button class="menu" type="button">
-            <svg class="menu__icon" width="54" height="29" viewBox="0 0 54 29"
-                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <rect class="y" width="54" height="5" rx="2"/>
-                <rect class="x" y="12" width="54" height="5" rx="2"/>
-                <rect class="xx" y="24" width="31" height="5" rx="2"/>
-              <!-- <use href="#menu"></use> -->
-            </svg>
+          <div class="navigation__drop-down-menu drop-down-menu">
+            <div class="drop-down-menu__wrapper">
+              <ul class="drop-down-menu__list">
+                <li class="drop-down-menu__item">
+                  <a class="drop-down-menu__link" href="#features">залы</a>
+                </li>
+    
+                <li class="drop-down-menu__item">
+                  <a class="drop-down-menu__link" href="#about">О нас</a>
+                </li>
+    
+                <li class="drop-down-menu__item">
+                  <a class="drop-down-menu__link" href="#reservation">Бронь</a>
+                </li>
+    
+                <li class="drop-down-menu__item">
+                  <a class="drop-down-menu__link" href="#reviews">отзывы</a>
+                </li>
+    
+                <li class="drop-down-menu__item">
+                  <a class="drop-down-menu__link" href="#contacts">Контакты</a>
+                </li>
+              </ul> 
+
+            <button class="drop-down-menu__call-order call-order" type="button">Заказать звонок</button>
+          </div>
+        </div>
+
+          <button class="navigation__burger burger" type="button">
+            <span class="burger__line burger__line-one"></span>
+            <span class="burger__line burger__line-two"></span>
+            <span class="burger__line burger__line-three"></span>
+            <span class="burger__line burger__line-four"></span>
           </button>
 
-          <!-- <svg width="54" height="29" viewBox="0 0 54 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="54" height="5" rx="2" fill="#6C0287"/>
-            <rect y="12" width="54" height="5" rx="2" fill="#6C0287"/>
-            <rect y="24" width="31" height="5" rx="2" fill="#6C0287"/>
-            </svg> -->
-            
-
-
-          <button class="call-order-btn" type="button">Заказать звонок</button>
+          <button class="navigation__call-order call-order" type="button">Заказать звонок</button>
+      
         </nav>
       </div>
     </header>    

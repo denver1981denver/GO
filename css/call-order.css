@@ -1,0 +1,19 @@
+.call-order {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--white);
+	border-style: solid;
+	border-color: var(--violet);
+	transition: all 0.3s ease-in-out;
+}
+
+.call-order:hover,
+.call-order:focus-visible {
+	background-color: var(--medium-violet, #6c0287);
+	border-color: var(--medium-violet, #6c0287);
+}
+
+.call-order:active {
+	background-color: var(--dark-violet, #640aa3);
+	border: 1px solid var(--black, #000);
+}

@@ -21,6 +21,10 @@ body {
 	color: var(--white, #fff);
 }
 
+.open-popap {
+	overflow: hidden;
+}
+
 img,
 svg {
 	max-width: 100%;

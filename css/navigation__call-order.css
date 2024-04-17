@@ -1,31 +1,20 @@
-.call-order-btn {
+.navigation__call-order {
 	width: 280px;
 	min-height: 55px;
 	align-self: center;
-	margin-top: 4px;
+	/* margin-top: 4px; */
 	padding: 13px 2px 12px 0;
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 0;
 	text-transform: uppercase;
-	border: 3px solid var(--violet, #cd06ff);
+	color: #fff;
+	border-width: 3px;
 	border-radius: 10px;
-	transition: all 0.3s ease-in-out;
-}
-
-.call-order-btn:hover,
-.call-order-btn:focus-visible {
-	background-color: var(--medium-violet, #6c0287);
-	border-color: var(--medium-violet, #6c0287);
-}
-
-.call-order-btn:active {
-	background-color: var(--dark-violet, #640aa3);
-	border: 1px solid var(--black, #000);
 }
 
 @media (max-width: 1024px) {
-	.call-order-btn {
+	.navigation__call-order {
 		max-width: 229px;
 		min-height: 45px;
 		margin-top: 1px;
@@ -37,14 +26,14 @@
 }
 
 @media (max-width: 768px) {
-	.call-order-btn {
-		margin-top: 5px;
+	.navigation__call-order {
+		/* margin-top: 5px; */
 		margin-right: 0;
 	}
 }
 
 @media (max-width: 480px) {
-	.call-order-btn {
+	.navigation__call-order {
 		display: none;
 	}
 }

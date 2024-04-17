@@ -1,0 +1,116 @@
+.burger {
+	position: relative;
+	display: none;
+	width: 56px;
+	height: 56px;
+	outline-offset: 2px;
+	transition: all 0.3s ease-in-out;
+}
+
+.burger__line {
+	position: absolute;
+	display: block;
+	height: 5px;
+	width: 54px;
+	left: 2px;
+	background-color: var(--medium-violet);
+	border-radius: 2px;
+	transition: all 0.3s ease-in-out;
+}
+
+.burger:hover .burger__line {
+	background-color: var(--violet);
+}
+
+.burger:focus {
+	outline: 1px solid var(--violet);
+}
+
+.burger:focus .burger__line {
+	background-color: var(--blue-violet);
+}
+
+.burger:active .burger__line {
+	background-color: var(--blue-violet);
+}
+
+.burger__line-one {
+	top: 14px;
+}
+
+.burger__line-two,
+.burger__line-three {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.burger__line-four {
+	bottom: 15px;
+	width: 31px;
+}
+
+.open .burger__line-one,
+.open .burger__line-four {
+	opacity: 0;
+}
+
+.close .burger__line-one,
+.close .burger__line-four {
+	opacity: 1;
+}
+
+.open .burger__line-two {
+	transform: rotate(45deg);
+}
+
+.open .burger__line-three {
+	transform: rotate(-45deg);
+}
+
+.close .burger__line-two {
+	transform: rotate(0deg);
+}
+
+.close .burger__line-three {
+	transform: rotate(0deg);
+}
+
+.open.burger:focus-visible {
+	outline: none;
+}
+
+.open.burger:focus-visible .burger__line {
+	background-color: var(--medium-violet);
+}
+
+@media (max-width: 780px) {
+	.burger {
+		display: block;
+		align-self: stretch;
+		/* margin-top: 5px; */
+		order: -1;
+	}
+}
+
+@media (max-width: 420px) {
+	.burger {
+		max-width: 43px;
+		height: 42px;
+		align-self: center;
+		/* margin-top: 8px; */
+	}
+
+	.burger__line {
+		width: 39px;
+		height: 3px;
+	}
+
+	.burger__line-one {
+		top: 9px;
+	}
+
+	.burger__line-four {
+		bottom: 9px;
+		width: 22px;
+	}
+}

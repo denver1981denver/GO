@@ -1,8 +1,10 @@
 const formOverlay = document.querySelector('.overlay-modal');
-const btnAdd = document.querySelector('.call-order-btn');
+const btnAdd = document.querySelectorAll('.call-order');
 
-btnAdd.addEventListener('click', () => {
-  formOverlay.classList.add('is-visible');
+btnAdd.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    formOverlay.classList.add('is-visible');
+  });
 });
 
 formOverlay.addEventListener('click', (e) => {

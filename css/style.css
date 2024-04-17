@@ -3,9 +3,11 @@
 @import url(var.css);
 @import url(global.css);
 @import url(header.css);
-@import url(navigation-list.css);
-@import url(menu.css);
-@import url(call-order-btn.css);
+@import url(navigation__list.css);
+@import url(drop-down-menu.css);
+@import url(burger.css);
+@import url(call-order.css);
+@import url(navigation__call-order.css);
 @import url(hero.css);
 @import url(info.css);
 @import url(promo.css);
