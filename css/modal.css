@@ -21,6 +21,8 @@
 	position: absolute;
 	left: 50%;
 	top: 30%;
+	max-width: 600px;
+	max-height: 498px;
 	padding: 60px 150px 80px;
 	transform: translateX(-50%);
 	background-color: var(--purple);
@@ -87,6 +89,10 @@
 	outline: none;
 }
 
+.modal-form__input::placeholder {
+	color: var(--blue-violet);
+}
+
 .modal-form__input:focus {
 	border: 2px solid var(--violet, #cd06ff);
 }
@@ -133,6 +139,16 @@
 .modal__btn-submit:active:before {
 	background-color: var(--blue-violet, #840aa3);
 	color: var(--white, #fff);
+}
+
+.modal__btn-submit:disabled, 
+.modal__btn-submit:disabled:before {
+	background-color: var(--purple);
+	color: var(--light);
+}
+
+.modal__btn-submit:disabled:before {
+	filter: none;
 }
 
 @media (max-width: 640px) {

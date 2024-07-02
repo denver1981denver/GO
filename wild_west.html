@@ -24,10 +24,15 @@
   <meta name="theme-color" content="#74d5b0">
 
   <link rel="stylesheet" href="css/style.css">
+
+  <script defer src="script/plugins/just-validate.production.min.js"></script>
+  <script defer src="script/plugins/inputmask.min.js"></script>
+  <script defer src="script/plugins/axios.min.js"></script>
+  <script defer src="script/modal.js"></script>
 </head>
-<body>
+<body class="page">
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <nav class="navigation">
         <a class="navigation__logo" href="/">
           <picture class="navigation__logo-img">
@@ -40,39 +45,67 @@
         </a>
         
         <ul class="navigation__list">
-          <li class="navigation__item x">
-            <a class="navigation__link" href="../index.html#features">залы</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html#features">залы</a>
           </li>
 
           <li class="navigation__item">
-            <a class="navigation__link" href="../index.html#about">О нас</a>
+            <a class="navigation__link" href="index.html#about">О нас</a>
           </li>
 
           <li class="navigation__item">
-            <a class="navigation__link" href="../index.html#reservation">Бронь</a>
+            <a class="navigation__link" href="index.html#reservation">Бронь</a>
           </li>
 
           <li class="navigation__item navigation__item--tranform">
-            <a class="navigation__link" href="../index.html#reviews">отзывы</a>
+            <a class="navigation__link" href="index.html#reviews">отзывы</a>
           </li>
 
           <li class="navigation__item navigation__item--tranform">
-            <a class="navigation__link" href="../index.html#contacts">Контакты</a>
+            <a class="navigation__link" href="#contacts">Контакты</a>
           </li>
         </ul> 
 
-        <button class="menu" type="button">
-          <svg class="menu__icon" width="54" height="29" viewBox="0 0 54 29"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use href="#menu"></use>
-          </svg>
+        <div class="navigation__drop-down-menu drop-down-menu">
+          <div class="drop-down-menu__wrapper">
+            <ul class="drop-down-menu__list">
+              <li class="drop-down-menu__item">
+                <a class="drop-down-menu__link" href="#features">залы</a>
+              </li>
+  
+              <li class="drop-down-menu__item">
+                <a class="drop-down-menu__link" href="#about">О нас</a>
+              </li>
+  
+              <li class="drop-down-menu__item">
+                <a class="drop-down-menu__link" href="#reservation">Бронь</a>
+              </li>
+  
+              <li class="drop-down-menu__item">
+                <a class="drop-down-menu__link" href="#reviews">отзывы</a>
+              </li>
+  
+              <li class="drop-down-menu__item">
+                <a class="drop-down-menu__link" href="#contacts">Контакты</a>
+              </li>
+            </ul> 
+
+          <button class="drop-down-menu__call-order call-order" type="button">Заказать звонок</button>
+        </div>
+      </div>
+
+        <button class="navigation__burger burger" type="button">
+          <span class="burger__line burger__line-one"></span>
+          <span class="burger__line burger__line-two"></span>
+          <span class="burger__line burger__line-three"></span>
+          <span class="burger__line burger__line-four"></span>
         </button>
 
-        <button class="call-order-btn" type="button">Заказать звонок</button>
+        <button class="navigation__call-order call-order" type="button">Заказать звонок</button>
+    
       </nav>
     </div>
   </header>    
-
   <main>
     <section class="hero-hall">
       <div class="hero-hall__inner container">
@@ -235,6 +268,33 @@
       </div>
     </div>
   </footer>
+
+  <div class="overlay-modal">
+    <form class="modal-form" target="_blank" autocomplete="off" novalidate="novalidate">
+      <button class="modal-form__close" type="button">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)" fill="white" />
+          <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)" fill="white" />
+        </svg>
+      </button>
+
+      <h2 class="modal-form__title">Заказать звонок</h2>
+
+      <fieldset class="modal-form__group">
+        <label class="modal-form__label">
+          <span class="modal-form__span">Имя</span>
+          <input class="modal-form__input" name="modalName" id="modal-name" type="text" autocomplete="off" placeholder="Имя">
+        </label>
+
+        <label class="modal-form__label">
+          <span class="modal-form__span">Телефон</span>
+          <input class="modal-form__input" name="modalPhone" id="modal-phone" type="text" autocomplete="off" placeholder="Телефон">
+        </label>
+
+        <button class="modal__btn-submit" type="submit">Позвонить мне</button>
+      </fieldset>
+    </form>
+</div>
   
   <svg style="display: none;">
     <symbol id="menu">

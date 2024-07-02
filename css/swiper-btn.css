@@ -1,0 +1,57 @@
+.swiper-btn {
+	position: absolute;
+	width: 34px;
+	height: 66px;
+	z-index: 2;
+	top: 35%;
+	color: var(--medium-violet);
+	transition: color 0.5s linear;
+}
+
+.swiper-btn:hover {
+	color: var(--violet);
+	transition: color 0.3s linear;
+}
+
+.swiper-btn--prev {
+	left: 0;
+}
+
+.swiper-btn--next {
+	right: 0;
+}
+
+@media (max-width: 1024px) {
+	.swiper-btn {
+		width: 27px;
+		height: 51px;
+		top: 30%;
+	}
+}
+
+@media (max-width: 768px) {
+	.swiper-btn {
+		top: 40%;
+	}
+}
+
+@media (max-width: 535px) {
+	.swiper-btn {
+		width: 15px;
+		height: 29px;
+		top: 10%;
+	}
+
+	.swiper-btn--prev {
+		left: 25px;
+	}
+
+	.swiper-btn--next {
+		right: 25px;
+	}
+}
+@media (max-width: 320px) {
+	.swiper-btn {
+		top: 7%;
+	}
+}

@@ -23,9 +23,17 @@
     <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
     <meta name="theme-color" content="#74d5b0">
 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="script/script.js" type="module"></script>
+    <script defer src="script/plugins/just-validate.production.min.js"></script>
+    <script defer src="script/plugins/inputmask.min.js"></script>
+    <script defer src="script/plugins/axios.min.js"></script>
+    <script defer src="script/plugins/swiper-bundle.min.js"></script>
+    <script defer src="script/accordeon.js"></script>
+    <script defer src="script/drop-down-menu.js"></script>
+    <script defer src="script/modal.js"></script>
+    <script defer src="script/slider.js"></script>
   </head>
 
   <body class="page">
@@ -419,50 +427,65 @@
         <div class="container">
           <h2 class="reviews__title title">Отзывы посетителей</h2>
 
-          <ul class="reviews__list">
-            <li>
-              <blockquote class="reviews__wrapper reviews__wrapper-visitor-1">
-                <div class="reviews__img ">
-                  <img src="img/visitor-1.png" alt="фото посетителя">
-                </div>
-                
-                <cite class="reviews__visitor-name">Макс Самойлов</cite>
+          <div class="reviews__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <blockquote class="review">
+                  <div class="review__img ">
+                    <img src="img/visitor-1.png" alt="фото посетителя">
+                  </div>
+                  
+                  <span class="review__visitor-name">Макс Самойлов</span>
+  
+                  <p class="review__visitor-review"> Отмечали здесь день рождения с&nbsp;компанией друзей, все было очень круто!
+                    VR&nbsp;очки это просто бомба, никогда еще я не&nbsp;был в&nbsp;таком полном игровом погружении. Сервис на&nbsp;высоте!
+                  </p>
+                </blockquote>
+              </div>
 
-                <p class="reviews__visitor-review"> Отмечали здесь день рождения с компанией друзей, все было очень  круто!
-                  VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
-                </p>
-              </blockquote>
-            </li>
+              <div class="swiper-slide">
+                <blockquote class="review">
+                  <div class="review__img ">
+                    <img src="img/visitor-2.png" alt="фото посетителя">
+                  </div>
+            
+                  <span class="review__visitor-name">Оксана Григорьева</span>
+  
+                  <p class="review__visitor-review"> Были в&nbsp;комнате Дикий Запад, пели в&nbsp;караоке под Шакиру, отличный получился корпоратив!
+                    У&nbsp;нас в&nbsp;городе больше нет подобных заведений
+                  </p>
+                </blockquote>               
+              </div>
 
-            <li>
-              <blockquote class="reviews__wrapper reviews__wrapper-visitor-2">
-                <div class="reviews__img ">
-                  <img src="img/visitor-2.png" alt="фото посетителя">
-                </div>
-          
-                <cite class="reviews__visitor-name">Оксана Григорьева</cite>
+              <div class="swiper-slide">
+                <blockquote class="review">
+                  <div class="review__img">
+                    <img src="img/visitor-3.png" alt="фото посетителя">
+                  </div>
+                  
+                  <span class="review__visitor-name">Никита Ященко</span>
+  
+                  <p class="review__visitor-review">Немного подвисала игра в&nbsp;VR очках, а&nbsp;так все норм.
+                    Крутое оформление комнаты в&nbsp;стиле звездных войн, попал в&nbsp;атмосферу космоса
+                  </p>
+                </blockquote>
+              </div>
+            </div>
 
-                <p class="reviews__visitor-review"> Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив!
-                  У нас в городе больше нет подобных заведений
-                </p>
-              </blockquote>               
-            </li>
+            <button class="swiper-btn swiper-btn--prev">
+              <svg width="34" height="66" viewBox="0 0 34 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32.527 0L33.9413 1.41421L1.41434 33.9411L0.000127196 32.5269L32.527 0Z"/>
+                <path d="M0.000127196 32.5269L1.41434 31.1127L33.9413 63.6396L32.527 65.0538L0.000127196 32.5269Z"/>
+              </svg>
+            </button>
 
-            <li>
-              <blockquote class="reviews__wrapper">
-                <div class="reviews__img">
-                  <img src="img/visitor-3.png" alt="фото посетителя">
-                </div>
-                
-                <cite class="reviews__visitor-name">Никита Ященко</cite>
-
-                <p class="reviews__visitor-review">Немного подвисала игра в VR очках, а так все норм.
-                  Крутое оформление комнаты в стиле звездных войн, попал в атмосферу 
-                  <span class="reviews__text-snippet">космоса</span> 
-                </p>
-              </blockquote>
-            </li>
-          </ul>
+            <button class="swiper-btn swiper-btn--next">
+              <svg width="35" height="66" viewBox="0 0 35 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.52698 0L0.112764 1.41421L32.6397 33.9411L34.0539 32.5269L1.52698 0Z"/>
+                <path d="M34.0539 32.5269L32.6397 31.1127L0.112764 63.6396L1.52698 65.0538L34.0539 32.5269Z"/>
+                </svg>
+            </button>
+          </div>
         </div>
       </section>  
 
@@ -636,8 +659,7 @@
     </footer> 
 
     <div class="overlay-modal">
-
-        <form class="modal-form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
+        <form class="modal-form" target="_blank" autocomplete="off" novalidate="novalidate">
           <button class="modal-form__close" type="button">
             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)" fill="white" />
@@ -647,19 +669,19 @@
 
           <h2 class="modal-form__title">Заказать звонок</h2>
 
-          <div class="modal-form__group">
+          <fieldset class="modal-form__group">
             <label class="modal-form__label">
               <span class="modal-form__span">Имя</span>
-              <input class="modal-form__input" name="modal-name" id="modal-name" type="text" required>
+              <input class="modal-form__input" name="modalName" id="modal-name" type="text" autocomplete="off" placeholder="Имя">
             </label>
   
             <label class="modal-form__label">
               <span class="modal-form__span">Телефон</span>
-              <input class="modal-form__input" name="modal-phone" id="modal-phone" type="phone" required>
+              <input class="modal-form__input" name="modalPhone" id="modal-phone" type="text" autocomplete="off" placeholder="Телефон">
             </label>
 
             <button class="modal__btn-submit" type="submit">Позвонить мне</button>
-          </div>
+          </fieldset>
         </form>
     </div>
     
@@ -701,6 +723,8 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463 49.9999 24.9999C49.9999 38.8051 38.805 49.9999 25.0006 49.9999C15.2871 49.9999 6.86597 44.4576 2.72751 36.3647H13.6237C18.816 36.3647 22.4429 33.566 22.4429 29.0923C22.4429 19.6108 11.5051 23.4737 11.5051 20.1089C11.5051 18.4878 12.8057 17.898 15.1858 17.898H22.7692C24.8711 17.898 27.3435 18.275 27.3435 20.5685V28.1243C27.3435 33.5955 31.6159 36.364 36.0441 36.364C40.548 36.364 44.7435 33.5955 44.7435 28.1243V9.66919H44.7441Z" />
         <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262 39.0626 4.33079V28.3013C39.0626 29.9628 37.7037 31.3224 36.0447 31.3224C34.3838 31.3224 33.0261 29.9628 33.0261 28.3013V21.1186C33.0261 15.3846 30.1242 12.9994 26.3447 12.9994H14.0441C9.59088 12.9994 5.89665 15.834 5.89665 20.3289C5.89665 22.6289 6.8819 25.9994 11.5415 26.8353C15.337 27.5186 16.8351 27.3199 16.8351 29.3506C16.8351 31.3224 14.6261 31.3224 11.7101 31.3224H0.808189C0.269676 29.2582 -0.0019826 27.1334 -0.000143311 25C-0.000143311 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z"/>
       </symbol>
+
+     
     </svg>  
   </body>
 </html>
